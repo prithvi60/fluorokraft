@@ -15,23 +15,16 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(req) {
-  const { name, email, message, title } = await req.json();
-
-  const capitalized = title.charAt(0).toUpperCase() + title.slice(1);
-
+  const { name, email, jobTitle, companyName, contactNumber } =
+    await req.json();
+  const title = "contact";
   const messageForClient = `
-  <p style="font-size: 16px; color: #555;"><strong>Valuable customer insights derived from ${title}:</strong></p>
+  <p style="font-size: 16px; color: #555;"><strong>Valuable customer insights derived from contact form:</strong></p>
             <p style="font-size: 16px; color: #555;"><strong>Name:</strong> ${name}</p>
             <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${email}</p>
-            ${
-              message !== ""
-                ? `
-              <p style="font-size: 16px; color: #555;">
-                <strong>Message:</strong> ${message}
-              </p>
-                `
-                : ""
-            }
+            <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${jobTitle}</p>
+            <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${companyName}</p>
+            <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${contactNumber}</p>
   `;
 
   const messageForUser = `
@@ -49,13 +42,13 @@ export async function POST(req) {
   const clientMailOptions = {
     from: `"${email}" <${"support@webibee.com"}>`,
     to: process.env.EMAIL_ID,
-    subject: `New Customer Form Submitted - ${capitalized} Page`,
+    subject: `New Customer Form Submitted - Contact Page`,
     html: generateEmailTemplateForClient(messageForClient),
     // bcc: ["reachout@penthusiasts.com"],
   };
 
   const userMailOptions = {
-    from: `Business Portfolio - "${process.env.EMAIL_ID}" <support@webibee.com>`,
+    from: `Fluorokraft - "${process.env.EMAIL_ID}" <support@webibee.com>`,
     to: email,
     subject: "Acknowledgment: We received your Submission",
     html: generateEmailTemplateForUser(messageForUser, title),

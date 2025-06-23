@@ -1,10 +1,21 @@
-import React from 'react'
+import OurLeadership from '@/components/layout/about/OurLeadership'
+import OurMission from '@/components/layout/about/OurMission'
+import OurStory from '@/components/layout/about/OurStory'
+import AllPageHero from '@/components/layout/AllPageHero'
+import Contact from '@/components/layout/Contact'
+import GetQuote from '@/components/layout/GetQuote'
+
 
 const Page = () => {
     return (
-        <div className="grid grid-cols-1 items-center justify-items-center min-h-screen p-8 pb-20 gap-16 text-xl md:text-5xl sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <h4>About</h4>
-        </div>
+        <main>
+            <AllPageHero text={"Three Decades of Innovation. Fulfilling Precision Custom Requirements."} />
+            <OurStory />
+            <OurMission />
+            <OurLeadership />
+            <GetQuote />
+            <Contact />
+        </main>
     )
 }
 

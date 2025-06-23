@@ -12,6 +12,18 @@ const formular = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-formular",
+});
+
+const formularMono = localFont({
+  src: [
+    {
+      path: "../app/formular-mono.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-formularMono",
 });
 
 const roboto = Roboto({
@@ -32,7 +44,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${roboto.variable} ${formular.className} antialiased`}
+        className={` ${roboto.variable} ${formularMono.variable} ${formular.className} antialiased selection:bg-success selection:text-white`}
       >
         {children}
       </body>

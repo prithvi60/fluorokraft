@@ -20,9 +20,11 @@
   --color-success: var(--success);
   --color-info: var(--info);
   --font-roboto: var(--font-roboto);
+  --font-mono: var(--font-formularMono);
 }
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 body {
   background: var(--background);
@@ -40,7 +42,7 @@ body {
   }
 
   .padding {
-    @apply px-3 md:px-10 py-[40px] md:py-[70px];
+    @apply px-5 md:px-10 py-[40px] md:py-[70px];
   }
 }
 
@@ -62,6 +64,19 @@ body {
     12px 100%,
     0px calc(100% - 12px),
     0px 12px
+  );
+}
+
+.clip-pathHeroBottom {
+  clip-path: polygon(
+    0px 0px,
+    100% 0,
+    100% 14px,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    14px 100%,
+    0px calc(100% - 14px),
+    0px 0px
   );
 }
 

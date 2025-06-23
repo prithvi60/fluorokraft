@@ -1,7 +1,6 @@
 import React from "react";
 import { SectionHeading1, SectionPara1 } from "./SectionComponents";
 import Image from "next/image";
-import { GetStartButton, UnderlineAnimation } from "../UI/Button";
 
 const HomeHero = () => {
     return (

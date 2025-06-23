@@ -124,3 +124,93 @@ export const innovationLists = [
         desc: "Breakthrough formulations like custom Teflon blends that extend high-wear component lifecycles from weeks to months while reducing costs.",
     },
 ];
+
+export const leadershipTeam = [
+    {
+        name: "Maheshmoorthy V",
+        position: "Plastic Engineer, Partner and Director",
+    },
+    {
+        name: "Srinivasan Subramanian",
+        position: "CA, Partner and Director",
+    },
+    {
+        name: "Brahadeesh Srinivasan",
+        position: "Assistant Director",
+    },
+];
+
+export const whyFluorokraftFaqs = [
+    {
+        ques: "Zero-Risk Quality Partnership",
+        shortAns:
+            "Near-zero defects across millions of deliveries with 100 customer retention and no attrition among ongoing clients. Green Channel Vendor status means OEMs trust us with full quality responsibility, eliminating their inspection overhead.",
+        lists: [
+            {
+                title: "Proven Performance:",
+                points: [
+                    "Near-zero defect rates across millions of component deliveries",
+                    "98% on-time delivery performance with 4-5 week standard schedules",
+                    "100% customer retention with zero attrition among ongoing clients",
+                ],
+            },
+            {
+                title: "Global OEM Trust:",
+                points: [
+                    "Green Channel Vendor status with full quality responsibility",
+                    "Self-certified supplier eliminating incoming inspections",
+                    "25+ years of industry presence with 20+ year client relationships",
+                ],
+            },
+        ],
+        para: "Advanced quality systems include complete supply chain traceability, laser-based dimensional analysis, and systematic in-process monitoring every 100-1,000 parts. Components deliver chemical resistance against aggressive acids, thermal stability from cryogenic to 260°C, and ±0.05 mm dimensional precision on soft polymers for aerospace, oil &amp; gas, and submersible applications.",
+    },
+    {
+        ques: "Unmatched Reliability & Speed",
+        shortAns:
+            "98% on-time delivery with standard 4-5 week schedules, plus emergency response capability delivering rush orders in 1-2 weeks without quality compromise. 90% of clients maintain 5+ year partnerships, with many exceeding 20 years.",
+        lists: [
+            {
+                title: "Manufacturing Excellence:",
+                points: [
+                    "Ultra-precision CNC infrastructure achieving ±0.05 mm accuracy",
+                    "Stock-and-serve strategy with pre-positioned inventory",
+                    "Emergency response capability with 1-2 week rush fulfillment",
+                ],
+            },
+            {
+                title: "Partnership Foundation:",
+                points: [
+                    "90% of clients maintain 5+ year partnerships",
+                    "Collaborative planning with procurement teams",
+                    "2024 “Reliable Business Partner” award recognition",
+                ],
+            },
+        ],
+        para: "Strategic supply chain architecture includes intelligent demand forecasting and data-driven inventory management. Disciplined production planning maintains standard 4-5 week delivery timelines with agile accommodation for rush orders. Comprehensive joint planning processes ensure transparency and seamless transition from engineering consultation to steady supply execution.",
+    },
+    {
+        ques: "Innovation That Delivers Results",
+        shortAns:
+            "Co-engineering partnerships that extend equipment uptime by 40% and reduce downtime costs by 70%. Three decades of polymer expertise transforming complex challenges into cost-effective solutions with precision down to 0.05 mm tolerances.",
+        lists: [
+            {
+                title: "High-Performance Specialization:",
+                points: [
+                    "PTFE, PEEK, polyamide, UHMWPE, polyurethane, and exotic materials",
+                    "Applications: Oil &amp; gas valve seats, aerospace bushings, submersible seals",
+                    "Manufacturing tolerances down to 0.05 mm for precision-critical environments",
+                ],
+            },
+            {
+                title: "Innovation Results:",
+                points: [
+                    "Extended conveyor system uptime by 40% through a new material",
+                    "Reduced downtime costs by 70% with custom Teflon blends",
+                    "Cost-effective alternatives to proprietary components",
+                ],
+            },
+        ],
+        para: "Led by 30+ years polymer engineering expertise, our R&amp;D team specializes in complex part development, reverse-engineering, and integration of rare materials sourced globally. Co-engineering partnerships with client NPD teams deliver custom material formulation, scalable manufacturing solutions, and performance optimization from low-volume prototypes to high-volume production.",
+    },
+];

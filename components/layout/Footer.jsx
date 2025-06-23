@@ -68,10 +68,15 @@ const Footer = () => {
                             {footerLinks.slice(0, 6).map((list, idx) => (
                                 <li
                                     key={idx}
-                                    className={`text-sm underline underline-offset-4 capitalize md:text-base tracking-wide font-medium`}
+                                    className={`text-sm capitalize md:text-base tracking-wide font-medium`}
                                 >
-                                    <Link title={list.menu} href={list.href}>
+                                    <Link
+                                        title={list.menu}
+                                        href={list.href}
+                                        className="relative w-fit inline-block overflow-hidden group"
+                                    >
                                         {list.menu}
+                                        <div className="absolute bottom-0 left-0 w-[250%] h-[1px] bg-background transition-transform duration-400 ease-in -translate-x-[60%] group-hover:translate-x-0 clip-path-cut"></div>
                                     </Link>
                                 </li>
                             ))}
@@ -85,10 +90,15 @@ const Footer = () => {
                             {footerLinks.slice(7, footerLinks.length).map((list, idx) => (
                                 <li
                                     key={idx}
-                                    className={`text-sm underline underline-offset-4 capitalize md:text-base tracking-wide font-medium`}
+                                    className={`text-sm capitalize md:text-base tracking-wide font-medium`}
                                 >
-                                    <Link title={list.menu} href={list.href}>
+                                    <Link
+                                        title={list.menu}
+                                        href={list.href}
+                                        className="relative w-fit inline-block overflow-hidden group"
+                                    >
                                         {list.menu}
+                                        <div className="absolute bottom-0 left-0 w-[250%] h-[1px] bg-background transition-transform duration-400 ease-in -translate-x-[60%] group-hover:translate-x-0 clip-path-cut"></div>
                                     </Link>
                                 </li>
                             ))}
@@ -102,15 +112,12 @@ const Footer = () => {
                 <h4 className="uppercase font-roboto font-bold tracking-wide text-xl md:text-4xl">
                     FLUOROKRAFT
                 </h4>
-                <p className="capitalize underline underline-offset-4 font-medium lg:text-start text-base md:text-[20px]">
+                <p className="capitalize underline underline-offset-8 font-medium lg:text-start text-base md:text-[20px]">
                     ©Copyright {new Date().getFullYear()}{" "}
                     {/* <span className="text-text font-semibold">business portfolio</span> . */}
                     Fluorokraft
                 </p>
                 <ScrollToTopButton />
-                {/* <p className="font-medium underline underline-offset-4 tracking-wide text-base md:text-[20px]">
-                    Back to top
-                </p> */}
             </div>
         </footer>
     );

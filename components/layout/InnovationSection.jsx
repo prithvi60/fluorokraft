@@ -5,7 +5,11 @@ import Image from "next/image";
 
 const InnovationSection = () => {
     return (
-        <section className="w-full h-full padding flex flex-col gap-5 md:gap-0 md:flex-row md:justify-between xl:gap-6 bg-secondary">
+        <section
+            className="w-full h-full padding flex flex-col gap-5 md:gap-0 md:flex-row md:justify-between xl:gap-6 bg-secondary scroll-mt-[0px] sm:scroll-mt-[-50px]"
+            id="innovation"
+            name="innovation"
+        >
             <div className="w-full md:w-3/5">
                 <ListOfCategory
                     title={"Innovation"}

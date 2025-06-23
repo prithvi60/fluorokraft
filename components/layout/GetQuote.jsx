@@ -11,15 +11,15 @@ const GetQuote = () => {
                     color={"text-foreground"}
                 />
             </div>
-            <div className="w-full md:w-2/5">
+            <div className="w-full md:w-3/5 flex flex-col items-start md:items-center md:flex-row md:justify-between gap-8 md:gap-3">
                 <SectionPara1
                     text={
                         "Reach out to explore pricing, timelines, and solutions built for your needs."
                     }
                     color={"text-foreground"}
                 />
+                <GetStartButton href={"/contact"} text={"Contact us"} />
             </div>
-            <GetStartButton href={"/contact"} text={"Contact us"} />
         </section>
     );
 };

@@ -9,7 +9,7 @@ const CategoryCard = () => {
         <section className="w-full h-full padding grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 bg-[#EDEDED]">
             {categories.map((list, idx) => (
                 <div key={idx} className="sm:last:col-span-2 last:lg:col-auto">
-                    <Link href={list.href} className="space-y-2 md:space-y-4 group shadow">
+                    <Link passHref href={list.href} className="space-y-2 md:space-y-4 group shadow scroll-smooth">
                         <div className="w-full h-96 md:h-[450px] 2xl:h-[530px] relative clip-pathImg overflow-hidden">
                             <Image
                                 fill

@@ -1,11 +1,14 @@
 "use client";
 import { useState } from "react";
 import Loader from "../UI/Loader";
+import { GetStartButton } from "../UI/Button";
 
 const initialFormData = {
     name: "",
     email: "",
-    message: "",
+    jobTitle: "",
+    companyName: "",
+    contactNumber: "",
 };
 export const ContactForm = () => {
     const [formData, setFormData] = useState(initialFormData);
@@ -22,6 +25,7 @@ export const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus(true);
+        console.log("Form Data Submitted:", formData);
 
         try {
             const emailResponse = await fetch("/api/sendMail", {
@@ -32,8 +36,9 @@ export const ContactForm = () => {
                 body: JSON.stringify({
                     name: formData.name,
                     email: formData.email,
-                    message: formData.message,
-                    title: "contact"
+                    jobTitle: formData.jobTitle,
+                    companyName: formData.companyName,
+                    contactNumber: formData.contactNumber,
                 }),
             });
 
@@ -46,7 +51,7 @@ export const ContactForm = () => {
 
             const emailDataResult = await emailResponse.json();
 
-            // Check for success in both responses
+            // Check for success
             if (emailDataResult.success) {
                 setStatus(false);
                 setFormData(initialFormData);
@@ -56,63 +61,118 @@ export const ContactForm = () => {
             console.error("Error sending emails:", error);
             setStatus(false);
         }
+        setStatus(false)
     };
     return (
         <>
-            <form
-                onSubmit={handleSubmit}
-                className="w-full md:w-[85%] lg:w-3/5 space-y-5"
-            >
-                <div className="gap-2 flex flex-col">
-                    <label htmlFor="name" className="capitalize font-bold tracking-wider">
-                        name
-                    </label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        value={formData.name || ""}
-                        onChange={handleChange}
-                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none"
-                    />
+            <form onSubmit={handleSubmit} className="w-full space-y-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 lg:gap-y-12 gap-x-12 lg:gap-x-20">
+                    <div className="gap-1 flex flex-col relative text-sm md:text-base">
+                        <label
+                            htmlFor="name"
+                            className="capitalize font-medium tracking-wider font-mono"
+                        >
+                            name
+                        </label>
+                        <div className="p-4 before:border-b-2 before:border-dashed before:border-primary placeholder:text-foreground relative before:absolute before:bottom-0 before:content-[''] before:left-0 before:w-full focus-within:before:h-1.5 focus-within:before:border-none focus-within:before:bg-primary focus-within:outline-none mb-1">
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                value={formData.name || ""}
+                                onChange={handleChange}
+                                placeholder="Type"
+                                className="w-full bg-transparent focus:outline-none placeholder:text-primary/75 placeholder:font-medium"
+                            />
+                        </div>
+                    </div>
+                    <div className="gap-1 flex flex-col relative text-sm md:text-base">
+                        <label
+                            htmlFor="jobTitle"
+                            className="capitalize font-medium tracking-wider font-mono"
+                        >
+                            job title
+                        </label>
+                        <div className="p-4 before:border-b-2 before:border-dashed before:border-primary placeholder:text-foreground relative before:absolute before:bottom-0 before:content-[''] before:left-0 before:w-full focus-within:before:h-1.5 focus-within:before:border-none focus-within:before:bg-primary focus-within:outline-none mb-1">
+                            <input
+                                type="text"
+                                id="jobTitle"
+                                name="jobTitle"
+                                required
+                                value={formData.jobTitle || ""}
+                                onChange={handleChange}
+                                placeholder="Type"
+                                className="w-full bg-transparent focus:outline-none placeholder:text-primary/75 placeholder:font-medium"
+                            />
+                        </div>
+                    </div>
+                    <div className="gap-1 flex flex-col relative text-sm md:text-base">
+                        <label
+                            htmlFor="email"
+                            className="capitalize font-medium tracking-wider font-mono"
+                        >
+                            email
+                        </label>
+                        <div className="p-4 before:border-b-2 before:border-dashed before:border-primary placeholder:text-foreground relative before:absolute before:bottom-0 before:content-[''] before:left-0 before:w-full focus-within:before:h-1.5 focus-within:before:border-none focus-within:before:bg-primary focus-within:outline-none mb-1">
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                value={formData.email || ""}
+                                onChange={handleChange}
+                                placeholder="Type"
+                                className="w-full bg-transparent focus:outline-none placeholder:text-primary/75 placeholder:font-medium"
+                            />
+                        </div>
+                    </div>
+                    <div className="gap-1 flex flex-col relative text-sm md:text-base">
+                        <label
+                            htmlFor="companyName"
+                            className="capitalize font-medium tracking-wider font-mono"
+                        >
+                            company name
+                        </label>
+                        <div className="p-4 before:border-b-2 before:border-dashed before:border-primary placeholder:text-foreground relative before:absolute before:bottom-0 before:content-[''] before:left-0 before:w-full focus-within:before:h-1.5 focus-within:before:border-none focus-within:before:bg-primary focus-within:outline-none mb-1">
+                            <input
+                                type="text"
+                                id="companyName"
+                                name="companyName"
+                                required
+                                value={formData.companyName || ""}
+                                onChange={handleChange}
+                                placeholder="Type"
+                                className="w-full bg-transparent focus:outline-none placeholder:text-primary/75 placeholder:font-medium"
+                            />
+                        </div>
+                    </div>
+                    <div className="gap-1 flex flex-col relative text-sm md:text-base">
+                        <label
+                            htmlFor="contactNumber"
+                            className="capitalize font-medium tracking-wider font-mono"
+                        >
+                            contact number
+                        </label>
+                        <div className="p-4 before:border-b-2 before:border-dashed before:border-primary placeholder:text-foreground relative before:absolute before:bottom-0 before:content-[''] before:left-0 before:w-full focus-within:before:h-1.5 focus-within:before:border-none focus-within:before:bg-primary focus-within:outline-none mb-1">
+                            <input
+                                type="text"
+                                id="contactNumber"
+                                name="contactNumber"
+                                required
+                                maxLength={10}
+                                minLength={10}
+                                value={formData.contactNumber || ""}
+                                onChange={handleChange}
+                                placeholder="Type"
+                                className="w-full bg-transparent focus:outline-none placeholder:text-primary/75 placeholder:font-medium"
+                            />
+                        </div>
+                    </div>
                 </div>
-                <div className="gap-2 flex flex-col">
-                    <label htmlFor="email" className="capitalize font-bold tracking-wider">
-                        email
-                    </label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email || ""}
-                        onChange={handleChange}
-                        required
-                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none"
-                    />
+                <div className="pt-4">
+                    <GetStartButton text={"submit"} status={status} type />
                 </div>
-                <div className="gap-2 flex flex-col">
-                    <label htmlFor="message" className="capitalize font-bold tracking-wider">
-                        message
-                    </label>
-                    <textarea
-                        type="text"
-                        id="message"
-                        name="message"
-                        value={formData.message || ""}
-                        onChange={handleChange}
-                        rows={3}
-                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none"
-                    />
-                </div>
-                <button
-                    role="button"
-                    aria-label="Submit Form"
-                    type="submit"
-                    className="rounded-lg border-2 border-solid border-white bg-black px-3.5 cursor-pointer py-2 md:py-3 md:px-5 font-semibold capitalize text-white text-sm transition-all duration-300 hover:scale-110"
-                >
-                    {status ? <Loader /> : "Submit"}
-                </button>
             </form>
         </>
     );

@@ -16,11 +16,11 @@ export default function DesktopMenu({ menu, path }) {
         onMouseLeave={() => setIsHover(false)}
         title={menu.menu}
         href={menu.link || "#"}
-        className={`flex capitalize items-center ${path === "" ? "text-background" : "text-foreground"}`}
+        className={`flex capitalize items-center text-background`}
       >
         {menu.menu}
         <span
-          className={`absolute -bottom-0.5 left-0 right-0 h-[2px] rounded-full ${path === "" ? "bg-background" : "bg-foreground"} transition-transform duration-500 ease-out ${isHover ? "scale-x-100 origin-left" : "scale-x-0 origin-right"}`}
+          className={`absolute -bottom-0.5 left-0 right-0 h-[2px] rounded-full bg-background transition-transform duration-500 ease-out ${isHover ? "scale-x-100 origin-left" : "scale-x-0 origin-right"}`}
         />
       </Link>
     </li>

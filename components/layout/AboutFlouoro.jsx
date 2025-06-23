@@ -52,7 +52,7 @@ const wordVariants = {
         opacity: 0,
         y: 20,
         transition: {
-            delay: i * 0.03, // Staggered fade-out (reverse order)
+            delay: i * 0.03,
             type: "spring",
             damping: 12,
             stiffness: 100,
@@ -62,7 +62,7 @@ const wordVariants = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: i * 0.08, // Staggered fade-in
+            delay: i * 0.08,
             type: "spring",
             damping: 12,
             stiffness: 100,

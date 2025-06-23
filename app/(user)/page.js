@@ -1,5 +1,6 @@
 import AboutFlouoro from "@/components/layout/AboutFlouoro";
 import CategoryCard from "@/components/layout/CategoryCard";
+import Contact from "@/components/layout/Contact";
 import GetQuote from "@/components/layout/GetQuote";
 import HomeHero from "@/components/layout/HomeHero";
 import InnovationSection from "@/components/layout/InnovationSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <ReliabilitySection />
       <InnovationSection />
       <GetQuote />
+      <Contact />
     </main>
   );
 }

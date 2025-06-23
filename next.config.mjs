@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "ik.imagekit.io",
+        hostname: "mywebibeeworld.b-cdn.net",
       },
     ],
   },

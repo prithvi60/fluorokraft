@@ -26,11 +26,10 @@ const ScrollToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="cursor-pointer"
+          className="relative w-fit inline-block pb-0.5 overflow-hidden group capitalize text-base md:text-lg font-medium cursor-pointer"
         >
-          <p className="font-medium underline underline-offset-4 tracking-wide text-base md:text-[20px]">
-            Back to top
-          </p>
+          Back to top
+          <div className="absolute bottom-0 left-0 w-[250%] h-0.5 bg-background transition-transform duration-400 ease-in -translate-x-[60%] group-hover:translate-x-0 clip-path-cut" />
         </button>
       )}
     </div>
