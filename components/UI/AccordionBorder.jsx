@@ -35,13 +35,12 @@ const AccordionBorder = ({ items }) => {
                             )}
                         </span>
                     </button>
-                    <div className={` ${activeIndex === index ? "mb-6" : "mb-2"
-                        }`}>
+                    <div className={`mb-6`}>
                         <SectionPara1 text={item.shortAns} />
                     </div>
                     <div
                         id={`accordion-content-${index}`}
-                        className={`overflow-hidden space-y-7 mb-10 transition-all duration-500 ${activeIndex === index ? "max-h-96" : "max-h-0"
+                        className={`overflow-hidden space-y-7 mb-10 transition-all duration-500 ${activeIndex === index ? "max-h-screen" : "max-h-0"
                             }`}
                     >
                         {item.lists.map((listItem, listIndex) => (

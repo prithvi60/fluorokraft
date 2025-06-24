@@ -26,14 +26,16 @@ export const GetStartButton = ({ text, href = "#", status, type }) => {
     );
 };
 
-export const UnderlineAnimation = ({ text, href }) => {
+export const UnderlineAnimation = ({ text, href, opt }) => {
     return (
         <Link
             href={href}
-            className="relative w-fit inline-block pb-0.5 overflow-hidden group capitalize text-base md:text-lg font-medium"
+            className={`relative w-fit inline-block pb-0.5 overflow-hidden group capitalize text-base md:text-lg font-medium `}
         >
             {text}
-            <div className="absolute bottom-0 left-0 w-[250%] h-0.5 bg-foreground transition-transform duration-400 ease-in -translate-x-[60%] group-hover:translate-x-0 clip-path-cut" />
+            <div
+                className={`absolute bottom-0 left-0 w-[250%] h-0.5 transition-transform duration-400 ease-in -translate-x-[60%] group-hover:translate-x-0 clip-path-cut ${opt ? "bg-background" : "bg-foreground"}`}
+            />
         </Link>
     );
 };

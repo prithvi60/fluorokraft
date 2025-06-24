@@ -40,30 +40,30 @@ const Footer = () => {
                 </div>
                 <div className="grid grid-cols-1 md:flex md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12 xl:w-3/5">
                     <div className="block space-y-3">
-                        <h4 className="font-medium capitalize tracking-wider text-[20px]">
+                        <h1 className="font-medium capitalize tracking-wider text-[20px]">
                             Contact
-                        </h4>
+                        </h1>
                         <div className="space-y-1">
-                            <h4 className="font-medium capitalize tracking-wider text-[20px]">
+                            <h2 className="font-medium capitalize tracking-wider text-[20px]">
                                 Email
-                            </h4>
-                            <h5 className="font-medium capitalize tracking-wider text-[14px]">
+                            </h2>
+                            <h2 className="font-medium capitalize tracking-wider text-[14px]">
                                 info@fluorokraft.com
-                            </h5>
+                            </h2>
                         </div>
                         <div className="space-y-1">
-                            <h4 className="font-medium capitalize tracking-wider text-[20px]">
+                            <h2 className="font-medium capitalize tracking-wider text-[20px]">
                                 Phone
-                            </h4>
-                            <h5 className="font-medium capitalize tracking-wider text-[14px]">
+                            </h2>
+                            <h2 className="font-medium capitalize tracking-wider text-[14px]">
                                 +91 44 2454 1067
-                            </h5>
+                            </h2>
                         </div>
                     </div>
                     <div className="block space-y-3">
-                        <h4 className="font-medium capitalize tracking-wider text-[20px]">
+                        <h1 className="font-medium capitalize tracking-wider text-[20px]">
                             Quick Links
-                        </h4>
+                        </h1>
                         <ul className="block space-y-2.5 md:space-y-4">
                             {footerLinks.slice(0, 6).map((list, idx) => (
                                 <li
@@ -83,9 +83,9 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="block space-y-3">
-                        <h4 className="font-medium capitalize tracking-wider text-[20px]">
+                        <h2 className="font-medium capitalize tracking-wider text-[20px]">
                             Legal
-                        </h4>
+                        </h2>
                         <ul className="block space-y-2.5 md:space-y-4">
                             {footerLinks.slice(7, footerLinks.length).map((list, idx) => (
                                 <li
@@ -109,9 +109,9 @@ const Footer = () => {
             <div
                 className={`flex flex-col-reverse justify-center md:items-center lg:flex-row lg:justify-between gap-4 md:gap-8 font-medium px-6 md:px-0 pt-10 md:pt-2`}
             >
-                <h4 className="uppercase font-roboto font-bold tracking-wide text-xl md:text-4xl">
+                <h3 className="uppercase font-roboto font-bold tracking-wide text-xl md:text-4xl">
                     FLUOROKRAFT
-                </h4>
+                </h3>
                 <p className="capitalize underline underline-offset-8 font-medium lg:text-start text-base md:text-[20px]">
                     ©Copyright {new Date().getFullYear()}{" "}
                     {/* <span className="text-text font-semibold">business portfolio</span> . */}

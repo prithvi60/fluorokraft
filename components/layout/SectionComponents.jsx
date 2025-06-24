@@ -30,10 +30,10 @@ export const SectionHeadingSmall = ({ text, color }) => {
     );
 };
 
-export const SectionPara1 = ({ text, color, hero }) => {
+export const SectionPara1 = ({ text, color, hero, clamp }) => {
     return (
         <p
-            className={`${hero ? "text-sm md:text-base font-medium" : "text-base md:text-lg"} ${color ? color : "text-foreground"}`}
+            className={`${hero ? "text-sm md:text-base font-medium" : "text-base md:text-lg"} ${color ? color : "text-foreground"} ${clamp ? "line-clamp-4" : ""}`}
         >
             {text}
         </p>

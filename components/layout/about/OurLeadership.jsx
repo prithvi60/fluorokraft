@@ -21,7 +21,7 @@ const OurLeadership = () => {
             <div className="w-full md:w-3/5 space-y-8 md:space-y-14">
                 {leadershipTeam.map((leader, index) => (
                     <div
-                        className={`flex flex-col w-full items-end border-b-2 border-info/50 pb-8 px-6 transition-opacity duration-300 ${hoveredIndex !== null && hoveredIndex !== index ? "opacity-25" : "opacity-100 transition-colors duration-500 ease-in-out"
+                        className={`flex flex-col w-full sm:items-end border-b-2 border-info/50 pb-8 px-6 transition-opacity duration-300 ${hoveredIndex !== null && hoveredIndex !== index ? "opacity-25" : "opacity-100 transition-colors duration-500 ease-in-out"
                             }`}
                         key={index}
                         onMouseEnter={() => setHoveredIndex(index)}

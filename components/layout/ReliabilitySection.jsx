@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const ReliabilitySection = () => {
     return (
-        <section className="w-full h-full padding flex flex-col gap-5 md:gap-0 md:flex-row md:justify-between xl:gap-6 bg-[#EDEDED]">
+        <section className="w-full h-full padding flex flex-col gap-5 md:flex-row md:justify-between xl:gap-6 bg-[#EDEDED]">
             <div className="w-full md:w-3/5">
                 <ListOfCategory
                     title={"Reliability"}
