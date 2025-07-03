@@ -1,5 +1,5 @@
 export function generateEmailTemplateForUser(mainContent, title) {
-    const imageUrl = "https://mywebibeeworld.b-cdn.net/fluorokraft-email-logo.svg";
+    const imageUrl = "https://ik.imagekit.io/webibee/fluorokraft-logo2.svg?updatedAt=1751532165163";
     return `
       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto; border: 1px solid #ddd;">
           <div style="text-align: center; margin-bottom: 20px;">
@@ -36,7 +36,7 @@ export function generateEmailTemplateForUser(mainContent, title) {
 }
 
 export function generateEmailTemplateForClient(mainContent) {
-    const imageUrl = "https://mywebibeeworld.b-cdn.net/fluorokraft-email-logo.svg";
+    const imageUrl = "https://ik.imagekit.io/webibee/fluorokraft-logo2.svg?updatedAt=1751532165163";
     return `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto; border: 1px solid #ddd;">
               <p style="font-size: 16px; color: #555;">Hi,</p>
