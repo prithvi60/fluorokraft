@@ -21,11 +21,18 @@ const HomeHero = () => {
                 />
             </div>
             <div className="w-full h-full p-5">
-                <div className="relative w-full h-[80dvh] overflow-hidden clip-pathHero">
-                    <Image src={"/hero-bg.jpg"} alt="fluorokraft product" title="fluorokraft product" fill className="object-cover object-center" priority loading="eager" sizes="calc(100vw - 40px)" />
-                </div>
+                <Image
+                    width={1200}
+                    height={860}
+                    src={"/hero-bg.jpg"}
+                    alt="fluorokraft product"
+                    title="fluorokraft product"
+                    className="object-cover object-center w-full h-[420px] md:h-[80dvh] overflow-hidden clip-pathHero"
+                    priority
+                    loading="eager"
+                    sizes="calc(100vw - 40px)"
+                />
             </div>
-
         </section>
     );
 };

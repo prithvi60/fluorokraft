@@ -25,7 +25,9 @@ const ScrollToTopButton = () => {
     <div>
       {isVisible && (
         <button
+          type="button"
           onClick={scrollToTop}
+          aria-label="Scroll to top button"
           className="relative w-fit inline-block pb-0.5 overflow-hidden group capitalize text-base md:text-lg font-medium cursor-pointer"
         >
           Back to top

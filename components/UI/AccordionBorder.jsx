@@ -16,7 +16,8 @@ const AccordionBorder = ({ items }) => {
             {items.map((item, index) => (
                 <div key={index} className="mb-2 border-b-2 border-black/35">
                     <button
-                        role="button"
+                        type="button"
+                        aria-label="why Fluorokraft FAQ's"
                         aria-expanded={activeIndex === index}
                         aria-controls={`accordion-content-${index}`}
                         className={`w-full flex justify-between gap-x-4 lg:gap-0 items-center py-4 md:py-6 focus:outline-none cursor-pointer transition-colors`}

@@ -5,18 +5,18 @@ import { UnderlineAnimation } from "../UI/Button";
 const ListOfCategory = ({ title, desc, data, href }) => {
     return (
         <div className={`block w-full h-full space-y-8 md:space-y-12 ${title === "Innovation" ? "text-background" : ""}`}>
-            <h1 className="text-[clamp(1.5rem,5vw,2.85rem)] leading-10 sm:leading-12 xl:leading-20 font-bold">
+            <h2 className="text-[clamp(1.5rem,5vw,2.85rem)] leading-10 sm:leading-12 xl:leading-20 font-bold">
                 {title}
-            </h1>
+            </h2>
             <div className="w-full md:w-3/4">
                 <SectionPara1 text={desc} color={title === "Innovation" && "text-background"} />
             </div>
             <ul className="space-y-3 md:space-y-6 w-full lg:w-3/5">
                 {data.map((list, idx) => (
                     <li className="space-y-1" key={idx}>
-                        <h2 className="text-xl md:text-2xl font-semibold tracking-wide capitalize">
+                        <h3 className="text-xl md:text-2xl font-semibold tracking-wide capitalize">
                             {list.title}
-                        </h2>
+                        </h3>
                         <p className="text-base font-normal">{list.desc}</p>
                     </li>
                 ))}

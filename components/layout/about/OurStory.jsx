@@ -5,6 +5,7 @@ import {
     SectionPara1,
 } from "../SectionComponents";
 import Image from "next/image";
+import { ImageComponent } from "@/components/UI/ImageComponent";
 
 const OurStory = () => {
     return (
@@ -23,17 +24,7 @@ const OurStory = () => {
                 </div>
             </div>
             <div className="w-full md:w-2/5">
-                <div className="w-full h-80 md:h-96 xl:size-[450px] 2xl:size-[530px] relative clip-pathImg overflow-hidden group">
-                    <Image
-                        fill
-                        src={"/story-img.png"}
-                        alt={"our story"}
-                        title={"our story"}
-                        className="object-cover object-center group-hover:scale-110 transition-all duration-500"
-                        sizes="(min-width: 1540px) 530px, (min-width: 1280px) 450px, (min-width: 1040px) calc(40vw - 32px), (min-width: 780px) calc(9.58vw + 278px), (min-width: 420px) calc(100vw - 24px), calc(82vw + 48px)"
-                        loading="lazy"
-                    />
-                </div>
+                <ImageComponent src={"/story-img.png"} alt={"our story"} />
             </div>
         </section>
     );

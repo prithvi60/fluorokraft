@@ -30,7 +30,9 @@ export default function MobMenu({ Menus }) {
 
   return (
     <div className="relative">
-      <button role="button" aria-label="open or close"
+      <button
+        type="button"
+        aria-label="open or close"
         className="lg:hidden z-[999] relative"
         onClick={() => toggleDrawer()}
       >
@@ -60,13 +62,14 @@ export default function MobMenu({ Menus }) {
                         setOpenMenuIndex(isMenuOpen ? null : i);
                       }}
                     >
-                      <h4>{menu.menu}</h4>
+                      <h2>{menu.menu}</h2>
                       <IoIosArrowDown
                         className={`ml-auto ${isMenuOpen && "rotate-180"} `}
                       />
                     </div>
                   ) : (
-                    <Link title={menu.menu}
+                    <Link
+                      title={menu.menu}
                       onClick={() => {
                         toggleDrawer();
                       }}
@@ -92,7 +95,10 @@ export default function MobMenu({ Menus }) {
                             onClick={() => toggleDrawer()}
                             className="flex justify-between items-center rounded-md gap-x-2 w-full"
                           >
-                            <Link title={submenu.menu}
+                            <Link
+                              role="button"
+                              aria-label={submenu.menu}
+                              title={submenu.menu}
                               href={submenu.link}
                               className="flex capitalize justify-between items-center w-full p-4 rounded-md cursor-pointer relative"
                               onClick={() =>

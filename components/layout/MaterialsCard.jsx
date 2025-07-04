@@ -21,7 +21,7 @@ const MaterialsCard = () => {
                     </h2>
                     <SectionPara1 text={item.detail1} clamp />
                     <button
-                        role="button"
+                        aria-label="Read More"
                         type={"button"}
                         title={"Read More"}
                         className={`before:absolute z-10 before:content-[''] w-max before:-z-10 relative before:-top-1.5 before:left-1/2 before:-translate-x-1/2 before:bg-success clip-pathHero2 before:w-full before:h-14 before:py-3 hover:before:w-[125%] cursor-pointer before:transition-[width] before:duration-300 h-12 px-6 text-white`}

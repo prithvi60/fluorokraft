@@ -1,6 +1,7 @@
 import React from "react";
 import { SectionHeading2, SectionPara1 } from "../SectionComponents";
 import Image from "next/image";
+import { ImageComponent } from "@/components/UI/ImageComponent";
 
 const WhyChooseFluoroProduct = () => {
     return (
@@ -11,21 +12,22 @@ const WhyChooseFluoroProduct = () => {
                     <ul className="space-y-14 mx-auto md:mx-0 max-w-[420px]">
                         {data.map((list, idx) => (
                             <li className="space-y-1" key={idx}>
-                                <h1
+                                <h2
                                     className={`text-4xl md:text-6xl tracking-wider font-extrabold`}
                                 >
                                     {list.count}
-                                </h1>
-                                <h2 className="text-xl md:text-2xl tracking-wide font-semibold">
-                                    {list.title}
                                 </h2>
+                                <h3 className="text-xl md:text-2xl tracking-wide font-semibold">
+                                    {list.title}
+                                </h3>
                                 <SectionPara1 text={list.desc} />
                             </li>
                         ))}
                     </ul>
                 </div>
                 <div className="w-full md:w-2/5">
-                    <div className="h-[450px] w-full md:h-[480px] xl:h-[650px] 2xl:h-[650px] relative clip-pathImg overflow-hidden group">
+                    <ImageComponent src={"/ourProduct.jpg"} alt={"product"} whyFluoro />
+                    {/* <div className="h-[450px] w-full md:h-[480px] xl:h-[650px] relative clip-pathImg overflow-hidden group">
                         <Image
                             fill
                             src={"/ourProduct.jpg"}
@@ -35,7 +37,7 @@ const WhyChooseFluoroProduct = () => {
                             sizes="(min-width: 780px) calc(40.14vw - 46px), calc(100vw - 40px)"
                             loading="lazy"
                         />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

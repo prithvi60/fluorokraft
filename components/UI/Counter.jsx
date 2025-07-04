@@ -23,9 +23,9 @@ export const Stat = ({ num, suffix, decimals = 0 }) => {
     }, [num, decimals, isInView]);
 
     return (
-        <h1 className={`text-4xl md:text-6xl tracking-wider font-extrabold`}>
+        <h2 className={`text-4xl md:text-6xl tracking-wider font-extrabold`}>
             <span ref={ref}>{num}</span>
             {suffix}
-        </h1>
+        </h2>
     );
 };

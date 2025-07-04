@@ -15,7 +15,8 @@ export const AccordionSplitted = ({ data }) => {
             {data.map((item, index) => (
                 <div key={index} className="mb-2">
                     <button
-                        role="button"
+                        type="button"
+                        aria-label="products tabs lists"
                         aria-expanded={activeIndex === index}
                         aria-controls={`accordion-content-${index}`}
                         className={`w-full flex justify-between gap-x-4 lg:gap-0 items-center px-4 md:px-6 py-4 md:py-9 ${item.title === "Precision Components" ? "bg-success" : "bg-transparent"} focus:outline-none cursor-pointer transition-colors ${activeIndex === index ? "rounded-t-lg" : "rounded-lg"
@@ -49,7 +50,6 @@ export const AccordionSplitted = ({ data }) => {
                                 <li key={index} className="!font-medium">
                                     <button
                                         type="button"
-                                        role="button"
                                         className="cursor-pointer text-left"
                                     >
                                         <SectionPara1 text={item} />

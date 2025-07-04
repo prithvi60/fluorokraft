@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { SectionHeadingSmall, SectionPara1 } from "../SectionComponents";
+import { ImageComponent } from "@/components/UI/ImageComponent";
 
 const OurMission = () => {
     return (
@@ -20,17 +21,7 @@ const OurMission = () => {
                     </div>
                 </div>
                 <div className="w-full md:w-2/5">
-                    <div className="w-full h-80 md:h-96 xl:h-[450px] 2xl:h-[530px] relative">
-                        <Image
-                            fill
-                            src={"/mission.svg"}
-                            alt={"our mission"}
-                            title={"our mission"}
-                            className="object-contain object-top"
-                            sizes="(min-width: 1540px) 530px, (min-width: 1280px) 450px, (min-width: 1040px) calc(40vw - 32px), (min-width: 780px) calc(9.58vw + 278px), (min-width: 420px) calc(100vw - 24px), calc(82vw + 48px)"
-                            loading="lazy"
-                        />
-                    </div>
+                    <ImageComponent src={"/mission.svg"} alt={"our mission"} />
                 </div>
             </div>
             <div className="block space-y-8 md:space-y-12">
@@ -39,9 +30,9 @@ const OurMission = () => {
                     <ul className="space-y-3 md:space-y-6 w-full grid grid-cols-1 md:grid-cols-2 gap-8 2xl:gap-0">
                         {data.map((list, idx) => (
                             <li className="space-y-1 max-w-lg xl:max-w-2xl" key={idx}>
-                                <h3 className="text-lg md:text-xl font-semibold tracking-wide capitalize">
+                                <h2 className="text-lg md:text-xl font-semibold tracking-wide capitalize">
                                     {list.title}
-                                </h3>
+                                </h2>
                                 <p className="text-base font-normal">{list.desc}</p>
                             </li>
                         ))}

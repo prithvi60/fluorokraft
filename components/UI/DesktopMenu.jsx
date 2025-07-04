@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function DesktopMenu({ menu, path }) {
   const [isHover, setIsHover] = useState(false);
@@ -15,8 +14,11 @@ export default function DesktopMenu({ menu, path }) {
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
         title={menu.menu}
-        href={menu.link || "#"}
+        aria-label={menu.menu}
+        href={menu.link || ""}
         className={`flex capitalize items-center text-background`}
+        passHref
+        itemProp="url"
       >
         {menu.menu}
         <span

@@ -30,9 +30,9 @@ const ProductsSection = () => {
                             className="object-contain object-top size-full lg:size-80 xl:size-96"
                             loading="lazy"
                         />
-                        <h1 className="font-medium text-lg md:text-xl tracking-wider">
+                        <h3 className="font-medium text-lg md:text-xl tracking-wider">
                             {item.title}
-                        </h1>
+                        </h3>
                         <p className="text-base text-foreground">{item.desc}</p>
                         <UnderlineAnimation text={"Know More"} href={item.href} />
                     </div>
@@ -49,17 +49,16 @@ const ProductsSectionSideTabs = ({ color, data }) => {
         <div
             className={`w-full h-fit block space-y-4 md:space-y-6 p-6 ${color ? "bg-[#F6F6F5] rounded-lg" : "bg-transparent"}`}
         >
-            <h1
+            <h2
                 className={`font-medium font-mono text-[15px] tracking-wider ${color ? "text-background bg-success p-2.5 rounded-lg" : "text-foreground"} w-full`}
             >
                 {data.title}
-            </h1>
+            </h2>
             <ul className="block space-y-2">
                 {data.lists.map((item, index) => (
                     <li key={index} className="!font-medium">
                         <button
                             type="button"
-                            role="button"
                             className="cursor-pointer text-left"
                         >
                             <SectionPara1 text={item} />

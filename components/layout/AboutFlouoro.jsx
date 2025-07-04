@@ -26,7 +26,7 @@ const AboutFlouoro = () => {
                 animate={controls}
                 className="mx-auto max-w-7xl text-center"
             >
-                <h1
+                <h2
                     className={`text-[clamp(1.8rem,5vw,4.25rem)] leading-10 sm:leading-12 xl:leading-20 text-background`}
                 >
                     {words.map((word, i) => (
@@ -39,7 +39,7 @@ const AboutFlouoro = () => {
                             {word}
                         </motion.span>
                     ))}
-                </h1>
+                </h2>
             </motion.div>
         </section>
     );
