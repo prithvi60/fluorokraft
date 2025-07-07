@@ -18,8 +18,19 @@ export const postType = defineType({
             validation: (Rule) => Rule.required(),
             options: {
                 source: "title",
-                maxLength: 50,
-                slugify: (input) => input.toLowerCase().replace(/\s+/g, "-"),
+                maxLength: 96,
+                slugify: (input) =>
+                    input
+                        .toLowerCase()
+                        // Replace special characters with hyphens
+                        .replace(/[,\s().:']/g, '-')
+                        // Remove all non-word characters except hyphens
+                        .replace(/[^\w-]+/g, '')
+                        // Replace multiple hyphens with single hyphen
+                        .replace(/--+/g, '-')
+                        // Trim hyphens from start and end
+                        .replace(/^-+/, '')
+                        .replace(/-+$/, '')
             },
         }),
         defineField({

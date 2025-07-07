@@ -47,7 +47,7 @@ const AccordionBorder = ({ items }) => {
                         {item.lists.map((listItem, listIndex) => (
                             <div className="block space-y-1" key={listIndex}>
                                 <SectionPara1 text={listItem.title} />
-                                <ul className="list-disc list-outside pl-4 space-y-1">
+                                <ul className={`${listItem.title !== "" && "list-disc list-outside pl-4"} space-y-2`}>
                                     {listItem.points.map((point, pointIndex) => (
                                         <li key={pointIndex}>
                                             <SectionPara1 text={point} />

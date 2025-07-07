@@ -25,9 +25,9 @@ export const BlogSpecificPage = ({ post }) => {
           {post.title}
         </h4>
         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center sm:gap-10">
-          <h4 className="flex items-center gap-2 text-base md:text-lg capitalize">
+          {/* <h4 className="flex items-center gap-2 text-base md:text-lg capitalize">
             {readingTime} min{readingTime > 1 ? "s" : ""} Read
-          </h4>
+          </h4> */}
           <h5 className="text-base font-medium tracking-wider md:text-lg">
             {formattedDate}
           </h5>

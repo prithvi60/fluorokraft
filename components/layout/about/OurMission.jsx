@@ -25,7 +25,9 @@ const OurMission = () => {
                 </div>
             </div>
             <div className="block space-y-8 md:space-y-12">
-                <SectionHeadingSmall text={"Our Values"} color />
+                <div>
+                    <SectionHeadingSmall text={"Our Values"} color />
+                </div>
                 <div>
                     <ul className="space-y-3 md:space-y-6 w-full grid grid-cols-1 md:grid-cols-2 gap-8 2xl:gap-0">
                         {data.map((list, idx) => (

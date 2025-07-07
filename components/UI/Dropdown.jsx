@@ -11,8 +11,10 @@ const Dropdown = ({ item, index, card, setIsOpen, setIsActiveIndex }) => {
     };
 
     return (
-        <div className="w-full h-full absolute -bottom-10 left-0">
-            <div className="relative w-full h-full">
+        <div
+            className={`w-full h-full absolute left-0 ${card ? "-bottom-6" : "-bottom-52 md:-bottom-36 lg:-bottom-48 xl:-bottom-60"}`}
+        >
+            <div className="relative w-full">
                 <button
                     type="button"
                     aria-label="why Fluorokraft FAQ's"
@@ -32,31 +34,52 @@ const Dropdown = ({ item, index, card, setIsOpen, setIsActiveIndex }) => {
                         )}
                     </span>
                 </button>
-                <div
-                    id={`accordion-content-${index}`}
-                    className={`absolute z-20 left-0 right-0 bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${activeIndex === index
-                        ? "max-h-screen opacity-100 translate-y-0"
-                        : "max-h-0 opacity-0 -translate-y-2"
-                        }`}
-                >
-                    {card ? (
-                        <div className="block space-y-6 md:space-y-8 max-w-sm p-3 sm:p-6">
-                            <SectionPara1 text={item.detail1} clamp />
-                            <button
-                                aria-label="Read More"
-                                type={"button"}
-                                title={"Read More"}
-                                className={`before:absolute z-10 before:content-[''] w-max before:-z-10 relative before:-top-1.5 before:left-1/2 before:-translate-x-1/2 before:bg-success clip-pathHero2 before:w-full before:h-14 before:py-3 hover:before:w-[125%] cursor-pointer before:transition-[width] before:duration-300 h-12 px-6 text-white`}
-                                onClick={() => {
-                                    setIsOpen(true);
-                                    setIsActiveIndex(index);
-                                }}
-                            >
-                                Read More
-                            </button>
-                        </div>
-                    ) : (
+                {card ? (
+                    <div
+                        id={`accordion-content-${index}`}
+                        className={`absolute z-20 left-0 right-0 bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${activeIndex === index
+                            ? "max-h-screen opacity-100 translate-y-0"
+                            : "max-h-0 opacity-0 -translate-y-2"
+                            }`}
+                    >
+                        <div className="py-6 px-3">
+                            <div className="block space-y-6 md:space-y-8 max-h-[420px] overflow-y-scroll h-full">
+                                <div className="space-y-1">
+                                    <SectionPara1 text={item.detail1} />
 
+                                    {item.title === "DELRIN" && (
+                                        <ul className="space-y-1 w-full list-disc pl-5 list-outside">
+                                            {item.lists.map((list, idx) => (
+                                                <li className="text-base" key={idx}>
+                                                    {list}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
+                                <div className="space-y-1">
+                                    <SectionPara1 text={item.detail2} />
+                                    {item.title === "PEEK" && (
+                                        <ul className="space-y-1 w-full list-disc pl-5 list-outside">
+                                            {item.lists.map((list, idx) => (
+                                                <li className="text-base" key={idx}>
+                                                    {list}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ) : (
+                    <div
+                        id={`accordion-content-${index}`}
+                        className={`absolute z-20 left-0 right-0 bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${activeIndex === index
+                            ? "max-h-screen opacity-100 translate-y-0"
+                            : "max-h-0 opacity-0 -translate-y-2"
+                            }`}
+                    >
                         <div className="p-4 space-y-4">
                             {item.lists.map((listItem, listIndex) => (
                                 <div className="block" key={listIndex}>
@@ -64,8 +87,8 @@ const Dropdown = ({ item, index, card, setIsOpen, setIsActiveIndex }) => {
                                 </div>
                             ))}
                         </div>
-                    )}
-                </div>
+                    </div>
+                )}
             </div>
         </div>
     );

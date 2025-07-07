@@ -4,6 +4,7 @@ import { POST_QUERY } from '@/sanity/Queries';
 
 const Page = async ({ params }) => {
     const { slug } = await params
+    // console.log(slug);
 
     const post = await client.fetch(
         POST_QUERY,
@@ -15,6 +16,7 @@ const Page = async ({ params }) => {
             },
         }
     );
+    // console.log(post);
 
     return (
         <div>

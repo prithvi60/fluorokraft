@@ -10,7 +10,7 @@ import Dropdown from "../UI/Dropdown";
 const MaterialsCard = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isActiveIndex, setIsActiveIndex] = useState(null);
-    console.log(isActiveIndex);
+    // console.log(isActiveIndex);
 
     return (
         <section className="w-full flex flex-col sm:flex-row gap-5 padding">

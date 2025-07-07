@@ -257,6 +257,43 @@ export const whyFluorokraftFaqs = [
         ],
         para: "Led by 30+ years polymer engineering expertise, our R&amp;D team specializes in complex part development, reverse-engineering, and integration of rare materials sourced globally. Co-engineering partnerships with client NPD teams deliver custom material formulation, scalable manufacturing solutions, and performance optimization from low-volume prototypes to high-volume production.",
     },
+    {
+        ques: "Precision Infrastructure for Polymer Excellence",
+        shortAns:
+            "At Fluorokraft, infrastructure is more than machinery—it's the foundation of precision, reliability, and innovation. Our advanced manufacturing ecosystem is designed to meet the exacting demands of global OEMs across industries, ensuring every component we produce meets the highest standards of performance and consistency.",
+        lists: [
+            {
+                title: "",
+                points: [
+                    "Built for Performance, Trusted WorldwidePrecision-Driven ManufacturingEquipped with advanced CNC and VMC machines capable of maintaining tolerances as tight as ±0.05 mm—even for soft, high-performance polymers.Hydraulic molding presses and specialized tooling systems enable scalable production of complex geometries and custom profiles. Engineered to handle materials like PTFE, PEEK, UHMWPE, and polyacetal, ensuring durability and chemical resistance in harsh environments.",
+                    "Integrated Quality & Delivery Systems ISO 9001:2015 certified processes ensure rigorous quality control from raw material sourcing to final inspection. In-process inspections and laser-based dimensional analysis guarantee profile integrity and zero-defect deliveries. A disciplined planning and scheduling framework enables predictable lead times, with agile capacity for urgent orders without compromising quality.",
+                    "Fluorokraft’s infrastructure is not just built for scale—it’s built for trust. From co-engineering innovation to flawless execution, our systems empower long-term partnerships with global OEMs. Whether it’s a single high-value prototype or a high-volume production run, our infrastructure ensures every part delivers on precision, reliability, and performance—every time.",
+                ],
+            },
+        ],
+        para: "",
+    },
+    {
+        ques: "Co-Engineering Approach To Delivering Solutions",
+        shortAns:
+            "At Fluorokraft, co-engineering is more than collaboration—it’s a strategic partnership that transforms complex challenges into high-performance solutions. By working closely with our clients’ design and engineering teams, we develop custom polymer components that enhance durability, reduce downtime, and extend product lifecycles. Whether it’s optimizing material blends or reimagining part geometries, our co-engineering approach combines deep polymer expertise with precision manufacturing to deliver measurable value across industries.",
+        lists: [
+            {
+                title: "Doubling Valve Lifespan Through Co-Engineered PTFE Innovation",
+                points: [
+                    "For over three decades, Fluorokraft has partnered with a leading industrial valve manufacturer to enhance product durability and performance. Through collaborative engineering, Fluorokraft developed a custom PTFE-based component tailored to the client’s demanding operating conditions. The result: valve lifespan increased from 5 years to an impressive 10 years. This breakthrough not only reduced replacement frequency but also strengthened the client’s product reputation in global markets—demonstrating how material innovation can drive long-term reliability.",
+                ],
+            },
+            {
+                title:
+                    "Reducing Downtime Costs by 70% with PTFE-Enhanced Conveyor Components",
+                points: [
+                    "In a high-impact industrial application, a client faced frequent conveyor failures every 6 months, leading to costly downtime. Fluorokraft stepped in with a co-engineered solution—introducing a PTFE layer in the conveyor’s moving parts to reduce friction and wear. The outcome was transformative: mean time between failures (MTBF) extended to 9 months, and downtime costs dropped by 70%. This success showcases Fluorokraft’s ability to turn operational challenges into performance gains through precision polymer engineering.",
+                ],
+            },
+        ],
+        para: "",
+    },
 ];
 
 export const materialCards = [
@@ -333,10 +370,7 @@ export const materialCards = [
 export const materialCardsLists = [
     {
         title: "Fluoropolymers",
-        lists: [
-            "PTFE",
-            "PCTFE",
-        ],
+        lists: ["PTFE", "PCTFE"],
     },
     {
         title: "Engineering Thermoplastics",
@@ -344,16 +378,11 @@ export const materialCardsLists = [
     },
     {
         title: "Elastomers / Rubber",
-        lists: [
-            "Nitrile Rubber",
-        ],
+        lists: ["Nitrile Rubber"],
     },
     {
         title: "Polyolefins",
-        lists: [
-            "PP",
-            "LDPE / HDPE",
-        ],
+        lists: ["PP", "LDPE / HDPE"],
     },
 ];
 
@@ -426,52 +455,72 @@ export const industrialMaterials = [
     {
         img: "/industries/Automotives.jpg",
         title: "Automotives",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
     {
         img: "/industries/HEI.jpg",
         title: "Heavy Electrical Insulation",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
     {
         img: "/industries/Infrastructure.jpg",
         title: "Infrastructure",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
     {
         img: "/industries/FHS.jpg",
         title: "Fluid handling Systems",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
     {
         img: "/industries/MT.jpg",
         title: "Machine tool",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
     {
         img: "/industries/chemical.jpg",
         title: "Chemical",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
     {
         img: "/industries/aerospace.jpg",
         title: "Aerospace",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
     {
         img: "/industries/OG.jpg",
         title: "Oil and Gas",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
     {
         img: "/industries/biotech.jpg",
         title: "Biotech, Pharma and Healthcare",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
     {
         img: "/industries/railways.jpg",
         title: "Railways",
-        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+        lists: [
+            "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line",
+        ],
     },
 ];
 
@@ -495,7 +544,7 @@ export const infrastructureCategoryDetail = [
             "Blending for customised compounds in PTFE and PEEK in-house",
         ],
         img: "/infra/mould-bg.png",
-        inHouseLists: [""]
+        inHouseLists: [""],
     },
     {
         title: "Machine Shop",
@@ -507,7 +556,7 @@ export const infrastructureCategoryDetail = [
             "Tool and design facilities for specialised fixtures",
         ],
         img: "/infra/machine-bg.png",
-        inHouseLists: [""]
+        inHouseLists: [""],
     },
     {
         title: "ePTFE Unit",
@@ -517,7 +566,7 @@ export const infrastructureCategoryDetail = [
             "In-house extrusion and tooling expertise to allow for unique profiles",
         ],
         img: "/infra/ePTFE.png",
-        inHouseLists: [""]
+        inHouseLists: [""],
     },
     {
         title: "Inspection Facility",

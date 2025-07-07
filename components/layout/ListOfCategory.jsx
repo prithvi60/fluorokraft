@@ -1,13 +1,25 @@
 import React from "react";
 import { SectionPara1 } from "./SectionComponents";
 import { UnderlineAnimation } from "../UI/Button";
+import Image from "next/image";
 
-const ListOfCategory = ({ title, desc, data, href }) => {
+const ListOfCategory = ({ title, desc, data, href, image }) => {
     return (
         <div className={`block w-full h-full space-y-8 md:space-y-12 ${title === "Innovation" ? "text-background" : ""}`}>
-            <h2 className="text-[clamp(1.5rem,5vw,2.85rem)] leading-10 sm:leading-12 xl:leading-20 font-bold">
-                {title}
-            </h2>
+            <div className="w-full flex items-center gap-3">
+                <Image
+                    width={50}
+                    height={50}
+                    src={image}
+                    alt={title}
+                    title={title}
+                    className="object-cover object-center size-8 md:size-12 clip-pathHero"
+                    loading="lazy"
+                />
+                <h2 className="text-[clamp(1.5rem,5vw,2.85rem)] leading-10 sm:leading-12 xl:leading-20 font-bold">
+                    {title}
+                </h2>
+            </div>
             <div className="w-full md:w-3/4">
                 <SectionPara1 text={desc} color={title === "Innovation" && "text-background"} />
             </div>

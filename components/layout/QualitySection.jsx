@@ -14,6 +14,7 @@ const QualitySection = () => {
                     }
                     data={qualityLists}
                     href={""}
+                    image={"/quality-icon.svg"}
                 />
             </div>
             <div className="w-full md:w-2/5 pt-20 text-center md:text-start">

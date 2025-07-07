@@ -15,6 +15,7 @@ const ReliabilitySection = () => {
                     }
                     data={reliabilityLists}
                     href={""}
+                    image={"/reliability-icon.svg"}
                 />
             </div>
             <div className="w-full md:w-2/5 md:pt-20">

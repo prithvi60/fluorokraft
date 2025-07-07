@@ -20,7 +20,7 @@ export const POST_QUERY = groq`
   publishedAt,
   "imageUrl": image.asset->url,
   "imageAlt": image.alt,
-  "plainBody": body[].children[].text,
+  "plainBody": body[_type == "block"].children[].text,
   body[]{
     ...,
     _type == "image" => {

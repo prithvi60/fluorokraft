@@ -19,6 +19,7 @@ const InnovationSection = () => {
                     }
                     data={innovationLists}
                     href={""}
+                    image={"/innovation-icon.svg"}
                 />
             </div>
             <div className="w-full md:w-2/5 md:pt-20">

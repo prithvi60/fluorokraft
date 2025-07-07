@@ -25,7 +25,7 @@ export const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus(true);
-        console.log("Form Data Submitted:", formData);
+        // console.log("Form Data Submitted:", formData);
 
         try {
             const emailResponse = await fetch("/api/sendMail", {

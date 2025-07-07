@@ -23,7 +23,7 @@ export const SectionHeading2 = ({ text, color }) => {
 export const SectionHeadingSmall = ({ text, color }) => {
     return (
         <small
-            className={`font-medium font-mono text-[15px] tracking-wider ${color ? "text-background" : "text-foreground"} w-full`}
+            className={`font-medium text-[clamp(1.25rem,3.5vw,2rem)] leading-10 sm:leading-10 tracking-wider ${color ? "text-background" : "text-foreground"} w-full`}
         >
             {text}
         </small>

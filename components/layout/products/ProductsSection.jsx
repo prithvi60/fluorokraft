@@ -44,7 +44,7 @@ const ProductsSection = () => {
 
 export default ProductsSection;
 
-export const ProductsSectionSideTabs = ({ color, data }) => {
+export const ProductsSectionSideTabs = ({ color, data, blog }) => {
     return (
         <div
             className={`w-full h-fit block space-y-4 md:space-y-6 p-6 ${color ? "bg-[#F6F6F5] rounded-lg" : "bg-transparent"}`}
@@ -59,9 +59,9 @@ export const ProductsSectionSideTabs = ({ color, data }) => {
                     <li key={index} className="!font-medium">
                         <button
                             type="button"
-                            className="cursor-pointer text-left"
+                            className={`cursor-pointer text-left ${blog ? "text-sm" : "text-sm md:text-base"}`}
                         >
-                            <SectionPara1 text={item} />
+                            <p className={`text-foreground`}>{item}</p>
                         </button>
                     </li>
                 ))}
