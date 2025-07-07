@@ -37,7 +37,7 @@ const Footer = () => {
                     <p className="font-medium capitalize tracking-wide leading-6 text-[14px] w-full md:w-3/5">
                         Engineering Precision Polymer Components for Demanding Applications
                     </p>
-                    <ul className="flex items-center gap-2.5">
+                    {/* <ul className="flex items-center gap-2.5">
                         {socialLinks.map((list, idx) => (
                             <li key={idx} className="flex-shrink-0">
                                 <Link
@@ -51,7 +51,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                         ))}
-                    </ul>
+                    </ul> */}
                 </div>
                 <div className="grid grid-cols-1 md:flex md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12 xl:w-3/5">
                     <div className="block space-y-3">

@@ -9,6 +9,7 @@ const initialFormData = {
     jobTitle: "",
     companyName: "",
     contactNumber: "",
+    message: "",
 };
 export const ContactForm = () => {
     const [formData, setFormData] = useState(initialFormData);
@@ -39,6 +40,7 @@ export const ContactForm = () => {
                     jobTitle: formData.jobTitle,
                     companyName: formData.companyName,
                     contactNumber: formData.contactNumber,
+                    message: formData.message,
                 }),
             });
 
@@ -163,6 +165,27 @@ export const ContactForm = () => {
                                 maxLength={10}
                                 minLength={10}
                                 value={formData.contactNumber || ""}
+                                onChange={handleChange}
+                                placeholder="Type"
+                                className="w-full bg-transparent focus:outline-none placeholder:text-primary/75 placeholder:font-medium"
+                            />
+                        </div>
+                    </div>
+                    <div className="gap-1 flex flex-col relative text-sm md:text-base">
+                        <label
+                            htmlFor="message"
+                            className="capitalize font-medium tracking-wider font-mono"
+                        >
+                            message
+                        </label>
+                        <div className="p-4 before:border-b-2 before:border-dashed before:border-primary placeholder:text-foreground relative before:absolute before:bottom-0 before:content-[''] before:left-0 before:w-full focus-within:before:h-1.5 focus-within:before:border-none focus-within:before:bg-primary focus-within:outline-none mb-1">
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                rows={1}
+                                maxLength={100}
+                                value={formData.message || ""}
                                 onChange={handleChange}
                                 placeholder="Type"
                                 className="w-full bg-transparent focus:outline-none placeholder:text-primary/75 placeholder:font-medium"

@@ -13,7 +13,7 @@ export const SectionHeading1 = ({ text, color, center }) => {
 export const SectionHeading2 = ({ text, color }) => {
     return (
         <h2
-            className={`text-[clamp(1.5rem,5vw,2.25rem)] leading-10 sm:leading-12 xl:leading-14 ${color}`}
+            className={`text-[clamp(1.5rem,5vw,2rem)] leading-10 sm:leading-12 xl:leading-14 ${color}`}
         >
             {text}
         </h2>

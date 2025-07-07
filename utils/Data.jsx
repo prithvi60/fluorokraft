@@ -68,37 +68,37 @@ export const variousCategory = [
     {
         img: "/slider/product-hero.png",
         categoryName: "Product",
-        href: "",
+        href: "/products",
         desc: "Fluorokraft is among the leading manufacturers of custom polymer precision machined components like Seals, Valve seats, O-Rings, Packings, Washers using PTFE and other specialized plastics.",
     },
     {
         img: "/slider/quality-hero.png",
         categoryName: "Quality",
-        href: "",
+        href: "/innovation",
         desc: "Fluorokraft, an ISO 9001:2015 certified manufacturer, delivers near-zero defect precision PTFE components—trusted globally with Green Channel Vendor status for consistent quality across millions of parts.",
     },
     {
         img: "/slider/reliability-hero.png",
         categoryName: "Reliability",
-        href: "",
+        href: "/why-fluoroKraft",
         desc: "98% on-time delivery, 100% customer retention, and decades-long partnerships—Fluorokraft delivers predictable performance and supply chain confidence, every time.",
     },
     {
         img: "/slider/product-hero.png",
         categoryName: "Materials",
-        href: "",
+        href: "/materials",
         desc: "Fluorokraft specializes in precision machining of advanced materials like PTFE, PEEK, PCTFE, Delrin, and Nylon 6,6—engineered for durability, chemical resistance, and extreme performance.",
     },
     {
         img: "/slider/quality-hero.png",
         categoryName: "Innovation",
-        href: "",
+        href: "#innovation",
         desc: "Fluorokraft drives breakthrough results through co-engineered polymer solutions along with clients focusing on boosting equipment lifecycles and cutting downtime costs with custom material formulations and decades of expertise.",
     },
     {
         img: "/slider/reliability-hero.png",
         categoryName: "World-Class Infrastructure",
-        href: "",
+        href: "/infrastructure",
         desc: "Fluorokraft’s advanced CNC and molding capabilities, ISO-certified quality systems, and agile production planning deliver consistent, high-tolerance polymer components—trusted by global OEMs for performance at scale.",
     },
 ];

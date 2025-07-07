@@ -7,7 +7,7 @@ const Contact = () => {
         <section className="w-full relative padding flex flex-col gap-10 lg:gap-0 md:flex-row items-start justify-between bg-[#F6F6F6]">
             <div className="w-full md:w-1/5 lg:w-2/5 space-y-5 px-5 md:px-0">
                 <div className="w-full md:w-2/5 lg:w-[30%]">
-                    <SectionHeading2 text={"Request a Quote"} />
+                    <SectionHeading2 text={"Request a Callback"} />
                 </div>
             </div>
             <div className="space-y-4 md:space-y-10 w-full md:w-4/5 lg:w-3/5 px-5 md:px-0">
