@@ -11,7 +11,8 @@ const ReliabilitySection = () => {
                 <ListOfCategory
                     title={"Reliability"}
                     desc={
-                        "Fluorokraft delivers consistent performance through long-standing client partnerships, agile delivery systems, and a smart stock-and-serve strategy that keeps production running without interruption."
+                   `98 on-time delivery with 100 customer retention and partnerships spanning over three
+decades built on predictable excellence.`
                     }
                     data={reliabilityLists}
                     href={""}

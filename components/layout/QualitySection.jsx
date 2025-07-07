@@ -10,7 +10,7 @@ const QualitySection = () => {
                 <ListOfCategory
                     title={"Quality"}
                     desc={
-                        "Near-zero defects across millions of components with Green Channel Vendor status that proves the trust placed by global OEMs on Fluorokraft"
+                  `Near-zero defects across millions of components with Green Channel Vendor status that proves the trust placed by global OEMs on Fluorokraft`
                     }
                     data={qualityLists}
                     href={""}
