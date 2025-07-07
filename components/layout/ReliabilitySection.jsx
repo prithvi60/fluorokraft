@@ -6,12 +6,12 @@ import { ImageComponent } from "../UI/ImageComponent";
 
 const ReliabilitySection = () => {
     return (
-        <section className="w-full h-full padding flex flex-col gap-5 md:flex-row md:justify-between xl:gap-6 bg-[#EDEDED]">
+        <section className="w-full h-full padding flex flex-col gap-5 md:flex-row md:justify-between xl:gap-6 ">
             <div className="w-full md:w-3/5">
                 <ListOfCategory
                     title={"Reliability"}
                     desc={
-                        "98 on-time delivery with 100 customer retention and partnerships spanning over three decades built on predictable excellence."
+                        "Fluorokraft delivers consistent performance through long-standing client partnerships, agile delivery systems, and a smart stock-and-serve strategy that keeps production running without interruption."
                     }
                     data={reliabilityLists}
                     href={""}

@@ -9,7 +9,7 @@ const Page = () => {
         <main>
             <AllPageHero text={"Materials we work with"} />
             <MaterialsCard />
-            <GetQuote />
+            {/* <GetQuote /> */}
             <Contact />
         </main>
     )

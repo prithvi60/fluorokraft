@@ -80,7 +80,7 @@ const Footer = () => {
                             Quick Links
                         </h2>
                         <ul className="block space-y-2.5 md:space-y-4">
-                            {footerLinks.slice(0, 6).map((list, idx) => (
+                            {footerLinks.slice(0, 8).map((list, idx) => (
                                 <li
                                     key={idx}
                                     className={`text-sm capitalize md:text-base tracking-wide font-medium`}
@@ -105,7 +105,7 @@ const Footer = () => {
                             Legal
                         </h2>
                         <ul className="block space-y-2.5 md:space-y-4">
-                            {footerLinks.slice(7, footerLinks.length).map((list, idx) => (
+                            {footerLinks.slice(8, footerLinks.length).map((list, idx) => (
                                 <li
                                     key={idx}
                                     className={`text-sm capitalize md:text-base tracking-wide font-medium`}

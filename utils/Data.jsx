@@ -7,10 +7,13 @@ import {
 } from "react-icons/fa6";
 
 export const navLinks = [
+    { menu: "Home", link: "/" },
     { menu: "about", link: "/about" },
     { menu: "why fluoroKraft", link: "/why-fluoroKraft" },
     { menu: "products", link: "/products" },
     { menu: "materials", link: "/materials" },
+    { menu: "industries", link: "/industries" },
+    { menu: "infrastructure", link: "/infrastructure" },
     { menu: "contact us", link: "/contact" },
 ];
 
@@ -20,6 +23,8 @@ export const footerLinks = [
     { menu: "Why Fluorokraft", href: "/why-fluoroKraft" },
     { menu: "Products", href: "/products" },
     { menu: "Materials", href: "/materials" },
+    { menu: "Industries", href: "/industries" },
+    { menu: "Infrastructure", href: "/infrastructure" },
     { menu: "Contact Us", href: "/contact" },
     { menu: "Terms of use", href: "/terms" },
     { menu: "Privacy Policy", href: "/privacy-policy" },
@@ -56,6 +61,45 @@ export const socialLinks = [
             <FaYoutube className="text-xl md:text-3xl text-[#90ADEC] hover:animate-pulse" />
         ),
         href: "#",
+    },
+];
+
+export const variousCategory = [
+    {
+        img: "/slider/product-hero.png",
+        categoryName: "Product",
+        href: "",
+        desc: "Fluorokraft is among the leading manufacturers of custom polymer precision machined components like Seals, Valve seats, O-Rings, Packings, Washers using PTFE and other specialized plastics.",
+    },
+    {
+        img: "/slider/quality-hero.png",
+        categoryName: "Quality",
+        href: "",
+        desc: "Fluorokraft, an ISO 9001:2015 certified manufacturer, delivers near-zero defect precision PTFE components—trusted globally with Green Channel Vendor status for consistent quality across millions of parts.",
+    },
+    {
+        img: "/slider/reliability-hero.png",
+        categoryName: "Reliability",
+        href: "",
+        desc: "98% on-time delivery, 100% customer retention, and decades-long partnerships—Fluorokraft delivers predictable performance and supply chain confidence, every time.",
+    },
+    {
+        img: "/slider/product-hero.png",
+        categoryName: "Materials",
+        href: "",
+        desc: "Fluorokraft specializes in precision machining of advanced materials like PTFE, PEEK, PCTFE, Delrin, and Nylon 6,6—engineered for durability, chemical resistance, and extreme performance.",
+    },
+    {
+        img: "/slider/quality-hero.png",
+        categoryName: "Innovation",
+        href: "",
+        desc: "Fluorokraft drives breakthrough results through co-engineered polymer solutions along with clients focusing on boosting equipment lifecycles and cutting downtime costs with custom material formulations and decades of expertise.",
+    },
+    {
+        img: "/slider/reliability-hero.png",
+        categoryName: "World-Class Infrastructure",
+        href: "",
+        desc: "Fluorokraft’s advanced CNC and molding capabilities, ISO-certified quality systems, and agile production planning deliver consistent, high-tolerance polymer components—trusted by global OEMs for performance at scale.",
     },
 ];
 
@@ -286,6 +330,33 @@ export const materialCards = [
     },
 ];
 
+export const materialCardsLists = [
+    {
+        title: "Fluoropolymers",
+        lists: [
+            "PTFE",
+            "PCTFE",
+        ],
+    },
+    {
+        title: "Engineering Thermoplastics",
+        lists: ["Nylon 6,6", "DELRIN", "PEEK"],
+    },
+    {
+        title: "Elastomers / Rubber",
+        lists: [
+            "Nitrile Rubber",
+        ],
+    },
+    {
+        title: "Polyolefins",
+        lists: [
+            "PP",
+            "LDPE / HDPE",
+        ],
+    },
+];
+
 export const productsTabsLists = [
     {
         title: "Precision Components",
@@ -348,5 +419,124 @@ export const fluoroProducts = [
         title: "Plain Bearings",
         desc: "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line.",
         href: "/products/plain-bearings",
+    },
+];
+
+export const industrialMaterials = [
+    {
+        img: "/industries/Automotives.jpg",
+        title: "Automotives",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+    {
+        img: "/industries/HEI.jpg",
+        title: "Heavy Electrical Insulation",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+    {
+        img: "/industries/Infrastructure.jpg",
+        title: "Infrastructure",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+    {
+        img: "/industries/FHS.jpg",
+        title: "Fluid handling Systems",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+    {
+        img: "/industries/MT.jpg",
+        title: "Machine tool",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+    {
+        img: "/industries/chemical.jpg",
+        title: "Chemical",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+    {
+        img: "/industries/aerospace.jpg",
+        title: "Aerospace",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+    {
+        img: "/industries/OG.jpg",
+        title: "Oil and Gas",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+    {
+        img: "/industries/biotech.jpg",
+        title: "Biotech, Pharma and Healthcare",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+    {
+        img: "/industries/railways.jpg",
+        title: "Railways",
+        lists: ["Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line"],
+    },
+];
+
+export const infraCategory = [
+    { img: "/infra/mould.svg", title: "Moulding Shop" },
+    { img: "/infra/machine.svg", title: "Machine Shop" },
+    { img: "/infra/skiving.svg", title: "Skiving Unit" },
+    { img: "/infra/extraction.svg", title: "Extrusion Plant" },
+    { img: "/infra/inspection.svg", title: "Inspection Facility" },
+    { img: "/infra/ePTFE.svg", title: "ePTFE Unit" },
+];
+
+export const infrastructureCategoryDetail = [
+    {
+        title: "Moulding Shop",
+        points: [
+            "Compression moulding capability for both PTFE and PEEK in-house",
+            "Hydraulic presses ranging from 50 tonnes to 200 tonnes",
+            "Cold moulding of PTFE before the sintering process",
+            "Moulding cum heating process for PEEK",
+            "Blending for customised compounds in PTFE and PEEK in-house",
+        ],
+        img: "/infra/mould-bg.png",
+        inHouseLists: [""]
+    },
+    {
+        title: "Machine Shop",
+        points: [
+            "Turning centres",
+            "Turn-mill centres",
+            "Vertical milling centres",
+            "Conventional machine shop",
+            "Tool and design facilities for specialised fixtures",
+        ],
+        img: "/infra/machine-bg.png",
+        inHouseLists: [""]
+    },
+    {
+        title: "ePTFE Unit",
+        points: [
+            "Custom-built, CNC-controlled ePTFE stretching machine to meet global quality norms",
+            "Enhanced capability to manufacture expanded PTFE tapes in thicknesses of 0.5mm to 15mm",
+            "In-house extrusion and tooling expertise to allow for unique profiles",
+        ],
+        img: "/infra/ePTFE.png",
+        inHouseLists: [""]
+    },
+    {
+        title: "Inspection Facility",
+        points: [
+            "Fully-equipped inspection and testing facilities to verify dimensions and material properties",
+            "Rapid-I inspection system for non-contact dimensional inspection",
+            "Customised gauges for inspection of large volume parts",
+            "In-house capacity to test properties such as:",
+        ],
+        img: "/infra/INSPECTION-BG.png",
+        inHouseLists: [
+            "Tensile strength",
+            "Elongation",
+            "Specific gravity",
+            "Breakdown voltage",
+            "Coefficients of linear thermal expansion",
+            "Wear resistance K-Factor",
+            "Coefficients of friction",
+            "Compressive strength",
+        ],
     },
 ];

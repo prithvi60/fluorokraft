@@ -16,7 +16,7 @@ export default function DesktopMenu({ menu, path }) {
         title={menu.menu}
         aria-label={menu.menu}
         href={menu.link || ""}
-        className={`flex capitalize items-center text-background`}
+        className={`flex capitalize items-center text-background text-sm xl:text-lg`}
         passHref
         itemProp="url"
       >

@@ -1,6 +1,5 @@
 import AllPageHero from '@/components/layout/AllPageHero'
 import Contact from '@/components/layout/Contact'
-import GetQuote from '@/components/layout/GetQuote'
 import WhyFluorokraft from '@/components/layout/WhyFluorokraft'
 import React from 'react'
 
@@ -9,7 +8,7 @@ const Page = () => {
         <main>
             <AllPageHero text={"Fluorokraft : Zero-defect precision, predictable delivery, measurable results"} />
             <WhyFluorokraft />
-            <GetQuote />
+            {/* <GetQuote /> */}
             <Contact />
         </main>
     )

@@ -13,7 +13,7 @@ const Page = () => {
             <OurStory />
             <OurMission />
             <OurLeadership />
-            <GetQuote />
+            {/* <GetQuote /> */}
             <Contact />
         </main>
     )

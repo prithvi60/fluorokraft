@@ -1,9 +1,9 @@
 import React from "react";
 
-export const SectionHeading1 = ({ text, color }) => {
+export const SectionHeading1 = ({ text, color, center }) => {
     return (
         <h1
-            className={`text-[clamp(1.8rem,5vw,4.25rem)] leading-10 sm:leading-12 xl:leading-20 ${color}`}
+            className={`text-[clamp(1.8rem,5vw,4.25rem)] leading-10 sm:leading-12 xl:leading-20 ${color} ${center && "text-center"}`}
         >
             {text}
         </h1>

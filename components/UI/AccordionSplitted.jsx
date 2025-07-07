@@ -19,12 +19,12 @@ export const AccordionSplitted = ({ data }) => {
                         aria-label="products tabs lists"
                         aria-expanded={activeIndex === index}
                         aria-controls={`accordion-content-${index}`}
-                        className={`w-full flex justify-between gap-x-4 lg:gap-0 items-center px-4 md:px-6 py-4 md:py-9 ${item.title === "Precision Components" ? "bg-success" : "bg-transparent"} focus:outline-none cursor-pointer transition-colors ${activeIndex === index ? "rounded-t-lg" : "rounded-lg"
+                        className={`w-full flex justify-between gap-x-4 lg:gap-0 items-center px-4 md:px-6 py-4 md:py-9 ${item.title === "Precision Components" || item.title === "Fluoropolymers" ? "bg-success" : "bg-transparent"} focus:outline-none cursor-pointer transition-colors ${activeIndex === index ? "rounded-t-lg" : "rounded-lg"
                             }`}
                         onClick={() => toggleAccordion(index)}
                     >
                         <span
-                            className={`font-medium font-mono text-[15px] tracking-wider ${item.title === "Precision Components" ? "text-background bg-success" : "text-foreground"} w-full`}
+                            className={`font-medium font-mono text-[15px] tracking-wider ${item.title === "Precision Components" || item.title === "Fluoropolymers" ? "text-background bg-success" : "text-foreground"} w-full`}
                         >
                             {item.title}
                         </span>
@@ -40,17 +40,15 @@ export const AccordionSplitted = ({ data }) => {
                     </button>
                     <div
                         id={`accordion-content-${index}`}
-                        className={`overflow-hidden transition-all duration-500 ${item.title === "Precision Components" ? "bg-[#F6F6F5]" : "bg-transparent"} ${activeIndex === index
-                            ? "max-h-screen rounded-b-lg"
-                            : "max-h-0"
+                        className={`overflow-hidden transition-all duration-500 ${item.title === "Precision Components" || item.title === "Fluoropolymers" ? "bg-[#F6F6F5]" : "bg-transparent"} ${activeIndex === index ? "max-h-screen rounded-b-lg" : "max-h-0"
                             }`}
                     >
-                        <ul className="block space-y-2 p-6">
+                        <ul className="block space-y-4 p-6">
                             {item.lists.map((item, index) => (
                                 <li key={index} className="!font-medium">
                                     <button
                                         type="button"
-                                        className="cursor-pointer text-left"
+                                        className="cursor-pointer text-center w-full"
                                     >
                                         <SectionPara1 text={item} />
                                     </button>

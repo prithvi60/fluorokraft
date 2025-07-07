@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 const AboutFlouoro = () => {
     const text =
-        "Fluorokraft engineers zero-defect polymer components for mission-critical applications, delivering 30 years of proven reliability and breakthrough innovations that extend equipment lifecycles while eliminating operational risks for global OEMs.";
+        "Fluorokraft is a trusted global partner in precision polymer engineering, delivering high-performance PTFE components through advanced infrastructure, co-engineered innovation, and ISO-certified quality systems with near-zero defect reliability.";
     const words = text.split(" ");
     const controls = useAnimation();
     const ref = useRef(null);
@@ -27,7 +27,7 @@ const AboutFlouoro = () => {
                 className="mx-auto max-w-7xl text-center"
             >
                 <h2
-                    className={`text-[clamp(1.8rem,5vw,4.25rem)] leading-10 sm:leading-12 xl:leading-20 text-background`}
+                    className={`text-[clamp(1.5rem,5vw,2.25rem)] leading-10 sm:leading-12 xl:leading-14 text-background`}
                 >
                     {words.map((word, i) => (
                         <motion.span

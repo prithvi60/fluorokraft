@@ -44,7 +44,7 @@ const ProductsSection = () => {
 
 export default ProductsSection;
 
-const ProductsSectionSideTabs = ({ color, data }) => {
+export const ProductsSectionSideTabs = ({ color, data }) => {
     return (
         <div
             className={`w-full h-fit block space-y-4 md:space-y-6 p-6 ${color ? "bg-[#F6F6F5] rounded-lg" : "bg-transparent"}`}

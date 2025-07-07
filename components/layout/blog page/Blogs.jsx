@@ -12,9 +12,6 @@ const Blogs = ({ posts }) => {
     return (
         <section className="padding w-full space-y-24 md:space-y-36">
             <div className="w-full space-y-10 md:space-y-16">
-                <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-semibold text-center">
-                    Read more Interesting Blog
-                </h2>
                 <div className="grid grid-cols-1 max-w-xs mx-auto sm:max-w-full md:grid-cols-2 place-content-center place-items-center xl:grid-cols-3 gap-8">
                     {posts.map((item, idx) => (
                         <Link title="blog post page"

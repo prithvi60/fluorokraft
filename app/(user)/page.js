@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <main className="">
       <HomeHero />
-      <CategoryCard />
+      {/* <CategoryCard /> */}
+      <ReliabilitySection />
       <QualitySection />
       <AboutFlouoro />
-      <ReliabilitySection />
       <InnovationSection />
-      <GetQuote />
+      {/* <GetQuote /> */}
       <Contact />
     </main>
   );

@@ -1,11 +1,17 @@
+"use client"
 import React from "react";
-import { SectionHeading1, SectionPara1 } from "./SectionComponents";
-import Image from "next/image";
+import dynamic from "next/dynamic";
+import { CategorySliderLoading } from "./CategorySlider";
+const CategorySliderComponent = dynamic(() => import('./CategorySlider'), {
+    loading: () => <CategorySliderLoading />,
+    ssr: false // Optional: Disable server-side rendering for this component
+});
 
 const HomeHero = () => {
     return (
-        <section className="w-full h-full bg-[#2C3E50]">
-            <div className="w-full h-full padding space-y-4 md:space-y-8 pb-5 border-b-2 border-zinc-600">
+        <section className="w-full h-full bg-[#2C3E50] p-5">
+            <CategorySliderComponent />
+            {/* <div className="w-full h-full padding space-y-4 md:space-y-8 pb-5 border-b-2 border-zinc-600">
                 <div className="w-full md:w-3/5">
                     <SectionHeading1
                         text={"Engineering Precision Polymer Components"}
@@ -19,8 +25,9 @@ const HomeHero = () => {
                     color={"text-background "}
                     hero
                 />
-            </div>
-            <div className="w-full h-full p-5">
+            </div> */}
+            {/* <div className="w-full h-full p-5">
+                <CategorySlider />
                 <Image
                     width={1200}
                     height={860}
@@ -32,7 +39,7 @@ const HomeHero = () => {
                     loading="eager"
                     sizes="calc(100vw - 40px)"
                 />
-            </div>
+            </div> */}
         </section>
     );
 };
