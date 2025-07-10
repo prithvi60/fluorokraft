@@ -84,19 +84,19 @@ export const variousCategory = [
         desc: "98% on-time delivery, 100% customer retention, and decades-long partnerships—Fluorokraft delivers predictable performance and supply chain confidence, every time.",
     },
     {
-        img: "/slider/product-hero.png",
+        img: "/slider/material.jpg",
         categoryName: "Materials",
         href: "/materials",
         desc: "Fluorokraft specializes in precision machining of advanced materials like PTFE, PEEK, PCTFE, Delrin, and Nylon 6,6—engineered for durability, chemical resistance, and extreme performance.",
     },
     {
-        img: "/slider/quality-hero.png",
+        img: "/slider/innovation-hero.jpg",
         categoryName: "Innovation",
         href: "#innovation",
         desc: "Fluorokraft drives breakthrough results through co-engineered polymer solutions along with clients focusing on boosting equipment lifecycles and cutting downtime costs with custom material formulations and decades of expertise.",
     },
     {
-        img: "/slider/reliability-hero.png",
+        img: "/slider/infrastructure-hero.jpg",
         categoryName: "World-Class Infrastructure",
         href: "/infrastructure",
         desc: "Fluorokraft’s advanced CNC and molding capabilities, ISO-certified quality systems, and agile production planning deliver consistent, high-tolerance polymer components—trusted by global OEMs for performance at scale.",
@@ -527,8 +527,8 @@ export const industrialMaterials = [
 export const infraCategory = [
     { img: "/infra/mould.svg", title: "Moulding Shop" },
     { img: "/infra/machine.svg", title: "Machine Shop" },
-    { img: "/infra/skiving.svg", title: "Skiving Unit" },
-    { img: "/infra/extraction.svg", title: "Extrusion Plant" },
+    // { img: "/infra/skiving.svg", title: "Skiving Unit" },
+    // { img: "/infra/extraction.svg", title: "Extrusion Plant" },
     { img: "/infra/inspection.svg", title: "Inspection Facility" },
     { img: "/infra/ePTFE.svg", title: "ePTFE Unit" },
 ];

@@ -9,7 +9,7 @@ export const GetStartButton = ({ text, href = "#", status, type, hero }) => {
             type={type ? "submit" : "button"}
             title={text}
             aria-label={`${text} page`}
-            className={`before:absolute z-10 before:content-[''] w-max before:-z-10 relative before:left-1/2 before:-translate-x-1/2 before:bg-success clip-pathHero2 before:w-full before:min-h-14 before:py-3 hover:before:w-[125%] cursor-pointer before:transition-[width] before:duration-300 min-h-12 px-6 py-3 text-white ${hero ? "flex items-center gap-2 justify-center before:top-1" : "before:-top-1.5"}`}
+            className={`before:absolute z-10 before:content-[''] w-max before:-z-10 relative before:left-1/2 before:-translate-x-1/2 before:bg-success clip-pathHero2 before:w-full before:min-h-14 before:py-3 hover:before:w-[125%] cursor-pointer before:transition-[width] before:duration-300 min-h-12 px-6 py-3 text-white before:-top-1 before:sm:-top-0.5`}
         >
             {type ? (
                 <span>{status ? <Loader /> : "Submit"}</span>
@@ -18,16 +18,16 @@ export const GetStartButton = ({ text, href = "#", status, type, hero }) => {
                     aria-label={`${text} page`}
                     title={`${text} page`}
                     href={href}
-                    className={`font-semibold capitalize text-sm md:text-base min-h-[48px] py-2`}
+                    className={`font-medium capitalize text-base md:text-lg min-h-[48px] py-2`}
                 >
                     {text}
                 </Link>
             )}
-            {hero && (
+            {/* {hero && (
                 <span>
                     <FaArrowRightLong className="text-background text-base md:text-lg min-h-[48px] -mt-1.5" />
                 </span>
-            )}
+            )} */}
         </button>
     );
 };

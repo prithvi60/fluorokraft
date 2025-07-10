@@ -31,7 +31,7 @@ const CategorySlider = () => {
                             src={image.img}
                             alt={image.categoryName}
                             title={image.categoryName}
-                            className="object-cover object-center w-full h-[90dvh] md:h-[80dvh] overflow-hidden clip-pathHero"
+                            className="object-cover object-center w-full h-[90dvh] md:h-[80dvh] overflow-hidden clip-pathHero brightness-50"
                             // priority
                             loading="lazy"
                             sizes="calc(100vw - 40px)"
@@ -67,10 +67,10 @@ function SampleNextArrow(props) {
     return (
         <div
             className={`${loading && "hidden"
-                } absolute bottom-5 sm:bottom-10 right-8 xl:right-16 rounded-full p-2.5 cursor-pointer hover:bg-info bg-secondary backdrop-blur-xl`}
+                } absolute top-1/2 right-0 sm:right-8 xl:right-10 rounded-full p-2.5 cursor-pointer hover:bg-info bg-secondary backdrop-blur-xl`}
             onClick={onClick}
         >
-            <FaArrowRight className="text-xs sm:text-base xl:text-2xl text-white" />
+            <FaArrowRight className="text-sm sm:text-base xl:text-2xl text-white" />
         </div>
     );
 }
@@ -80,10 +80,10 @@ function SamplePrevArrow(props) {
     return (
         <div
             className={`${loading && "hidden"
-                } absolute p-2.5 cursor-pointer hover:bg-info bottom-5 sm:bottom-10 right-20 xl:right-32 rounded-full z-30 bg-secondary backdrop-blur-xl`}
+                } absolute p-2.5 cursor-pointer hover:bg-info top-1/2 left-0 sm:left-8 xl:left-10 rounded-full z-30 bg-secondary backdrop-blur-xl`}
             onClick={onClick}
         >
-            <FaArrowLeft className="text-xs sm:text-base xl:text-2xl text-white" />
+            <FaArrowLeft className="text-sm sm:text-base xl:text-2xl text-white" />
         </div>
     );
 }

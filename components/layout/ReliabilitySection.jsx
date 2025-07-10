@@ -11,8 +11,7 @@ const ReliabilitySection = () => {
                 <ListOfCategory
                     title={"Reliability"}
                     desc={
-                   `98 on-time delivery with 100 customer retention and partnerships spanning over three
-decades built on predictable excellence.`
+                   `Near-zero defects across millions of components with Green Channel Vendor status that proves the trust placed by global OEMs on Fluorokraft`
                     }
                     data={reliabilityLists}
                     href={""}

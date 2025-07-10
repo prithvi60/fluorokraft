@@ -66,6 +66,23 @@ body {
     0px 12px
   );
 }
+.clip-pathHeroBorder {
+  position: relative;
+}
+.clip-pathHeroBorder::before {
+  clip-path: polygon(
+    12px 0px,
+    calc(100% - 12px) 0px,
+    100% 13px,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    12px 100%,
+    0px calc(100% - 12px),
+    0px 12px
+  );
+  outline: 2px solid var(--success);
+  outline-offset: -2px;
+}
 
 .clip-pathHeroBottom {
   clip-path: polygon(

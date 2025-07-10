@@ -12,10 +12,6 @@ const Contact = () => {
             </div>
             <div className="space-y-4 md:space-y-10 w-full md:w-4/5 lg:w-3/5 px-5 md:px-0">
                 <ContactForm />
-                <div className="pt-5">
-                    <SectionPara1 text={"Reach out directly at"} color={"text-foreground"} />
-                    <SectionPara1 text={"info@fluorokraft.com"} color={"text-foreground font-semibold tracking-wider"} />
-                </div>
             </div>
         </section>
     );

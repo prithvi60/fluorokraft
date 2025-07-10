@@ -27,7 +27,7 @@ const AboutFlouoro = () => {
                 className="mx-auto max-w-7xl text-center"
             >
                 <h2
-                    className={`text-[clamp(1.5rem,5vw,2.25rem)] leading-10 sm:leading-12 xl:leading-14 text-background`}
+                    className={`text-[clamp(1.5rem,5vw,2.25rem)] leading-10 sm:leading-12 xl:leading-14 text-background py-24`}
                 >
                     {words.map((word, i) => (
                         <motion.span
