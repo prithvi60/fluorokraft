@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { SectionPara1 } from "../layout/SectionComponents";
 
-const Dropdown = ({ item, index, card, setIsOpen, setIsActiveIndex }) => {
+const Dropdown = ({ item, index, card }) => {
     const [activeIndex, setActiveIndex] = useState(null);
 
     const toggleAccordion = (index) => {

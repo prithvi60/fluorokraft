@@ -3,7 +3,7 @@ import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { SectionPara1 } from "../layout/SectionComponents";
 
-export const AccordionSplitted = ({ data }) => {
+export const AccordionSplitted = ({ data, setIsActiveIndex }) => {
     const [activeIndex, setActiveIndex] = useState(null);
 
     const toggleAccordion = (index) => {
@@ -49,6 +49,7 @@ export const AccordionSplitted = ({ data }) => {
                                     <button
                                         type="button"
                                         className="cursor-pointer text-center w-full"
+                                        onClick={() => setIsActiveIndex(item)}
                                     >
                                         <SectionPara1 text={item} />
                                     </button>

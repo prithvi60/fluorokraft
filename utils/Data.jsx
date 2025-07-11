@@ -359,7 +359,7 @@ export const materialCards = [
             "Polypropylene is easily fabricated, weldable, and widely used in both sheet and molded form. Though not as rigid as engineering plastics like Nylon or Delrin, PP is often chosen for its low cost, light weight, and ability to withstand repeated flexing—a property known as 'living hinge' behavior. Common applications include chemical tanks, laboratory equipment, seals, packaging components, and automotive interior parts. Fluorokraft provides customized PP-based components for industries requiring chemical durability, ease of fabrication, and economical performance.",
     },
     {
-        title: "LDPE or HDPE",
+        title: "LDPE / HDPE",
         detail1:
             "Polyethylene, available in two primary forms—LDPE (Low-Density Polyethylene) and HDPE (High-Density Polyethylene)—is a widely used thermoplastic known for its excellent chemical resistance, low moisture absorption, and lightweight nature. Both grades are non-toxic, UV-stabilizable, and offer good electrical insulation properties. LDPE is more flexible and impact-resistant, making it suitable for applications that require pliability, while HDPE is stronger and more rigid, ideal for structural components and high-load environments. Both materials are available in FDA-compliant grades for food and medical uses.",
         detail2:
@@ -370,7 +370,7 @@ export const materialCards = [
 export const materialCardsLists = [
     {
         title: "Fluoropolymers",
-        lists: ["PTFE", "PCTFE"],
+        lists: ["PTFEE", "PCTFE"],
     },
     {
         title: "Engineering Thermoplastics",
