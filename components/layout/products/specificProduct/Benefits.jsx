@@ -5,14 +5,14 @@ import {
     SectionPara1,
 } from "../../SectionComponents";
 
-const Benefits = () => {
+const Benefits = ({ data }) => {
     return (
         <section className="w-full relative padding flex flex-col gap-10 md:gap-7 lg:gap-16 md:flex-row items-start justify-between bg-[#F7F7F7]">
-            <SectionWrapper count={"01"} title={"Benefits"} data={benefitsLists} />
+            <SectionWrapper count={"01"} title={"Benefits"} data={data.benefits} />
             <SectionWrapper
                 count={"02"}
                 title={"Applications"}
-                data={applicationsLists}
+                data={data.applications}
             />
         </section>
     );

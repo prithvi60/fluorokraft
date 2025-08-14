@@ -7,20 +7,26 @@ import {
     SectionPara1,
 } from "../../SectionComponents";
 
-const AboutProduct = () => {
+const AboutProduct = ({ data }) => {
     return (
         <section className="w-full relative padding flex flex-col-reverse gap-10 md:gap-7 lg:gap-16 md:flex-row items-start justify-between">
             <div className="block space-y-6 md:space-y-8 max-w-sm w-full md:w-1/2 relative">
                 <div className="space-y-5">
-                    <SectionHeadingSmall text={"Industrial Seals and Bearings"} />
-                    <SectionHeading2 text={"Plain Bearings"} />
+                    {data.title && (
+                        <div className="pb-3">
+                            <SectionHeadingSmall text={data.title} />
+                        </div>
+                    )}
+                    <SectionHeading2 text={data.subTitle} />
                 </div>
-                <SectionPara1
-                    text={
-                        "Despite having the finest low torque gasket on the market, we set out to make it even better with the new Energizer™ gaskets product line."
-                    }
-                    clamp
-                />
+                {typeof data.desc === "string" ? (
+                    <SectionPara1 text={data.desc} clamp />
+                ) : (
+                    <p
+                        className="text-base text-foreground"
+                    >{data.desc}</p>
+                )}
+
                 <button
                     role="button"
                     type={"button"}
@@ -32,9 +38,9 @@ const AboutProduct = () => {
             </div>
             <div className="w-full md:w-1/2 relative flex flex-col md:flex-row items-center justify-center gap-5">
                 <Image
-                    src={"/products/product-6.png"}
-                    alt={"Plain Bearings"}
-                    title={"Plain Bearings"}
+                    src={data.sliderImgs[0].img}
+                    alt={data.sliderImgs[0].alt}
+                    title={data.sliderImgs[0].alt}
                     width={100}
                     height={100}
                     className="object-contain object-top h-80 w-full md:w-60 md:h-56 lg:w-80 lg:h-80 xl:size-96"
@@ -42,18 +48,18 @@ const AboutProduct = () => {
                 />
                 <div className="flex flex-row justify-center items-center gap-5 md:flex-col">
                     <Image
-                        src={"/products/product-6.png"}
-                        alt={"Plain Bearings"}
-                        title={"Plain Bearings"}
+                        src={data.sliderImgs[1].img}
+                        alt={data.sliderImgs[0].alt}
+                        title={data.sliderImgs[0].alt}
                         width={100}
                         height={100}
                         className="object-contain object-top size-24 md:w-full md:h-20 lg:size-32 xl:size-36 flex-shrink-0"
                         loading="lazy"
                     />
                     <Image
-                        src={"/products/product-6.png"}
-                        alt={"Plain Bearings"}
-                        title={"Plain Bearings"}
+                        src={data.sliderImgs[2].img}
+                        alt={data.sliderImgs[0].alt}
+                        title={data.sliderImgs[0].alt}
                         width={100}
                         height={100}
                         className="object-contain object-top size-24 md:w-full md:h-20 lg:size-32 xl:size-36 flex-shrink-0"

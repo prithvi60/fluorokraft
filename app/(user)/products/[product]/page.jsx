@@ -4,22 +4,26 @@ import AboutProduct from "@/components/layout/products/specificProduct/AboutProd
 import Benefits from "@/components/layout/products/specificProduct/Benefits";
 import Variations from "@/components/layout/products/specificProduct/Variations";
 import WhatMakesDiff from "@/components/layout/products/specificProduct/WhatMakesDiff";
+import { productCategorySpecificDetails } from "@/utils/Data";
 import React from "react";
 
 const Page = async ({ params }) => {
     const { product } = await params;
     const filteredProductName = product.replace(/-/g, " ");
+    const filteredProduct = productCategorySpecificDetails.find(val => val.subTitle.toLowerCase() === filteredProductName)
+    // console.log(filteredProduct);
+
     return (
         <main className="">
             <AllPageHero
                 text={
-                    filteredProductName === "O rings" ? "O-rings" : filteredProductName
+                    filteredProduct.mainTitle
                 }
             />
-            <AboutProduct />
-            <Benefits />
-            <WhatMakesDiff />
-            <Variations />
+            <AboutProduct data={filteredProduct} />
+            <Benefits data={filteredProduct} />
+            {/* <WhatMakesDiff />
+            <Variations /> */}
             <Contact />
         </main>
     );

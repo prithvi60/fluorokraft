@@ -536,6 +536,14 @@ export const infraCategory = [
 export const infrastructureCategoryDetail = [
     {
         title: "Moulding Shop",
+        para: (
+            <>
+                Fluorokraft operates a fully equipped moulding facility capable of processing both PTFE and PEEK materials with precision. The shop features hydraulic presses ranging from small to high tonnage, enabling the production of components across a wide range of sizes and specifications. PTFE is shaped using a cold forming technique prior to sintering, ensuring dimensional accuracy and material integrity.
+                <br />
+                <br />
+                For PEEK, a combined moulding and thermal processing approach is employed to achieve optimal mechanical properties. Additionally, Fluorokraft offers in-house blending of customized PTFE and PEEK compounds, allowing tailored solutions for specific performance requirements across industries.
+            </>
+        ),
         points: [
             "Compression moulding capability for both PTFE and PEEK in-house",
             "Hydraulic presses ranging from 50 tonnes to 200 tonnes",
@@ -547,7 +555,16 @@ export const infrastructureCategoryDetail = [
         inHouseLists: [""],
     },
     {
-        title: "Machine Shop",
+        title: "Precision machining facilities",
+        para: (
+            <>
+                Fluorokraft’s machining division is equipped with advanced CNC systems, operated by skilled programmers specializing in high-accuracy component production. The facility includes a range of turning, milling, and multi-axis machining centers capable of handling complex geometries and tight tolerances.
+                <br />
+                <br />
+                In addition to CNC capabilities, the shop features conventional machining setups for specialized tasks, along with custom tooling and fixture design to support unique part requirements. The team ensures consistent performance through precise tool calibration and wear monitoring, enabling reliable output across varied production volumes.
+
+            </>
+        ),
         points: [
             "Turning centres",
             "Turn-mill centres",
@@ -560,6 +577,14 @@ export const infrastructureCategoryDetail = [
     },
     {
         title: "ePTFE Unit",
+        para: (
+            <>
+                Fluorokraft’s isostatic moulding infrastructure is designed for precision and consistency in PTFE and PFA components. Advanced moulding systems ensure uniform pressure, producing parts with consistent density and minimal internal stress—crucial for high-performance applications involving corrosive fluids, heat, and mechanical loads.
+                <br />
+                <br />
+                The facility includes specialized cold moulding equipment for PTFE and integrated heating for PEEK, enabling tailored processing. In-house compound blending allows precise control over material properties. With skilled technicians and strict quality protocols, Fluorokraft delivers complex, high-tolerance components for industries like chemical processing, oil & gas, pharmaceuticals, and aerospace.
+            </>
+        ),
         points: [
             "Custom-built, CNC-controlled ePTFE stretching machine to meet global quality norms",
             "Enhanced capability to manufacture expanded PTFE tapes in thicknesses of 0.5mm to 15mm",
@@ -570,6 +595,15 @@ export const infrastructureCategoryDetail = [
     },
     {
         title: "Inspection Facility",
+        para: (
+            <>
+                Fluorokraft maintains stringent quality control through continuous in-process monitoring, ensuring every PTFE component meets tight dimensional tolerances—down to 0.05 mm. Skilled technicians oversee each stage of production to maintain consistency and precision.
+                <br />
+                <br />
+                Final inspections are carried out using advanced video-based measurement systems that accurately validate intricate geometries and surface profiles. Every production batch is fully traceable, supported by detailed dimensional reports and certified material test documentation to guarantee compliance and performance.
+
+            </>
+        ),
         points: [
             "Fully-equipped inspection and testing facilities to verify dimensions and material properties",
             "Rapid-I inspection system for non-contact dimensional inspection",
@@ -586,6 +620,2021 @@ export const infrastructureCategoryDetail = [
             "Wear resistance K-Factor",
             "Coefficients of friction",
             "Compressive strength",
+        ],
+    },
+];
+
+export const productCategoryData = [
+    {
+        title: "Precision PTFE Components",
+        subItems: [
+            {
+                title: "Chemical Processing Valve Seats and Seals",
+                subItems: [
+                    { title: "Seat Rings" },
+                    { title: "Seals" },
+                    { title: "Anti Extrusion Rings" },
+                    { title: "Gaskets" },
+                ],
+            },
+            {
+                title: "High-Purity Fluid Handling Fittings and Connectors",
+                subItems: [
+                    { title: "Support Rings" },
+                    { title: "Guide Components" },
+                    { title: "Wipers" },
+                    { title: "Duct Support" },
+                ],
+            },
+            {
+                title: "Pharmaceutical Processing Gaskets and O-Rings",
+                subItems: [
+                    { title: "Gaskets" },
+                    { title: "Seals" },
+                    { title: "Washers" },
+                ],
+            },
+            {
+                title: "Linings for Unequal Tee, Elbow, and Other Fittings",
+                subItems: [{ title: "Strips and Liners" }, { title: "Base Plates" }],
+            },
+            {
+                title: "Assembly and Structural Components",
+                subItems: [
+                    { title: "Head Pieces" },
+                    { title: "Inserts" },
+                    { title: "Electrical Components" },
+                ],
+            },
+        ],
+    },
+    {
+        title: "Custom Solutions and components",
+        subItems: [
+            { title: "Sealing Solutions" },
+            { title: "Motion Control Components" },
+            { title: "Structural Components" },
+            { title: "Wear Protection" },
+            { title: "Fluid Handling" },
+            { title: "Assembly Components" },
+            { title: "Electrical Accessories" },
+            { title: "Fastening Components" },
+        ],
+    },
+    {
+        title: "Iso-static Moulded Components",
+        subItems: [
+            { title: "Butterfly Valve PTFE Seats" },
+            { title: "PTFE Encapsulated Discs" },
+            { title: "PTFE Sleeved Plug Valves" },
+            { title: "AODD Pump PTFE Parts" },
+            { title: "Control Valve PTFE Parts" },
+            { title: "Diaphragm Valve PTFE Parts" },
+            { title: "PTFE Lined Tees and Joints" },
+            { title: "PTFE Automotive Seals" },
+            { title: "PFA Lined Open Impellers" },
+            { title: "SS Lined Unequal Cross" },
+            { title: "Isostatically Moulded PTFE Expansion Joint" },
+            { title: "PFA Lined Control Valve Body" },
+        ],
+    },
+];
+
+const SpanTag = ({ tag }) => {
+    return <span className="font-semibold">{tag}</span>;
+};
+
+export const productCategorySpecificDetails = [
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Chemical Processing Valve Seats and Seals",
+        mainImg: "/products/product-3.png",
+        subTitle: "Seat Rings",
+        desc: "Engineered from high-performance PTFE, Fluorokraft’s precision seat rings ensure leak-proof sealing and extended durability in aggressive chemical processing environments. Seats can be made in multiple diameters as per requirement.",
+        sliderImgs: [
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Superior chemical resistance"} /> for harsh environments
+            </>,
+            <>
+                <SpanTag tag={"Leak-proof sealing"} /> with precision-engineered fit
+            </>,
+            <>
+                <SpanTag tag={"High temperature tolerance"} /> for extreme conditions
+            </>,
+            <>
+                <SpanTag tag={"Low friction and wear"} /> for extended valve life
+            </>,
+            <>
+                <SpanTag tag={"Custom sizes and materials"} /> for diverse applications
+            </>,
+        ],
+        applications: [
+            <>
+                Ideal for <SpanTag tag={"high and low temperature"} /> operations
+            </>,
+            <>
+                Suitable for <SpanTag tag={"static and dynamic sealing systems"} />
+            </>,
+            <>
+                Performs under <SpanTag tag={"high and low pressure"} /> conditions
+            </>,
+            <>
+                Reliable in <SpanTag tag={"corrosive chemical environments"} />
+            </>,
+            <>
+                Effective for <SpanTag tag={"large tolerance gap surfaces"} />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Chemical Processing Valve Seats and Seals",
+        mainImg: "/products/product-1.png",
+        subTitle: "Seals",
+        desc: "High-performance PTFE seals engineered for reliable, leak-proof operation in demanding chemical processing environments.",
+        sliderImgs: [
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+        ],
+
+        benefits: [
+            <>
+                <SpanTag tag={"Excellent chemical resistance"} /> for aggressive media
+            </>,
+            <>
+                <SpanTag tag={"Leak-proof sealing"} /> in high-performance valves
+            </>,
+            <>
+                <SpanTag tag={"Durable"} /> under extreme temperatures and pressures
+            </>,
+            <>
+                <SpanTag tag={"Low friction and wear"} /> for long service life
+            </>,
+            <>
+                <SpanTag tag={"Custom-engineered"} /> for precise fit and function
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"high and low temperature"} /> chemical processes
+            </>,
+            <>
+                Suitable for <SpanTag tag={"static and dynamic sealing systems"} />
+            </>,
+            <>
+                Performs reliably under <SpanTag tag={"high and low pressure"} />{" "}
+                conditions
+            </>,
+            <>
+                Ideal for{" "}
+                <SpanTag tag={"corrosive and aggressive chemical environments"} />
+            </>,
+            <>
+                Effective in{" "}
+                <SpanTag tag={"deep well drilling and unconventional operations"} />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Chemical Processing Valve Seats and Seals",
+        mainImg: "/products/product-4.png",
+        subTitle: "Anti Extrusion Rings",
+        desc: "Robust PTFE anti-extrusion rings designed to prevent seal deformation and ensure reliable performance in high-pressure chemical processing systems.",
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Prevents seal extrusion"} /> under extreme pressure
+                conditions
+            </>,
+            <>
+                <SpanTag tag={"Enhances sealing integrity"} /> and system reliability
+            </>,
+            <>
+                <SpanTag tag={"Resistant"} /> to chemicals and aggressive media
+            </>,
+            <>
+                <SpanTag tag={"Performs"} /> in high-temperature and high-pressure
+                environments
+            </>,
+            <>
+                <SpanTag tag={"Customizable"} /> for various valve and seal
+                configurations
+            </>,
+        ],
+        applications: [
+            <>
+                Ideal for <SpanTag tag={"high-pressure chemical processing systems"} />
+            </>,
+            <>
+                Suitable for <SpanTag tag={"static and dynamic sealing applications"} />
+            </>,
+            <>
+                Performs in <SpanTag tag={"high and low temperature"} /> environments
+            </>,
+            <>
+                Used in <SpanTag tag={"corrosive and abrasive media handling"} />
+            </>,
+            <>
+                Effective in{" "}
+                <SpanTag tag={"deep well and unconventional drilling operations"} />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Chemical Processing Valve Seats and Seals",
+        mainImg: "/products/product-2.png",
+        subTitle: "Gaskets",
+        desc: "High-performance PTFE gaskets designed for secure, leak-proof sealing in chemically aggressive and high-pressure environments.",
+        sliderImgs: [
+            { img: "/products/product-2.png", alt: "product" },
+            { img: "/products/product-2.png", alt: "product" },
+            { img: "/products/product-2.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Excellent chemical resistance"} /> for harsh media
+            </>,
+            <>
+                <SpanTag tag={"Reliable sealing"} /> under extreme conditions
+            </>,
+            <>
+                <SpanTag tag={"Thermally stable"} /> across wide temperature ranges
+            </>,
+            <>
+                <SpanTag tag={"Low friction and wear"} /> for long-lasting performance
+            </>,
+            <>
+                <SpanTag tag={"Custom-fit designs"} /> for various industrial
+                applications
+            </>,
+        ],
+        applications: [
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> operations
+            </>,
+            <>
+                Performs in <SpanTag tag={"static and dynamic sealing systems"} />
+            </>,
+            <>
+                Ideal for <SpanTag tag={"high and low pressure"} /> environments
+            </>,
+            <>
+                Effective in <SpanTag tag={"corrosive chemical processing setups"} />
+            </>,
+            <>
+                Used in{" "}
+                <SpanTag tag={"deep well drilling and unconventional systems"} />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "High-Purity Fluid Handling Fittings and Connectors",
+        mainImg: "/products/product-1.png",
+        subTitle: "Support Rings",
+        desc: "Durable PTFE support rings designed to reinforce sealing systems and maintain structural integrity in high-purity fluid handling applications.",
+        sliderImgs: [
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Prevents seal deformation"} /> under pressure
+            </>,
+            <>
+                <SpanTag tag={"Enhances mechanical stability"} /> of fittings and
+                connectors
+            </>,
+            <>
+                <SpanTag tag={"Resistant"} /> to chemicals and high-purity fluids
+            </>,
+            <>
+                <SpanTag tag={"Performs reliably"} /> across temperature extremes
+            </>,
+            <>
+                <SpanTag tag={"Customizable"} /> for various system configurations
+            </>,
+        ],
+        applications: [
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> fluid systems
+            </>,
+            <>
+                Performs in <SpanTag tag={"static and dynamic sealing environments"} />
+            </>,
+            <>
+                Ideal for <SpanTag tag={"high-pressure and vacuum applications"} />
+            </>,
+            <>
+                Used in <SpanTag tag={"corrosive and ultra-clean fluid processes"} />
+            </>,
+            <>
+                Effective in <SpanTag tag={"systems with wide tolerance gaps"} />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "High-Purity Fluid Handling Fittings and Connectors",
+        mainImg: "/products/product-6.png",
+        subTitle: "Guide Components",
+        desc: "Precision-engineered PTFE guide components that ensure accurate alignment and smooth operation in high-purity fluid systems.",
+        sliderImgs: [
+            { img: "/products/product-6.png", alt: "product" },
+            { img: "/products/product-6.png", alt: "product" },
+            { img: "/products/product-6.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Ensures precise alignment"} /> of moving parts
+            </>,
+            <>
+                <SpanTag tag={"Reduces wear and friction"} /> in dynamic systems
+            </>,
+            <>
+                <SpanTag tag={"Chemically inert"} /> for high-purity applications
+            </>,
+            <>
+                <SpanTag tag={"Performs"} /> under thermal and pressure extremes
+            </>,
+            <>
+                <SpanTag tag={"Customizable"} /> for various fluid handling setups
+            </>,
+        ],
+        applications: [
+            <>
+                Ideal for <SpanTag tag={"static and dynamic fluid systems"} />
+            </>,
+            <>
+                Performs in <SpanTag tag={"high and low temperature"} /> environments
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high-pressure and vacuum operations"} />
+            </>,
+            <>
+                Used in <SpanTag tag={"corrosive and ultra-clean processing lines"} />
+            </>,
+            <>
+                Effective in{" "}
+                <SpanTag tag={"systems requiring precise motion control"} />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "High-Purity Fluid Handling Fittings and Connectors",
+        mainImg: "/products/product-5.png",
+        subTitle: "Wipers",
+        desc: "PTFE wipers designed to maintain shaft cleanliness and protect sealing systems in high-purity dynamic fluid handling assemblies.",
+        sliderImgs: [
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Removes contaminants"} /> from reciprocating shafts and
+                rods
+            </>,
+            <>
+                <SpanTag tag={"Protects internal seals"} /> from external debris and
+                wear
+            </>,
+            <>
+                <SpanTag tag={"Maintains system purity"} /> in ultra-clean environments
+            </>,
+            <>
+                <SpanTag tag={"Resistant"} /> to chemicals and high temperatures
+            </>,
+            <>
+                <SpanTag tag={"Improves seal longevity"} /> and overall system
+                reliability
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"dynamic fluid handling systems"} /> with
+                reciprocating motion
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> operations
+            </>,
+            <>
+                Performs under <SpanTag tag={"high-pressure and vacuum conditions"} />
+            </>,
+            <>
+                Ideal for <SpanTag tag={"corrosive and high-purity environments"} />
+            </>,
+            <>
+                Integrated into{" "}
+                <SpanTag
+                    tag={"actuators, guide assemblies, and motion control setups"}
+                />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "High-Purity Fluid Handling Fittings and Connectors",
+        mainImg: "/products/product-4.png",
+        subTitle: "Duct Support",
+        desc: "Precision PTFE duct supports designed to stabilize and secure fluid transport lines in high-purity processing environments.",
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Provides structural support"} /> for ducting and tubing
+                systems
+            </>,
+            <>
+                <SpanTag tag={"Minimizes vibration and movement"} /> during operation
+            </>,
+            <>
+                <SpanTag tag={"Resistant"} /> to corrosion and chemical exposure
+            </>,
+            <>
+                <SpanTag tag={"Maintains alignment"} /> in high-purity fluid pathways
+            </>,
+            <>
+                <SpanTag tag={"Customizable"} /> for various duct sizes and layouts
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"static and dynamic fluid transport systems"} />
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> environments
+            </>,
+            <>
+                Performs under <SpanTag tag={"high-pressure and vacuum conditions"} />
+            </>,
+            <>
+                Ideal for{" "}
+                <SpanTag tag={"corrosive and ultra-clean processing setups"} />
+            </>,
+            <>
+                Effective in{" "}
+                <SpanTag
+                    tag={"semiconductor, pharmaceutical, and biotech facilities"}
+                />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Pharmaceutical Processing Gaskets and O-Rings",
+        mainImg: "/products/product-2.png",
+        subTitle: "Gaskets",
+        desc: "High-purity PTFE gaskets engineered for sterile, leak-proof sealing in pharmaceutical processing systems.",
+        sliderImgs: [
+            { img: "/products/product-2.png", alt: "product" },
+            { img: "/products/product-2.png", alt: "product" },
+            { img: "/products/product-2.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Chemically inert"} /> and non-reactive with
+                pharmaceutical media
+            </>,
+            <>
+                <SpanTag tag={"Compliant"} /> with FDA and USP Class VI standards
+            </>,
+            <>
+                <SpanTag tag={"Resistant"} /> to high temperatures and aggressive
+                cleaning agents
+            </>,
+            <>
+                <SpanTag tag={"Ensures leak-proof sealing"} /> in critical process
+                connections
+            </>,
+            <>
+                <SpanTag tag={"Low extractables"} /> for contamination-free performance
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"flange connections"} /> of reactors, tanks, and
+                piping
+            </>,
+            <>
+                Ideal for{" "}
+                <SpanTag
+                    tag={"clean-in-place (CIP) and steam-in-place (SIP) systems"}
+                />
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> pharmaceutical
+                processes
+            </>,
+            <>
+                Performs in <SpanTag tag={"static sealing"} /> of sterile fluid transfer
+                systems
+            </>,
+            <>
+                Applied in{" "}
+                <SpanTag tag={"biotech, injectable, and API manufacturing lines"} />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Pharmaceutical Processing Gaskets and O-Rings",
+        mainImg: "/products/product-3.png",
+        subTitle: "Seals",
+        desc: "High-purity PTFE seals engineered for leak-proof performance in sterile pharmaceutical processing systems.",
+        sliderImgs: [
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Chemically inert"} /> and compatible with pharmaceutical
+                media
+            </>,
+            <>
+                <SpanTag tag={"Compliant"} /> with FDA and USP Class VI standards
+            </>,
+            <>
+                <SpanTag tag={"Withstands"} /> high temperatures and aggressive cleaning
+                cycles
+            </>,
+            <>
+                <SpanTag tag={"Ensures reliable sealing"} /> in dynamic and static
+                applications
+            </>,
+            <>
+                <SpanTag tag={"Minimizes contamination risk"} /> with low extractables
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"valves, pumps, and mixers"} /> in sterile
+                processing lines
+            </>,
+            <>
+                Ideal for <SpanTag tag={"dynamic sealing"} /> in reciprocating and
+                rotating equipment
+            </>,
+            <>
+                Performs in <SpanTag tag={"CIP/SIP systems"} /> and high-temperature
+                sterilization
+            </>,
+            <>
+                Suitable for <SpanTag tag={"aseptic fluid transfer and containment"} />
+            </>,
+            <>
+                Applied in{" "}
+                <SpanTag tag={"biotech, injectable, and API manufacturing systems"} />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Pharmaceutical Processing Gaskets and O-Rings",
+        mainImg: "/products/product-4.png",
+        subTitle: "Washers",
+        desc: "High-purity PTFE washers designed to ensure secure, contamination-free connections in pharmaceutical processing systems.",
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Chemically inert"} /> and non-reactive with
+                pharmaceutical substances
+            </>,
+            <>
+                <SpanTag tag={"Compliant"} /> with FDA and USP Class VI standards
+            </>,
+            <>
+                <SpanTag tag={"Resistant"} /> to high temperatures and sterilization
+                processes
+            </>,
+            <>
+                <SpanTag tag={"Provides uniform load distribution"} /> in bolted
+                assemblies
+            </>,
+            <>
+                <SpanTag tag={"Minimizes contamination risk"} /> with low extractables
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"instrumentation fittings and filter housings"} />
+            </>,
+            <>
+                Ideal for <SpanTag tag={"static sealing"} /> in sterile fluid systems
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> environments
+            </>,
+            <>
+                Performs in <SpanTag tag={"CIP/SIP"} /> and high-pressure cleaning
+                cycles
+            </>,
+            <>
+                Applied in{" "}
+                <SpanTag
+                    tag={"biotech, injectable, and pharmaceutical production lines"}
+                />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Linings for Unequal Tee, Elbow, and Other Fittings",
+        mainImg: "/products/product-5.png",
+        subTitle: "Strips and Liners",
+        desc: "PTFE strips and liners engineered to protect and enhance the performance of complex fluid handling fittings in corrosive and high-purity environments.",
+        sliderImgs: [
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Provides chemical resistance"} /> to aggressive media
+            </>,
+            <>
+                <SpanTag tag={"Protects internal surfaces"} /> of elbows, tees, and
+                custom fittings
+            </>,
+            <>
+                <SpanTag tag={"Ensures smooth flow paths"} /> and reduces contamination
+                risk
+            </>,
+            <>
+                <SpanTag tag={"Thermally stable"} /> across wide temperature ranges
+            </>,
+            <>
+                <SpanTag tag={"Custom-fit designs"} /> for complex geometries and
+                transitions
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"lined piping systems"} /> for chemical and
+                pharmaceutical processing
+            </>,
+            <>
+                Ideal for{" "}
+                <SpanTag tag={"unequal tees, elbows, reducers, and custom fittings"} />
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> fluid
+                transport
+            </>,
+            <>
+                Performs in <SpanTag tag={"corrosive and ultra-clean environments"} />
+            </>,
+            <>
+                Applied in{" "}
+                <SpanTag
+                    tag={"semiconductor, biotech, and specialty chemical systems"}
+                />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Linings for Unequal Tee, Elbow, and Other Fittings",
+        mainImg: "/products/product-5.png",
+        subTitle: "Base Plates",
+        desc: "PTFE base plates designed to provide stable, corrosion-resistant support and sealing surfaces in complex fluid handling fittings.",
+        sliderImgs: [
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Offers structural reinforcement"} /> for lined fittings
+                and assemblies
+            </>,
+            <>
+                <SpanTag tag={"Resistant"} /> to aggressive chemicals and high
+                temperatures
+            </>,
+            <>
+                <SpanTag tag={"Ensures secure sealing"} /> at junctions and transitions
+            </>,
+            <>
+                <SpanTag tag={"Maintains dimensional stability"} /> under pressure and
+                thermal stress
+            </>,
+            <>
+                <SpanTag tag={"Customizable"} /> for varied fitting geometries and
+                system layouts
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"lined elbows, tees, and reducers"} /> for
+                chemical and pharmaceutical systems
+            </>,
+            <>
+                Ideal for <SpanTag tag={"flange interfaces and support points"} /> in
+                piping assemblies
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> fluid handling
+                environments
+            </>,
+            <>
+                Performs in{" "}
+                <SpanTag tag={"corrosive and ultra-clean processing setups"} />
+            </>,
+            <>
+                Applied in{" "}
+                <SpanTag
+                    tag={"semiconductor, specialty chemical, and biotech installations"}
+                />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Assembly and Structural Components",
+        mainImg: "/products/product-3.png",
+        subTitle: "Head Pieces",
+        desc: "PTFE head pieces engineered for reliable sealing and corrosion protection in structural and assembly components across high-purity systems.",
+        sliderImgs: [
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Excellent chemical resistance"} /> for aggressive media
+            </>,
+            <>
+                <SpanTag tag={"Provides secure sealing"} /> in flanged and assembled
+                units
+            </>,
+            <>
+                <SpanTag tag={"Thermally stable"} /> across wide temperature ranges
+            </>,
+            <>
+                <SpanTag tag={"Supports structural integrity"} /> in demanding
+                environments
+            </>,
+            <>
+                <SpanTag tag={"Customizable"} /> for varied assembly configurations
+            </>,
+        ],
+        applications: [
+            <>
+                Used in{" "}
+                <SpanTag
+                    tag={"pressure vessels, valve heads, and flanged assemblies"}
+                />
+            </>,
+            <>
+                Ideal for{" "}
+                <SpanTag tag={"chemical, pharmaceutical, and biotech systems"} />
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> operations
+            </>,
+            <>
+                Performs in <SpanTag tag={"corrosive and ultra-clean environments"} />
+            </>,
+            <>
+                Applied in{" "}
+                <SpanTag
+                    tag={
+                        "reactor heads, containment systems, and custom structural fittings"
+                    }
+                />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Assembly and Structural Components",
+        mainImg: "/products/product-4.png",
+        subTitle: "Inserts",
+        desc: "PTFE inserts designed to provide chemical shielding and dimensional stability within structural and fluid handling assemblies.",
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Protects internal surfaces"} /> from chemical exposure
+            </>,
+            <>
+                <SpanTag tag={"Improves wear resistance"} /> in high-contact areas
+            </>,
+            <>
+                <SpanTag tag={"Maintains dimensional accuracy"} /> under thermal stress
+            </>,
+            <>
+                <SpanTag tag={"Compatible"} /> with high-purity and corrosive
+                environments
+            </>,
+            <>
+                <SpanTag tag={"Custom-fit"} /> for complex geometries and cavities
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"valve bodies, housings, and custom fittings"} />
+            </>,
+            <>
+                Ideal for{" "}
+                <SpanTag tag={"chemical, pharmaceutical, and biotech systems"} />
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high and low temperature"} /> operations
+            </>,
+            <>
+                Performs in <SpanTag tag={"static and dynamic assemblies"} />
+            </>,
+            <>
+                Applied in{" "}
+                <SpanTag tag={"fluid contact zones and structural interfaces"} />
+            </>,
+        ],
+    },
+    {
+        title: "Precision PTFE Components",
+        mainTitle: "Assembly and Structural Components",
+        mainImg: "/products/product-5.png",
+        subTitle: "Electrical Components",
+        desc: "PTFE electrical components engineered for insulation, chemical resistance, and reliability in sensitive and corrosive environments.",
+        sliderImgs: [
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+        ],
+
+        benefits: [
+            <>
+                <SpanTag tag={"Excellent dielectric properties"} /> for electrical
+                insulation
+            </>,
+            <>
+                <SpanTag tag={"Resistant"} /> to chemicals and moisture
+            </>,
+            <>
+                <SpanTag tag={"Stable"} /> under high temperatures and voltages
+            </>,
+            <>
+                <SpanTag tag={"Low surface energy"} /> prevents contamination buildup
+            </>,
+            <>
+                <SpanTag tag={"Customizable"} /> for sensors, bushings, and spacers
+            </>,
+        ],
+        applications: [
+            <>
+                Used in <SpanTag tag={"instrumentation panels and sensor housings"} />
+            </>,
+            <>
+                Ideal for <SpanTag tag={"electrically sensitive fluid systems"} />
+            </>,
+            <>
+                Suitable for <SpanTag tag={"high-purity and corrosive environments"} />
+            </>,
+            <>
+                Performs in <SpanTag tag={"control systems and monitoring equipment"} />
+            </>,
+            <>
+                Applied in{" "}
+                <SpanTag
+                    tag={"semiconductor, pharmaceutical, and chemical facilities"}
+                />
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Custom Solutions and components",
+        mainImg: "/products/product-1.png",
+        subTitle: "Sealing Solutions",
+        desc: "Precision-engineered seals offering exceptional chemical resistance, thermal stability, and leak-proof performance. Designed for static and dynamic sealing in aggressive and sterile environments.",
+        sliderImgs: [
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+        ],
+
+        benefits: [
+            `Excellent chemical and thermal resistance`,
+            `Leak-proof performance in static and dynamic systems`,
+            `Low friction and wear for extended service life`,
+            `FDA and USP Class VI compliant for clean applications`,
+            `Customizable for complex geometries and pressure ratings`,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Pharmaceutical and biotech processing"} />: sterile
+                sealing in CIP/SIP systems
+            </>,
+            <>
+                <SpanTag tag={"Chemical manufacturing"} />: leak-proof seals for
+                corrosive media
+            </>,
+            <>
+                <SpanTag tag={"Oil & gas"} />: high-pressure seals in valves and pumps
+            </>,
+            <>
+                <SpanTag tag={"Food & beverage"} />: hygienic seals in fluid transfer
+                systems
+            </>,
+            <>
+                <SpanTag tag={"Semiconductor"} />: ultra-clean sealing in wafer
+                processing equipment
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Custom Solutions and components",
+        mainImg: "/products/product-5.png",
+        subTitle: "Motion Control Components",
+        desc: "Low-friction, wear-resistant parts that ensure smooth and precise movement in mechanical systems. Suitable for actuators, guide assemblies, and high-purity motion control setups.",
+        sliderImgs: [
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+        ],
+
+        benefits: [
+            `Low-friction surfaces for smooth, precise movement`,
+            `High wear resistance under continuous operation`,
+            `Dimensional stability across temperature variations`,
+            `Suitable for clean room and high-purity environments`,
+            `Custom-fit for actuators, guides, and sliding systems`,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Automation and robotics"} />: low-friction guides and
+                bushings
+            </>,
+            <>
+                <SpanTag tag={"Medical devices"} />: precision movement in diagnostic
+                equipment
+            </>,
+            <>
+                <SpanTag tag={"Aerospace"} />: wear-resistant components in control
+                systems
+            </>,
+            <>
+                <SpanTag tag={"Packaging machinery"} />: smooth motion in high-speed
+                operations
+            </>,
+            <>
+                <SpanTag tag={"Laboratory equipment"} />: sliding and rotating parts in
+                clean environments
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Custom Solutions and components",
+        mainImg: "/products/product-5.png",
+        subTitle: "Structural Components",
+        desc: "Robust and chemically inert structural elements that provide mechanical support and long-term durability. Used in assemblies exposed to corrosive media and extreme temperatures.",
+        sliderImgs: [
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+        ],
+        benefits: [
+            `High mechanical strength and rigidity`,
+            `Corrosion-resistant in aggressive chemical environments`,
+            `Lightweight alternative to metal components`,
+            `Thermally stable for demanding process conditions`,
+            `Custom-machined for complex assemblies and supports`,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Chemical reactors and vessels"} />: corrosion-resistant
+                supports
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical skids and frames"} />: non-metallic
+                structural parts
+            </>,
+            <>
+                <SpanTag tag={"Semiconductor fabrication"} />: cleanroom-compatible
+                assemblies
+            </>,
+            <>
+                <SpanTag tag={"Water treatment systems"} />: structural elements in
+                corrosive zones
+            </>,
+            <>
+                <SpanTag tag={"Food processing lines"} />: hygienic structural supports
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Custom Solutions and components",
+        mainImg: "/products/product-6.png",
+        subTitle: "Wear Protection",
+        desc: "Advanced polymer linings and inserts that reduce abrasion and extend equipment life. Ideal for high-contact surfaces in fluid, mechanical, and particulate handling systems.",
+        sliderImgs: [
+            { img: "/products/product-6.png", alt: "product" },
+            { img: "/products/product-6.png", alt: "product" },
+            { img: "/products/product-6.png", alt: "product" },
+        ],
+        benefits: [
+            `Reduces abrasion and surface damage in high-contact areas`,
+            `Extends equipment life and reduces maintenance downtime`,
+            `Chemically inert and non-stick surface properties`,
+            `Performs under high loads and sliding speeds`,
+            `Ideal for lining chutes, valves, and moving parts`,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Bulk material handling"} />: liners for chutes and
+                hoppers
+            </>,
+            <>
+                <SpanTag tag={"Mining and minerals"} />: abrasion-resistant surfaces
+            </>,
+            <>
+                <SpanTag tag={"Chemical processing"} />: protective layers in high-flow
+                zones
+            </>,
+            <>
+                <SpanTag tag={"Pharma and biotech"} />: wear pads in fluid systems
+            </>,
+            <>
+                <SpanTag tag={"Automotive"} />: anti-friction components in moving
+                assemblies
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Custom Solutions and components",
+        mainImg: "/products/product-4.png",
+        subTitle: "Fluid Handling",
+        desc: "Components designed to ensure clean, efficient, and contamination-free fluid transport. Includes liners, fittings, and supports for high-purity and corrosive fluid systems.",
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            `fluid transport`,
+            `Resistant Ensures clean, contamination-free to aggressive chemicals and solvents`,
+            `Maintains integrity under pressure and temperature extremes`,
+            `Smooth internal surfaces reduce flow resistance and buildup`,
+            `Customizable for fittings, liners, and duct supports`,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Pharmaceutical and biotech"} />: sterile fluid transfer
+                systems
+            </>,
+            <>
+                <SpanTag tag={"Chemical plants"} />: lined fittings and ducts for
+                corrosive fluids
+            </>,
+            <>
+                <SpanTag tag={"Semiconductor"} />: ultrapure water and chemical
+                distribution
+            </>,
+            <>
+                <SpanTag tag={"Food & beverage"} />: hygienic piping and connectors
+            </>,
+            <>
+                <SpanTag tag={"Water purification"} />: non-reactive fluid pathways
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Custom Solutions and components",
+        mainImg: "/products/product-4.png",
+        subTitle: "Assembly Components",
+        desc: "Precision-molded parts that enhance the integrity and performance of complex assemblies. Used in flanged joints, housings, and multi-part structural systems.",
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            `Enhances sealing and structural integrity in assemblies`,
+            `Chemically inert and thermally stable`,
+            `Precision-molded for tight tolerances and repeatability`,
+            `Compatible with high-purity and sterile systems`,
+            `Supports modular and complex system integration`,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Instrumentation and control panels"} />: precision-fit
+                parts
+            </>,
+            <>
+                <SpanTag tag={"Valve and pump assemblies"} />: sealing and support
+                elements
+            </>,
+            <>
+                <SpanTag tag={"Medical devices"} />: modular components for sterile
+                systems
+            </>,
+            <>
+                <SpanTag tag={"Lab equipment"} />: cleanroom-compatible assembly parts
+            </>,
+            <>
+                <SpanTag tag={"Process skids"} />: integration of multiple functional
+                units
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Custom Solutions and components",
+        mainImg: "/products/product-3.png",
+        subTitle: "Electrical Accessories",
+        desc: "High-performance insulating components with excellent dielectric properties and chemical resistance. Ideal for instrumentation, sensor housings, and control systems in harsh environments.",
+        sliderImgs: [
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+        ],
+        benefits: [
+            `Excellent dielectric strength and insulation properties`,
+            `Chemically resistant for harsh environments`,
+            `Stable under high voltage and temperature conditions`,
+            `Low moisture absorption for consistent performance`,
+            `Customizable for sensors, bushings, and terminal supports`,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Semiconductor equipment"} />: insulators and sensor
+                housings
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical automation"} />: dielectric components in
+                control systems
+            </>,
+            <>
+                <SpanTag tag={"Chemical plants"} />: corrosion-resistant electrical
+                interfaces
+            </>,
+            <>
+                <SpanTag tag={"Medical electronics"} />: non-reactive insulating parts
+            </>,
+            <>
+                <SpanTag tag={"Industrial instrumentation"} />: bushings and terminal
+                supports
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Custom Solutions and components",
+        mainImg: "/products/product-4.png",
+        subTitle: "Fastening Components",
+        desc: "Corrosion-resistant fasteners and spacers designed for secure, stable connections in chemically aggressive and sterile setups. Customizable for various mechanical and fluid systems.",
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            `Corrosion-resistant in chemically aggressive environments`,
+            `Lightweight and non-conductive alternatives to metal fasteners`,
+            `Maintains strength and shape under thermal stress`,
+            `Ideal for sterile and cleanroom applications`,
+            `Custom sizes and geometries for secure, reliable assembly`,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Cleanroom assemblies"} />: non-metallic fasteners for
+                sterile environments
+            </>,
+            <>
+                <SpanTag tag={"Chemical processing"} />: corrosion-resistant bolts and
+                spacers
+            </>,
+            <>
+                <SpanTag tag={"Pharma skids and frames"} />: hygienic fastening
+                solutions
+            </>,
+            <>
+                <SpanTag tag={"Electronics"} />: non-conductive fasteners in sensitive
+                systems
+            </>,
+            <>
+                <SpanTag tag={"Food processing"} />: easy-to-clean fastening components
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-1.png",
+        subTitle: "Butterfly Valve PTFE Seats and PTFE Encapsulated Discs",
+        desc2:
+            "ISO-static moulded PTFE seats and encapsulated discs offer superior sealing and corrosion resistance in butterfly valves, combining the chemical inertness of PTFE with the strength of metal cores. Thesecomponents ensure reliable performance in high-pressure, chemically aggressive environments across various industries.",
+        desc: (
+            <>
+                ISO-static moulded PTFE seats and encapsulated discs offer superior
+                sealing and corrosion resistance in butterfly valves, combining the
+                chemical inertness of PTFE with the strength of metal cores. These
+                components ensure reliable performance in high-pressure, chemically
+                aggressive environments across various industries.
+                <br />
+                <br />
+                <SpanTag tag={"PTFE Seats:"} /> ISO static moulding creates PTFE seats
+                with uniform density and no voids, ensuring a perfect seal. These seats
+                are capable of withstanding high pressures and aggressive chemicals.
+                <br />
+                <br />
+                <SpanTag tag={"Encapsulated Discs:"} /> PTFE encapsulated discs are
+                produced by coating a metal core with PTFE through ISO static moulding.
+                This provides the strength of metal combined with the chemical
+                resistance of PTFE, ensuring durability and reliability in corrosive
+                environments.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Uniform Density & No Voids"} />: Ensures perfect sealing
+                and eliminates weak points
+            </>,
+            <>
+                <SpanTag tag={"High Chemical Resistance"} />: Withstands aggressive
+                fluids without degradation
+            </>,
+            <>
+                <SpanTag tag={"Superior Mechanical Strength"} />: Combines PTFE’s
+                resilience with metal core durability
+            </>,
+            <>
+                <SpanTag tag={"Low Friction & Wear"} />: Enhances valve life and reduces
+                maintenance
+            </>,
+            <>
+                <SpanTag tag={"Thermal Stability"} />: Performs reliably under extreme
+                temperature conditions
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Chemical Processing Plants"} />: For handling corrosive
+                media
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Manufacturing"} />: Ensures sterile and
+                leak-proof flow control
+            </>,
+            <>
+                <SpanTag tag={"Water Treatment Systems"} />: Reliable sealing in fluid
+                regulation
+            </>,
+            <>
+                <SpanTag tag={"Food & Beverage Industry"} />: Hygienic flow control with
+                non-reactive surfaces
+            </>,
+            <>
+                <SpanTag tag={"Oil & Gas Pipelines"} />: Durable sealing under high
+                pressure and temperature
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-3.png",
+        subTitle: "PTFE Sleeved Plug Valves",
+        desc2:
+            "Precision-engineered for smooth, leak-free operation in corrosive and high-temperature environments, PTFE sleeved plug valves offer unmatched durability and chemical resistance. ISO-static moulded PTFE sleeves ensure uniformity, enhancing valve performance and longevity.",
+        desc: (
+            <>
+                Precision-engineered for smooth, leak-free operation in corrosive and
+                high-temperature environments, PTFE sleeved plug valves offer unmatched
+                durability and chemical resistance. ISO-static moulded PTFE sleeves
+                ensure uniformity, enhancing valve performance and longevity.
+                <br />
+                <br />
+                Plug valves control fluid flow by rotation of a cylindrical or tapered
+                plug. PTFE sleeved plug valves utilize a PTFE sleeve to provide a tight
+                seal and smooth operation.
+                <br />
+                <br />
+                PTFE Sleeves: The ISO static moulding process ensures that the PTFE
+                sleeve is uniformly dense and free of imperfections. This enhances the
+                valve’s performance by reducing friction and wear, and providing
+                superior chemical resistance, making it ideal for use in harsh
+                environments.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Superior Sealing"} />: PTFE sleeves provide tight,
+                leak-proof seals even under high pressure
+            </>,
+            <>
+                <SpanTag tag={"Chemical Resistance"} />: Ideal for aggressive media due
+                to PTFE’s inert nature
+            </>,
+            <>
+                <SpanTag tag={"Low Friction Operation"} />: Smooth surface finish
+                reduces wear and energy consumption
+            </>,
+            <>
+                <SpanTag tag={"Thermal Stability"} />: Maintains integrity across wide
+                temperature ranges
+            </>,
+            <>
+                <SpanTag tag={"Durability"} />: ISO-static moulding enhances mechanical
+                strength and service life
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Chemical Processing Plants"} />: Handles corrosive fluids
+                safely
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Manufacturing"} />: Ensures
+                contamination-free flow control
+            </>,
+            <>
+                <SpanTag tag={"Oil & Gas Industry"} />: Suitable for harsh and
+                high-pressure environments
+            </>,
+            <>
+                <SpanTag tag={"Water Treatment Facilities"} />: Reliable in handling
+                treated and untreated water
+            </>,
+            <>
+                <SpanTag tag={"Food & Beverage Industry"} />: Maintains hygiene and
+                resists chemical cleaning agents
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-6.png",
+        subTitle: "AODD Pump PTFE Parts",
+        desc2:
+            "Engineered for durability and chemical resilience, ISO-static moulded PTFE components in AODD pumps ensure consistent performance in the most demanding fluid handling environments. Precision-moulded diaphragms, valve balls, and seats offer superior sealing, flexibility, and longevity.",
+        desc: (
+            <>
+                Engineered for durability and chemical resilience, ISO-static moulded
+                PTFE components in AODD pumps ensure consistent performance in the most
+                demanding fluid handling environments. Precision-moulded diaphragms,
+                valve balls, and seats offer superior sealing, flexibility, and
+                longevity.
+                <br />
+                <br />
+                Air-operated double diaphragm (AODD) pumps are used in applications
+                requiring robust and reliable performance in aggressive chemical
+                environments.
+                <br />
+                <br />
+                PTFE Parts: Critical components like diaphragms, valve balls, and seats
+                are moulded using ISO static techniques to achieve consistent material
+                properties. This ensures excellent chemical compatibility, flexibility,
+                and longevity, critical for maintaining the pump’s performance and
+                reliability.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-6.png", alt: "product" },
+            { img: "/products/product-6.png", alt: "product" },
+            { img: "/products/product-6.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Exceptional Chemical Resistance"} />: Withstands
+                aggressive acids, solvents, and corrosive fluids
+            </>,
+            <>
+                <SpanTag tag={"High Mechanical Strength"} />: ISO-static moulding
+                enhances durability and load-bearing capacity
+            </>,
+            <>
+                <SpanTag tag={"Reliable Sealing"} />: Minimizes leakage with
+                precision-fit components
+            </>,
+            <>
+                <SpanTag tag={"Thermal Stability"} />: Performs consistently across wide
+                temperature ranges
+            </>,
+            <>
+                <SpanTag tag={"Low Friction & Wear"} />: Smooth surfaces reduce energy
+                loss and extend service life
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Chemical Transfer Systems"} />: Ideal for handling
+                corrosive and hazardous fluids
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Production"} />: Ensures purity and
+                reliability in sterile environments
+            </>,
+            <>
+                <SpanTag tag={"Food & Beverage Processing"} />: Maintains hygiene and
+                resists cleaning chemicals
+            </>,
+            <>
+                <SpanTag tag={"Mining & Slurry Handling"} />: Durable under abrasive and
+                high-solid conditions
+            </>,
+            <>
+                <SpanTag tag={"Wastewater Treatment"} />: Reliable in pumping sludge,
+                chemicals, and effluents
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-5.png",
+        subTitle: "Control Valve PTFE Parts",
+        desc2:
+            "ISO-static moulded PTFE components in control valves deliver precision, durability, and chemical resilience, ensuring optimal flow regulation even in extreme process conditions. Seats, diaphragms, and packing rings offer low friction, tight sealing, and long-term reliability.",
+        desc: (
+            <>
+                ISO-static moulded PTFE components in control valves deliver precision,
+                durability, and chemical resilience, ensuring optimal flow regulation
+                even in extreme process conditions. Seats, diaphragms, and packing rings
+                offer low friction, tight sealing, and long-term reliability.
+                <br />
+                <br />
+                Control valves regulate flow or pressure in process systems, often under
+                extreme conditions.
+                <br />
+                <br />
+                PTFE Parts: ISO static moulding is used to produce components such as
+                valve seats, diaphragms, and packing rings. These PTFE parts are crucial
+                for ensuring precise control and long-term reliability by providing low
+                friction, excellent sealing, and resistance to wear and chemical attack.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Superior Sealing Integrity"} />: Minimizes leakage and
+                ensures accurate flow control
+            </>,
+            <>
+                <SpanTag tag={"Chemical Resistance"} />: Withstands aggressive media
+                across a wide pH range
+            </>,
+            <>
+                <SpanTag tag={"Low Friction Operation"} />: Enhances valve
+                responsiveness and reduces wear
+            </>,
+            <>
+                <SpanTag tag={"Thermal Stability"} />: Maintains performance under
+                fluctuating temperatures
+            </>,
+            <>
+                <SpanTag tag={"Extended Service Life"} />: ISO-static moulding ensures
+                consistent quality and durability
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Petrochemical Plants"} />: Reliable in handling corrosive
+                and high-temperature fluids
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Manufacturing"} />: Ensures precision and
+                contamination-free control
+            </>,
+            <>
+                <SpanTag tag={"Power Generation"} />: Performs under high pressure and
+                thermal stress
+            </>,
+            <>
+                <SpanTag tag={"Water & Wastewater Treatment"} />: Effective in
+                regulating diverse fluid types
+            </>,
+            <>
+                <SpanTag tag={"Food & Beverage Industry"} />: Maintains hygiene and
+                resists chemical cleaning agents
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-3.png",
+        subTitle: "Diaphragm Valve PTFE Parts",
+        desc2:
+            "ISO-static moulded PTFE diaphragms deliver exceptional chemical resistance, flexibility, and sealing performance, making them ideal for demanding flow control in corrosive and slurry-based environments. Uniform thickness and material integrity ensure long-term reliability and consistent valve operation.",
+        desc: (
+            <>
+                ISO-static moulded PTFE diaphragms deliver exceptional chemical
+                resistance, flexibility, and sealing performance, making them ideal for
+                demanding flow control in corrosive and slurry-based environments.
+                Uniform thickness and material integrity ensure long-term reliability
+                and consistent valve operation.
+                <br />
+                <br />
+                Diaphragm valves are ideal for handling corrosive fluids and slurries,
+                commonly used in industries such as chemical processing and
+                pharmaceuticals.
+                <br />
+                <br />
+                PTFE Diaphragms: Moulded using the ISO static process, PTFE diaphragms
+                offer outstanding chemical resistance. This method ensures uniform
+                thickness and properties, which is essential for the reliable operation
+                of diaphragm valves.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+            { img: "/products/product-3.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Outstanding Chemical Resistance"} />: Handles aggressive
+                acids, alkalis, and solvents
+            </>,
+            <>
+                <SpanTag tag={"Superior Flexibility"} />: Maintains responsiveness and
+                sealing under dynamic conditions
+            </>,
+            <>
+                <SpanTag tag={"Uniform Thickness"} />: Ensures consistent performance
+                and reduces failure risk
+            </>,
+            <>
+                <SpanTag tag={"Low Friction & Wear"} />: Enhances valve life and
+                operational efficiency
+            </>,
+            <>
+                <SpanTag tag={"Thermal Stability"} />: Performs reliably across wide
+                temperature ranges
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Chemical Processing"} />: Ideal for corrosive fluid
+                handling and dosing systems
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Manufacturing"} />: Ensures sterile and
+                precise flow control
+            </>,
+            <>
+                <SpanTag tag={"Mining & Slurry Transport"} />: Withstands abrasive and
+                particulate-laden media
+            </>,
+            <>
+                <SpanTag tag={"Water Treatment Plants"} />: Effective in handling
+                aggressive and variable fluids
+            </>,
+            <>
+                <SpanTag tag={"Food & Beverage Industry"} />: Maintains hygiene and
+                resists cleaning agents
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-4.png",
+        subTitle: "PTFE Lined Tees and Joints",
+        desc2:
+            "ISO-static moulded PTFE linings in tees and joints provide a seamless, corrosion-resistant barrier, ensuring long-lasting protection and leak-free performance in aggressive chemical piping systems. These components enhance system integrity while reducing maintenance and downtime.",
+        desc: (
+            <>
+                ISO-static moulded PTFE linings in tees and joints provide a seamless,
+                corrosion-resistant barrier, ensuring long-lasting protection and
+                leak-free performance in aggressive chemical piping systems. These
+                components enhance system integrity while reducing maintenance and
+                downtime.
+                <br />
+                <br />
+                PTFE lined tees and joints are essential for piping systems transporting
+                aggressive chemicals, offering a protective barrier against corrosion.
+                <br />
+                <br />
+                Lined Components: ISO static moulding produces PTFE linings that are
+                dense and free from defects. These linings protect the underlying metal
+                from corrosion, extend the service life of the piping components, and
+                ensure leak-free operation in challenging environments.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Superior Corrosion Resistance"} />: Shields metal
+                surfaces from aggressive chemicals
+            </>,
+            <>
+                <SpanTag tag={"Uniform Lining Quality"} />: ISO-static moulding ensures
+                defect-free, dense linings
+            </>,
+            <>
+                <SpanTag tag={"Leak-Free Operation"} />: Excellent sealing performance
+                under pressure and temperature variations
+            </>,
+            <>
+                <SpanTag tag={"Extended Service Life"} />: Reduces wear and degradation
+                in harsh environments
+            </>,
+            <>
+                <SpanTag tag={"Low Maintenance"} />: Minimizes downtime and replacement
+                frequency
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Chemical Processing Plants"} />: For safe transport of
+                corrosive fluids
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Pipelines"} />: Ensures purity and
+                chemical compatibility
+            </>,
+            <>
+                <SpanTag tag={"Acid Handling Systems"} />: Withstands highly acidic and
+                oxidizing agents
+            </>,
+            <>
+                <SpanTag tag={"Water Treatment Facilities"} />: Resists scaling and
+                chemical attack
+            </>,
+            <>
+                <SpanTag tag={"Food & Beverage Industry"} />: Maintains hygiene and
+                resists cleaning agents
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-1.png",
+        subTitle: "PTFE Automotive Seals",
+        desc2:
+            "ISO-static moulded PTFE seals offer unmatched durability, chemical resistance, and low friction, making them ideal for high-performance automotive systems. Their precision and reliability ensure optimal sealing in demanding thermal and mechanical environments.",
+        desc: (
+            <>
+                ISO-static moulded PTFE seals offer unmatched durability, chemical
+                resistance, and low friction, making them ideal for high-performance
+                automotive systems. Their precision and reliability ensure optimal
+                sealing in demanding thermal and mechanical environments.
+                <br />
+                <br />
+                PTFE seals are widely used in automotive and various other industrial
+                applications due to their exceptional properties. When manufactured
+                using the ISO static moulding process, PTFE seals gain additional
+                benefits, making them even more suitable for demanding environments.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+            { img: "/products/product-1.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"High Wear Resistance"} />: Withstands continuous motion
+                and mechanical stress
+            </>,
+            <>
+                <SpanTag tag={"Low Friction"} />: Enhances fuel efficiency and reduces
+                component wear
+            </>,
+            <>
+                <SpanTag tag={"Thermal Stability"} />: Performs reliably across extreme
+                temperature ranges
+            </>,
+            <>
+                <SpanTag tag={"Chemical Compatibility"} />: Resists oils, fuels,
+                coolants, and additives
+            </>,
+            <>
+                <SpanTag tag={"Dimensional Accuracy"} />: Ensures tight sealing and
+                consistent performance
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Engine Systems"} />: Seals for oil, coolant, and fuel
+                circuits
+            </>,
+            <>
+                <SpanTag tag={"Transmission Assemblies"} />: Reliable sealing under high
+                pressure and temperature
+            </>,
+            <>
+                <SpanTag tag={"Brake Systems"} />: Maintains integrity in hydraulic and
+                pneumatic setups
+            </>,
+            <>
+                <SpanTag tag={"EV Battery Packs"} />: Chemical-resistant seals for
+                thermal management systems
+            </>,
+            <>
+                <SpanTag tag={"Fuel Injection Systems"} />: Precision sealing for
+                high-pressure fuel delivery
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-2.png",
+        subTitle: "PFA Lined Open Impellers",
+        desc2:
+            "ISO-static moulded PFA linings on open impellers deliver superior corrosion resistance and hydraulic efficiency, making them ideal for aggressive fluid handling in demanding industrial environments. These impellers combine chemical durability with optimized flow dynamics for long-term performance.",
+        desc: (
+            <>
+                ISO-static moulded PFA linings on open impellers deliver superior
+                corrosion resistance and hydraulic efficiency, making them ideal for
+                aggressive fluid handling in demanding industrial environments. These
+                impellers combine chemical durability with optimized flow dynamics for
+                long-term performance.
+                <br />
+                <br />
+                PFA lined open impellers are a type of centrifugal pump impeller
+                designed to provide exceptional corrosion resistance and efficiency in
+                harsh industrial environments.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-2.png", alt: "product" },
+            { img: "/products/product-2.png", alt: "product" },
+            { img: "/products/product-2.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Exceptional Corrosion Resistance"} />: Protects against
+                acids, alkalis, and solvents
+            </>,
+            <>
+                <SpanTag tag={"Smooth Flow Path"} />: Enhances pump efficiency and
+                reduces energy consumption
+            </>,
+            <>
+                <SpanTag tag={"Uniform Lining Quality"} />: ISO-static moulding ensures
+                defect-free, dense linings
+            </>,
+            <>
+                <SpanTag tag={"Extended Service Life"} />: Minimizes wear and
+                degradation in harsh conditions
+            </>,
+            <>
+                <SpanTag tag={"Low Maintenance"} />: Reduces downtime and operational
+                costs
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Chemical Processing Plants"} />: Ideal for corrosive
+                fluid transfer
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Manufacturing"} />: Ensures purity and
+                compatibility with reactive substances
+            </>,
+            <>
+                <SpanTag tag={"Wastewater Treatment"} />: Handles aggressive and
+                variable effluents
+            </>,
+            <>
+                <SpanTag tag={"Mining Operations"} />: Suitable for abrasive slurry and
+                chemical handling
+            </>,
+            <>
+                <SpanTag tag={"Food & Beverage Industry"} />: Maintains hygiene and
+                resists cleaning agents
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-5.png",
+        subTitle: "SS Lined Unequal Cross",
+        desc2:
+            "ISO-static moulded lining within stainless steel unequal crosses ensures uniform thickness, corrosion resistance, and durability—ideal for precision flow measurement in aggressive and high-purity fluid systems. Combining structural strength with chemical protection, these components support long-term, leak-free operation.",
+        desc: (
+            <>
+                ISO-static moulded lining within stainless steel unequal crosses ensures
+                uniform thickness, corrosion resistance, and durability—ideal for
+                precision flow measurement in aggressive and high-purity fluid systems.
+                Combining structural strength with chemical protection, these components
+                support long-term, leak-free operation.
+                <br />
+                <br />
+                A stainless steel electromagnetic flow meter body with an
+                isostatic moulded lining. The isostatic moulding process ensures uniform
+                thickness and high durability of the lining, making it ideal for
+                applications in corrosive and high-purity fluid handling.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+            { img: "/products/product-5.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Uniform Lining Thickness"} />: Ensures consistent
+                performance and minimizes weak points
+            </>,
+            <>
+                <SpanTag tag={"Superior Corrosion Resistance"} />: Protects against
+                aggressive chemicals and fluids
+            </>,
+            <>
+                <SpanTag tag={"High Mechanical Strength"} />: Stainless steel body
+                supports pressure and load
+            </>,
+            <>
+                <SpanTag tag={"Leak-Free Operation"} />: Precision lining enhances
+                sealing and flow accuracy
+            </>,
+            <>
+                <SpanTag tag={"Extended Service Life"} />: Reduced wear and degradation
+                in harsh environments
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Electromagnetic Flow Meters"} />: Accurate measurement in
+                corrosive media
+            </>,
+            <>
+                <SpanTag tag={"Chemical Processing Pipelines"} />: Reliable flow control
+                in reactive systems
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Fluid Handling"} />: Maintains purity and
+                process integrity
+            </>,
+            <>
+                <SpanTag tag={"Water Treatment Systems"} />: Handles variable and
+                aggressive effluents
+            </>,
+            <>
+                <SpanTag tag={"Food & Beverage Processing"} />: Ensures hygiene and
+                resists cleaning agents
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-4.png",
+        subTitle: "Isostatically Moulded PTFE Expansion Joint",
+        desc2:
+            "Designed to absorb thermal movement, vibration, and misalignment, isostatically moulded PTFE expansion joints offer unmatched chemical resistance and flexibility in demanding pipeline systems. The uniform lining ensures long-term reliability and performance in corrosive and high-purity fluid applications.",
+        desc: (
+            <>
+                Designed to absorb thermal movement, vibration, and misalignment,
+                isostatically moulded PTFE expansion joints offer unmatched chemical
+                resistance and flexibility in demanding pipeline systems. The uniform
+                lining ensures long-term reliability and performance in corrosive and
+                high-purity fluid applications.
+                <br />
+                <br />
+                An isostatically moulded PTFE expansion joint is a flexible piping
+                component designed to absorb thermal expansion, vibrations, and
+                mechanical misalignments in pipeline systems. The PTFE
+                (Polytetrafluoroethylene) lining provides exceptional chemical
+                resistance, making it ideal for handling corrosive and high-purity
+                fluids.
+            </>
+        ),
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Excellent Chemical Resistance"} />: Ideal for aggressive
+                and high-purity media
+            </>,
+            <>
+                <SpanTag tag={"Superior Flexibility"} />: Absorbs thermal expansion,
+                vibration, and misalignment
+            </>,
+            <>
+                <SpanTag tag={"Uniform Wall Thickness"} />: Ensures consistent
+                mechanical performance and durability
+            </>,
+            <>
+                <SpanTag tag={"High Temperature Tolerance"} />: Maintains integrity
+                under thermal cycling
+            </>,
+            <>
+                <SpanTag tag={"Leak-Free Operation"} />: Precision moulding enhances
+                sealing and system safety
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Chemical Processing Plants"} />: For corrosive and
+                reactive fluid handling
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Manufacturing"} />: Maintains purity in
+                sterile environments
+            </>,
+            <>
+                <SpanTag tag={"Semiconductor Industry"} />: Suitable for ultra-pure
+                chemical transport
+            </>,
+            <>
+                <SpanTag tag={"Power Generation"} />: Handles thermal stress in
+                high-temperature lines
+            </>,
+            <>
+                <SpanTag tag={"Water & Wastewater Treatment"} />: Absorbs movement in
+                chemically treated systems
+            </>,
+        ],
+    },
+    {
+        mainTitle: "Iso-static Moulded Components",
+        mainImg: "/products/product-4.png",
+        subTitle: "PFA Lined Control Valve Body",
+        desc2:
+            "Engineered for precision flow control, PFA-lined control valve bodies offer exceptional resistance to corrosive and high-purity fluids, ensuring long-term reliability in demanding process environments. The ISO-static moulded PFA lining provides uniform protection against aggressive media like acids, alkalis, and solvents.",
+        desc: "Engineered for precision flow control, PFA-lined control valve bodies offer exceptional resistance to corrosive and high-purity fluids, ensuring long-term reliability in demanding process environments. The ISO-static moulded PFA lining provides uniform protection against aggressive media like acids, alkalis, and solvents.<br/>A PFA-lined control valve body is designed to regulate the flow of highly corrosive, abrasive, or high-purity fluids in industrial processes. The PFA lining provides superior chemical resistance, ensuring durability and protection against aggressive media like acids, alkalis, and solvents.",
+        sliderImgs: [
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+            { img: "/products/product-4.png", alt: "product" },
+        ],
+        benefits: [
+            <>
+                <SpanTag tag={"Superior Chemical Resistance"} />: Withstands highly
+                corrosive and reactive fluids
+            </>,
+            <>
+                <SpanTag tag={"Uniform Lining Integrity"} />: ISO-static moulding
+                ensures defect-free, dense linings
+            </>,
+            <>
+                <SpanTag tag={"Extended Service Life"} />: Minimizes wear and
+                degradation over time
+            </>,
+            <>
+                <SpanTag tag={"Leak-Free Operation"} />: Enhances sealing and flow
+                accuracy
+            </>,
+            <>
+                <SpanTag tag={"Thermal and Mechanical Stability"} />: Performs reliably
+                under fluctuating conditions
+            </>,
+        ],
+        applications: [
+            <>
+                <SpanTag tag={"Chemical Manufacturing"} />: For precise control of
+                aggressive process fluids
+            </>,
+            <>
+                <SpanTag tag={"Pharmaceutical Production"} />: Maintains purity and
+                resists contamination
+            </>,
+            <>
+                <SpanTag tag={"Semiconductor Fabrication"} />: Suitable for ultra-pure
+                chemical flow systems
+            </>,
+            <>
+                <SpanTag tag={"Water Treatment Plants"} />: Handles corrosive and
+                variable effluents
+            </>,
+            <>
+                <SpanTag tag={"Food & Beverage Industry"} />: Ensures hygiene and
+                resists cleaning agents
+            </>,
         ],
     },
 ];

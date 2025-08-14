@@ -6,7 +6,7 @@ import React from 'react'
 const Page = () => {
     return (
         <main>
-            <AllPageHero text={"Fluorokraft : Zero-defect precision, predictable delivery, measurable results"} />
+            <AllPageHero text={"Zero-defect precision, predictable delivery, measurable results"} />
             <WhyFluorokraft />
             {/* <GetQuote /> */}
             <Contact />
