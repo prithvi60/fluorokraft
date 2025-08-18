@@ -50,7 +50,7 @@ const ProductsSection = () => {
             <div className="w-full sm:w-2/5 lg:w-1/5">
                 <div className="space-y-3">
                     <h2 className="font-semi tracking-wider text-lg md:text-xl bg-success px-4 py-2 rounded-md w-full text-white">
-                        Filters
+                        Product Categories
                     </h2>
                     <NestedDropdown setIsActiveIndex={setIsActiveIndex} />
                 </div>

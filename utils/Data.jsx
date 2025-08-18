@@ -66,37 +66,37 @@ export const socialLinks = [
 
 export const variousCategory = [
     {
-        img: "/slider/product-hero.png",
+        img: "https://cdn.webibee.com/fluorokraft/slider/product-hero.png",
         categoryName: "Product",
         href: "/products",
         desc: "Fluorokraft is among the leading manufacturers of custom polymer precision machined components like Seals, Valve seats, O-Rings, Packings, Washers using PTFE and other specialized plastics.",
     },
     {
-        img: "/slider/quality-hero.png",
+        img: "https://cdn.webibee.com/fluorokraft/slider/quality-hero.png",
         categoryName: "Quality",
         href: "/innovation",
         desc: "Fluorokraft, an ISO 9001:2015 certified manufacturer, delivers near-zero defect precision PTFE components—trusted globally with Green Channel Vendor status for consistent quality across millions of parts.",
     },
     {
-        img: "/slider/reliability-hero.png",
+        img: "https://cdn.webibee.com/fluorokraft/slider/reliability-hero.png",
         categoryName: "Reliability",
         href: "/why-fluoroKraft",
         desc: "98% on-time delivery, 100% customer retention, and decades-long partnerships—Fluorokraft delivers predictable performance and supply chain confidence, every time.",
     },
     {
-        img: "/slider/material.jpg",
+        img: "https://cdn.webibee.com/fluorokraft/slider/material.jpg",
         categoryName: "Materials",
         href: "/materials",
         desc: "Fluorokraft specializes in precision machining of advanced materials like PTFE, PEEK, PCTFE, Delrin, and Nylon 6,6—engineered for durability, chemical resistance, and extreme performance.",
     },
     {
-        img: "/slider/innovation-hero.jpg",
+        img: "https://cdn.webibee.com/fluorokraft/slider/innovation-hero.jpg",
         categoryName: "Innovation",
         href: "#innovation",
         desc: "Fluorokraft drives breakthrough results through co-engineered polymer solutions along with clients focusing on boosting equipment lifecycles and cutting downtime costs with custom material formulations and decades of expertise.",
     },
     {
-        img: "/slider/infrastructure-hero.jpg",
+        img: "https://cdn.webibee.com/fluorokraft/slider/infrastructure-hero.jpg",
         categoryName: "World-Class Infrastructure",
         href: "/infrastructure",
         desc: "Fluorokraft’s advanced CNC and molding capabilities, ISO-certified quality systems, and agile production planning deliver consistent, high-tolerance polymer components—trusted by global OEMs for performance at scale.",
@@ -538,10 +538,19 @@ export const infrastructureCategoryDetail = [
         title: "Moulding Shop",
         para: (
             <>
-                Fluorokraft operates a fully equipped moulding facility capable of processing both PTFE and PEEK materials with precision. The shop features hydraulic presses ranging from small to high tonnage, enabling the production of components across a wide range of sizes and specifications. PTFE is shaped using a cold forming technique prior to sintering, ensuring dimensional accuracy and material integrity.
+                Fluorokraft operates a fully equipped moulding facility capable of
+                processing both PTFE and PEEK materials with precision. The shop
+                features hydraulic presses ranging from small to high tonnage, enabling
+                the production of components across a wide range of sizes and
+                specifications. PTFE is shaped using a cold forming technique prior to
+                sintering, ensuring dimensional accuracy and material integrity.
                 <br />
                 <br />
-                For PEEK, a combined moulding and thermal processing approach is employed to achieve optimal mechanical properties. Additionally, Fluorokraft offers in-house blending of customized PTFE and PEEK compounds, allowing tailored solutions for specific performance requirements across industries.
+                For PEEK, a combined moulding and thermal processing approach is
+                employed to achieve optimal mechanical properties. Additionally,
+                Fluorokraft offers in-house blending of customized PTFE and PEEK
+                compounds, allowing tailored solutions for specific performance
+                requirements across industries.
             </>
         ),
         points: [
@@ -558,11 +567,18 @@ export const infrastructureCategoryDetail = [
         title: "Precision machining facilities",
         para: (
             <>
-                Fluorokraft’s machining division is equipped with advanced CNC systems, operated by skilled programmers specializing in high-accuracy component production. The facility includes a range of turning, milling, and multi-axis machining centers capable of handling complex geometries and tight tolerances.
+                Fluorokraft’s machining division is equipped with advanced CNC systems,
+                operated by skilled programmers specializing in high-accuracy component
+                production. The facility includes a range of turning, milling, and
+                multi-axis machining centers capable of handling complex geometries and
+                tight tolerances.
                 <br />
                 <br />
-                In addition to CNC capabilities, the shop features conventional machining setups for specialized tasks, along with custom tooling and fixture design to support unique part requirements. The team ensures consistent performance through precise tool calibration and wear monitoring, enabling reliable output across varied production volumes.
-
+                In addition to CNC capabilities, the shop features conventional
+                machining setups for specialized tasks, along with custom tooling and
+                fixture design to support unique part requirements. The team ensures
+                consistent performance through precise tool calibration and wear
+                monitoring, enabling reliable output across varied production volumes.
             </>
         ),
         points: [
@@ -576,32 +592,20 @@ export const infrastructureCategoryDetail = [
         inHouseLists: [""],
     },
     {
-        title: "ePTFE Unit",
-        para: (
-            <>
-                Fluorokraft’s isostatic moulding infrastructure is designed for precision and consistency in PTFE and PFA components. Advanced moulding systems ensure uniform pressure, producing parts with consistent density and minimal internal stress—crucial for high-performance applications involving corrosive fluids, heat, and mechanical loads.
-                <br />
-                <br />
-                The facility includes specialized cold moulding equipment for PTFE and integrated heating for PEEK, enabling tailored processing. In-house compound blending allows precise control over material properties. With skilled technicians and strict quality protocols, Fluorokraft delivers complex, high-tolerance components for industries like chemical processing, oil & gas, pharmaceuticals, and aerospace.
-            </>
-        ),
-        points: [
-            "Custom-built, CNC-controlled ePTFE stretching machine to meet global quality norms",
-            "Enhanced capability to manufacture expanded PTFE tapes in thicknesses of 0.5mm to 15mm",
-            "In-house extrusion and tooling expertise to allow for unique profiles",
-        ],
-        img: "/infra/ePTFE.png",
-        inHouseLists: [""],
-    },
-    {
         title: "Inspection Facility",
         para: (
             <>
-                Fluorokraft maintains stringent quality control through continuous in-process monitoring, ensuring every PTFE component meets tight dimensional tolerances—down to 0.05 mm. Skilled technicians oversee each stage of production to maintain consistency and precision.
+                Fluorokraft maintains stringent quality control through continuous
+                in-process monitoring, ensuring every PTFE component meets tight
+                dimensional tolerances—down to 0.05 mm. Skilled technicians oversee each
+                stage of production to maintain consistency and precision.
                 <br />
                 <br />
-                Final inspections are carried out using advanced video-based measurement systems that accurately validate intricate geometries and surface profiles. Every production batch is fully traceable, supported by detailed dimensional reports and certified material test documentation to guarantee compliance and performance.
-
+                Final inspections are carried out using advanced video-based measurement
+                systems that accurately validate intricate geometries and surface
+                profiles. Every production batch is fully traceable, supported by
+                detailed dimensional reports and certified material test documentation
+                to guarantee compliance and performance.
             </>
         ),
         points: [
@@ -621,6 +625,33 @@ export const infrastructureCategoryDetail = [
             "Coefficients of friction",
             "Compressive strength",
         ],
+    },
+    {
+        title: "ePTFE Unit",
+        para: (
+            <>
+                Fluorokraft’s isostatic moulding infrastructure is designed for
+                precision and consistency in PTFE and PFA components. Advanced moulding
+                systems ensure uniform pressure, producing parts with consistent density
+                and minimal internal stress—crucial for high-performance applications
+                involving corrosive fluids, heat, and mechanical loads.
+                <br />
+                <br />
+                The facility includes specialized cold moulding equipment for PTFE and
+                integrated heating for PEEK, enabling tailored processing. In-house
+                compound blending allows precise control over material properties. With
+                skilled technicians and strict quality protocols, Fluorokraft delivers
+                complex, high-tolerance components for industries like chemical
+                processing, oil & gas, pharmaceuticals, and aerospace.
+            </>
+        ),
+        points: [
+            "Custom-built, CNC-controlled ePTFE stretching machine to meet global quality norms",
+            "Enhanced capability to manufacture expanded PTFE tapes in thicknesses of 0.5mm to 15mm",
+            "In-house extrusion and tooling expertise to allow for unique profiles",
+        ],
+        img: "/infra/ePTFE.png",
+        inHouseLists: [""],
     },
 ];
 
@@ -2450,8 +2481,7 @@ export const productCategorySpecificDetails = [
                 Combining structural strength with chemical protection, these components
                 support long-term, leak-free operation.
                 <br />
-                <br />
-                A stainless steel electromagnetic flow meter body with an
+                <br />A stainless steel electromagnetic flow meter body with an
                 isostatic moulded lining. The isostatic moulding process ensures uniform
                 thickness and high durability of the lining, making it ideal for
                 applications in corrosive and high-purity fluid handling.
@@ -2636,5 +2666,403 @@ export const productCategorySpecificDetails = [
                 resists cleaning agents
             </>,
         ],
+    },
+];
+
+export const industriesData = [
+    {
+        title: "Pumps and Valves",
+        img: "/industries/PV.jpg",
+        href: "pumps-and-valves",
+        para: (
+            <>
+                Fluorokraft plays a pivotal role in the pumps and valves industry by
+                supplying high-performance PTFE and PFA components that ensure
+                durability, chemical resistance, and precision sealing. Their products
+                are used extensively in valve manufacturing for applications across oil
+                & gas, chemicals, mining, paper & pulp, and fertilizers. Fluorokraft’s
+                valve components—such as seat rings, gaskets, packings, and seals—are
+                engineered to withstand extreme pressures and corrosive environments,
+                making them ideal for both OEM and aftermarket segments. Their
+                two-decade-long track record with global valve manufacturers highlights
+                their reliability and quality.
+                <br />
+                <br />
+                In the pump segment, Fluorokraft has contributed significantly to the
+                evolution of submersible pump technology. By replacing traditional metal
+                parts with engineered PTFE components, they have helped OEMs improve
+                corrosion resistance, reduce maintenance, and enhance product life.
+                Their work in Coimbatore, a hub for pump manufacturing, includes
+                R&D-driven product development that enabled clients to pioneer
+                teflon-based pump designs now widely used in the Middle East and Africa.
+                Fluorokraft’s engineering support and material innovation have
+                positioned them as a trusted supplier in this space.
+                <br />
+                <br />
+                <SpanTag tag="Fluorokraft has addressed this industry category" /> by
+                building long-term relationships with leading OEMs in both valve and
+                pump manufacturing. Their customers include American and European
+                multinationals with facilities across India, Singapore, Austria, and
+                Saudi Arabia. Fluorokraft is often the sole supplier due to its
+                consistent quality and on-time delivery. In Coimbatore, India, they have
+                supported pump manufacturers through engineering innovation and product
+                customization.
+            </>
+        ),
+        category: {
+            note: "This industry category covers a wide range of sub-industries including:",
+            lists: [
+                <>
+                    <SpanTag tag="Valve Manufacturing" /> for oil & gas, chemical
+                    processing, mining, paper & pulp, and fertilizer applications
+                </>,
+                <>
+                    <SpanTag tag="Submersible Pump OEMs" /> for water handling and fluid
+                    transfer
+                </>,
+                <>
+                    <SpanTag tag="Industrial Pump Systems" /> used in corrosive and
+                    high-pressure environments
+                </>,
+                <>
+                    <SpanTag tag="Aftermarket Valve and Pump Components" /> for
+                    maintenance and upgrades
+                </>,
+                <>
+                    <SpanTag tag="Casting and Component Supply Chains" /> centered in
+                    manufacturing hubs like Coimbatore
+                </>,
+            ],
+        },
+        RelevantProducts: {
+            note: "Relevant Products by Fluorokraft for Pumps and Valves:",
+            lists: [
+                "PTFE Valve Seats",
+                "Gaskets, Packings, and Seals",
+                "PTFE Sleeved Plug Valves",
+                "PTFE Encapsulated Discs",
+                "PTFE Lined Tees and Joints",
+                "Submersible Pump PTFE Components",
+                "Isostatically Moulded PTFE Expansion Joints",
+                "PFA-Lined Control Valve Bodies",
+                "Anti-Extrusion Rings",
+            ],
+        },
+    },
+    {
+        title: "Oil and Gas",
+        img: "/industries/OG.jpg",
+        href: "oil-and-gas",
+        para: (
+            <>
+                Fluorokraft plays a critical role in the oil and gas industry by
+                supplying high-performance PTFE and PFA components that ensure
+                reliability, chemical resistance, and sealing integrity in extreme
+                operating conditions. The industry demands materials that can withstand
+                high pressures, corrosive fluids, and fluctuating temperatures,
+                especially in upstream and downstream valve systems. Fluorokraft’s valve
+                components—such as seat rings, gaskets, packings, and seals—are
+                engineered to meet these challenges, ensuring leak-proof operation and
+                extended service life in drilling, refining, and transport systems.
+                <br />
+                <br />
+                Their products are also used in control valves, plug valves, and
+                expansion joints that regulate fluid flow in pipelines and processing
+                units. With ISO-static moulding technology, Fluorokraft ensures uniform
+                density and defect-free linings, which are essential for maintaining
+                performance in aggressive environments. These components are trusted by
+                OEMs and multinational companies operating in oil-rich regions like
+                Texas, Saudi Arabia, and Australia, where reliability and quality are
+                paramount.
+                <br />
+                <br />
+                <SpanTag tag="Fluorokraft has addressed this industry category" /> by
+                establishing long-term relationships with leading valve manufacturers
+                and oilfield equipment OEMs. Fluorokraft has been a supplier to an
+                American company headquartered in Houston for over 20 years, serving oil
+                companies in Texas. They are also the sole supplier to European
+                multinationals with facilities in Singapore, Austria, and Saudi Arabia.
+                Their reputation for on-time delivery and zero-defect quality has made
+                them a preferred vendor in this space
+            </>
+        ),
+        category: {
+            note: "This industry category covers a range of sub-industries including:",
+            lists: [
+                <>Upstream Exploration and Drilling</>,
+                <>Midstream Pipeline Transport and Storage</>,
+                <>Downstream Refining and Petrochemical Processing</>,
+                <>Valve and Flow Control OEMs</>,
+                <>Oilfield Equipment Manufacturers</>,
+            ],
+        },
+        RelevantProducts: {
+            note: "Relevant Products by Fluorokraft for Oil and Gas:",
+            lists: [
+                "PTFE Valve Seats",
+                "Gaskets, Packings, and Seals",
+                "PTFE Sleeved Plug Valves",
+                "PTFE Encapsulated Discs",
+                "Control Valve PTFE Parts",
+                "Isostatically Moulded PTFE Expansion Joints",
+                "PFA-Lined Control Valve Bodies",
+                "Anti-Extrusion Rings",
+            ],
+        },
+    },
+    {
+        title: "Chemical and Process Industries",
+        img: "/industries/CPI.jpg",
+        href: "chemical-and-proces-industries",
+        para: (
+            <>
+                This category includes chemical manufacturing plants, petrochemical
+                refineries, oil & gas operations, acid handling systems, and mining and
+                mineral processing facilities. These industries often operate under
+                extreme conditions involving corrosive fluids, high pressures, and
+                elevated temperatures, requiring materials and components that offer
+                exceptional chemical resistance and mechanical durability.
+                <br />
+                <br />
+                This category includes chemical manufacturing plants, petrochemical
+                refineries, oil & gas operations, acid handling systems, and mining and
+                mineral processing facilities. These industries often operate under
+                extreme conditions involving corrosive fluids, high pressures, and
+                elevated temperatures, requiring materials and components that offer
+                exceptional chemical resistance and mechanical durability.
+                <br />
+                <br />
+                Fluorokraft serves the chemical and process industries, including oil &
+                gas, chemicals, mining, fertilizers, iron & steel machinery, and paper &
+                pulp.
+                <br />
+                <br />
+                Fluorokraft plays a vital role in the chemical and process industries by
+                offering components that withstand aggressive chemicals, high pressures,
+                and extreme temperatures. These industries demand materials that resist
+                corrosion and maintain integrity under continuous exposure to acids,
+                alkalis, and solvents. Fluorokraft’s isostatically moulded PTFE and PFA
+                products provide uniform density, superior sealing, and long service
+                life, making them ideal for fluid control, transfer, and containment in
+                chemical reactors, pipelines, and processing equipment.
+                <br />
+                <br />
+                Whether it's butterfly valve seats, plug valves, or expansion joints,
+                Fluorokraft ensures leak-free operation and minimal maintenance in
+                corrosive environments. Their products are engineered to reduce
+                downtime, improve safety, and enhance system reliability in chemical
+                manufacturing, oil & gas, and mining operations.
+            </>
+        ),
+        category: {
+            note: "",
+            lists: [],
+        },
+        RelevantProducts: {
+            note: "Relevant Products:",
+            lists: [
+                "PTFE Sleeved Plug Valves",
+                "PTFE Lined Tees and Joints",
+                "PFA Lined Open Impellers",
+                "Isostatically Moulded PTFE Expansion Joints",
+                "PFA-Lined Control Valve Bodies",
+                "Anti-Extrusion Rings",
+                "Seals and Gaskets",
+                "SS Lined Unequal Cross",
+            ],
+        },
+    },
+    {
+        title: "Water, Wastewater & Environmental Systems",
+        img: "/industries/WES.jpg",
+        href: "water-and-wastewater-environment-systems",
+        para: (
+            <>
+                Industries in this group are responsible for the treatment,
+                purification, and management of water and wastewater. This includes
+                municipal water treatment plants, industrial effluent systems, and
+                environmental remediation facilities. These operations require
+                components that can handle chemically treated fluids, sludge, and
+                aggressive cleaning agents while maintaining leak-free performance and
+                long-term reliability under fluctuating pressure and temperature
+                conditions.
+                <br />
+                <br />
+                Fluorokraft has made significant contributions to the water treatment
+                industry by supplying complex components for UV treatment systems and
+                other purification technologies. Their products are used by OEMs in
+                desalination, wastewater treatment, and clean water distribution. With
+                clients including global leaders in water treatment, Fluorokraft’s
+                ability to engineer tough-to-make parts with high quality and timely
+                delivery has positioned them as a reliable supplier in this growing
+                sector.
+                <br />
+                <br />
+                Fluorokraft serves the water and environmental sector through its
+                components used in water treatment plants, wastewater management, and
+                desalination systems.
+                <br />
+                <br />
+                Fluorokraft’s products are essential in water treatment and
+                environmental systems where chemical resistance and sealing reliability
+                are critical. Their PTFE-lined components and expansion joints handle
+                chemically treated fluids, sludge, and effluents with minimal wear and
+                leakage. These systems often operate under fluctuating pressures and
+                temperatures, and Fluorokraft’s isostatically moulded parts ensure
+                consistent performance.
+                <br />
+                <br />
+                Whether in municipal water treatment plants or industrial wastewater
+                systems, Fluorokraft’s components help maintain system integrity, reduce
+                maintenance, and ensure safe fluid transport.
+            </>
+        ),
+        category: {
+            note: "",
+            lists: [],
+        },
+        RelevantProducts: {
+            note: "Relevant Products:",
+            lists: [
+                "PTFE Lined Tees and Joints",
+                "Isostatically Moulded PTFE Expansion Joints",
+                "SS Lined Unequal Cross",
+                "PFA-Lined Control Valve Bodies",
+                "Seals and Gaskets",
+                "Guide Components",
+                "Duct Supports",
+            ],
+        },
+    },
+    {
+        title: "Energy, Power, Transportation and Others",
+        img: "/industries/EPT.jpg",
+        href: "energy-power-transportation-and-others",
+        para: (
+            <>
+                Industries in this category include power generation, automotive
+                manufacturing, aerospace systems, and energy infrastructure. These
+                sectors require components that can withstand high mechanical loads,
+                thermal stress, and exposure to fuels, coolants, and lubricants.
+                Applications range from engine systems and EV battery packs to control
+                valves in power plants and structural supports in aerospace assemblies,
+                where durability, precision, and efficiency are paramount.
+                <br />
+                <br />
+                Fluorokraft has addressed the energy and transportation sectors by
+                supplying high-precision components for hydraulic cylinders, submersible
+                pumps, and railway systems. Their teflon seals and rings are used in
+                construction equipment, metro suspensions, and automotive assemblies.
+                With a proven track record in high-temperature and high-pressure
+                applications, Fluorokraft’s products offer durability and performance in
+                demanding environments. Their long-term relationships with OEMs
+                highlight their credibility in this space.
+                <br />
+                <br />
+                Fluorokraft serves the energy and transportation sector through its
+                precision components used in hydraulic cylinder manufacturing,
+                submersible pump OEMs, railway suspension systems, automotive
+                components, and aerospace & defence.
+                <br />
+                <br />
+                Fluorokraft serves the energy and transportation sectors with
+                high-performance PTFE seals and structural components that withstand
+                thermal stress, mechanical load, and chemical exposure. Their products
+                are used in power generation systems, automotive assemblies, and
+                aerospace control units. The isostatic moulding process ensures
+                dimensional accuracy and durability, critical for fuel systems, brake
+                assemblies, and EV battery packs.
+                <br />
+                <br />
+                Fluorokraft serves the energy and transportation sectors with
+                high-performance PTFE seals and structural components that withstand
+                thermal stress, mechanical load, and chemical exposure. Their products
+                are used in power generation systems, automotive assemblies, and
+                aerospace control units. The isostatic moulding process ensures
+                dimensional accuracy and durability, critical for fuel systems, brake
+                assemblies, and EV battery packs.
+            </>
+        ),
+        category: {
+            note: "",
+            lists: [],
+        },
+        RelevantProducts: {
+            note: "Relevant Products:",
+            lists: [
+                "PTFE Automotive Seals",
+                "Control Valve PTFE Parts",
+                "Structural Components",
+                "Wear Protection Inserts",
+                "Sealing Solutions",
+                "SS Lined Unequal Cross",
+                "Base Plates and Head Pieces",
+            ],
+        },
+    },
+    {
+        title: "Aerospace",
+        img: "/industries/aero.jpg",
+        href: "aerospace",
+        para: (
+            <>
+                Fluorokraft supports the aerospace industry with high-precision PTFE
+                components that meet the demanding requirements of flight-critical
+                systems. Aerospace applications require materials that can withstand
+                extreme temperatures, mechanical stress, and tight dimensional
+                tolerances. Fluorokraft’s teflon rings, seals, and bespoke components
+                are engineered for use in air conditioning vents, control systems, and
+                structural assemblies where reliability and precision are paramount.
+                Their products offer low friction, high thermal stability, and chemical
+                inertness—ideal for aerospace-grade performance.
+                <br />
+                <br />
+                These components are particularly suited for Tier 3 suppliers and end
+                users who the top aerospace players in the world. Fluorokraft’s ability
+                to deliver ultra-precise parts with minimal rejection rates makes them a
+                valuable partner in aerospace manufacturing. Their expertise in shaping
+                advanced materials and their proven track record in high-spec
+                applications position them as a trusted supplier for both domestic and
+                export-oriented aerospace programs.
+                <br />
+                <br />
+                <SpanTag tag="Fluorokraft has addressed this industry category" /> by
+                maintaining long-term relationships with aerospace component
+                manufacturers, including a customer with whom they share a 20-year
+                history and entrepreneurial collaboration. Fluorokraft is recognized for
+                its ability to meet high precision standards, with parts priced at a
+                premium due to their quality. Their strategy includes targeting Tier 3
+                suppliers in Indian hubs like Bangalore and Pune.
+            </>
+        ),
+        category: {
+            note: "This industry category includes several sub-industries such as:",
+            lists: [
+                <>
+                    <SpanTag tag="Commercial Aerospaces" /> (aircraft systems, cabin
+                    components)
+                </>,
+                <>
+                    <SpanTag tag="Defense Aerospace" /> (cabin components in military
+                    aircraft, avionics)
+                </>,
+                <>
+                    <SpanTag tag="Tier 2 and Tier 3 Aerospace Suppliers" />
+                </>,
+                <>
+                    <SpanTag tag="Aerospace R&D and Prototyping" />
+                </>,
+            ],
+        },
+        RelevantProducts: {
+            note: "Relevant Products by Fluorokraft for Aerospace:",
+            lists: [
+                "High-Precision PTFE Rings",
+                "Custom-Machined Teflon Components",
+                "Motion Control Components",
+                "Structural Components",
+                "Sealing Solutions for Aerospace Systems",
+            ],
+        },
     },
 ];

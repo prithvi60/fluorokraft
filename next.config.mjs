@@ -12,7 +12,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "mywebibeeworld.b-cdn.net",
+        hostname: "cdn.webibee.com",
       },
     ],
   },

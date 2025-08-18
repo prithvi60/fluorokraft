@@ -33,8 +33,8 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Flourokraft",
-  description: "Flourokraft",
+  title: "Fluorokraft",
+  description: "Flouorokraft",
   icons: {
     icon: "/fluorokraft-min-logo.svg"
   }

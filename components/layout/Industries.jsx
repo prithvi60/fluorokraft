@@ -1,23 +1,36 @@
 import Image from "next/image";
 import React from "react";
-import { industrialMaterials } from "@/utils/Data";
-import Dropdown from "../UI/Dropdown";
+import { industriesData } from "@/utils/Data";
+import Link from "next/link";
 
 const Industries = () => {
     return (
-        <section className="w-full h-full padding flex justify-center items-center flex-wrap gap-20 relative max-w-[1240px] mx-auto mb-8 md:mb-10">
-            {industrialMaterials.map((item, idx) => (
-                <div className="block space-y-2 min-w-full mx-auto md:min-w-52 relative" key={idx}>
+        <section className="w-full h-full padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 relative max-w-[1224px] mx-auto mb-8 md:mb-10">
+            {industriesData.map((item, idx) => (
+                <div className="block space-y-2 relative" key={idx}>
                     <Image
                         src={item.img}
-                        alt={item.lists}
-                        title={item.lists}
+                        alt={item.title}
+                        title={item.title}
                         width={100}
                         height={100}
-                        className="object-cover object-top h-48 w-full md:h-32 lg:size-44 xl:size-56 flex-shrink-0 clip-pathHero"
+                        className="object-cover w-full h-64 xl:h-72 flex-shrink-0 clip-pathHero"
                         loading="lazy"
                     />
-                    <Dropdown item={item} key={idx} index={idx} />
+                    <div className="space-y-2 pt-3">
+                        <h2 className="text-start text-xl md:text-2xl leading-6 md:leading-8 font-medium line-clamp-2 ">
+                            {item.title}
+                        </h2>
+                        <p className={`text-base md:text-lg text-foreground line-clamp-3`}>
+                            {item.para}
+                        </p>
+                        <Link
+                            href={`/industries/${item.href}`}
+                            className="underline text-[#417ea4] underline-offset-2 "
+                        >
+                            Read More
+                        </Link>
+                    </div>
                 </div>
             ))}
         </section>

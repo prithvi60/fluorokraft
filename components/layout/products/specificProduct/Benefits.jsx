@@ -20,11 +20,13 @@ const Benefits = ({ data }) => {
 
 export default Benefits;
 
-const SectionWrapper = ({ count, title, data }) => {
+export const SectionWrapper = ({ count, title, data }) => {
     return (
         <div className="w-full md:w-1/2 space-y-8 md:space-y-16">
             <div className="space-y-5">
-                <SectionHeadingSmall text={count} />
+                {count && (
+                    <SectionHeadingSmall text={count} />
+                )}
                 <SectionHeading2 text={title} />
             </div>
             <div className="w-full flex justify-between gap-10 lg:gap-20">
@@ -39,23 +41,3 @@ const SectionWrapper = ({ count, title, data }) => {
         </div>
     );
 };
-
-const benefitsLists = [
-    "Longest lasting, continuous use gasket on the market",
-    "Will not come apart at the inside seam",
-    "Sealing surface material permanently bonded to gasket body",
-];
-const applicationsLists = [
-    "Specifically for FRP and plastic piping systems",
-    "Minimal torque required to seal",
-    "100% pure virgin TFM® or PTFE sealing surface",
-    "Totally Bonded Elastomer and TFM® or PTFE Construction",
-    "65 to 75 Durometer Elastomer",
-    "Typical compression set values of 15% or better",
-    "Continuous, no “seam,” radius style TFM or PTFE envelope",
-    "Thickest available TFM® or PTFE shield without sacrificing compression set properties",
-    "Available in Old Standard sizes 1/2″ to 24″",
-    "Available upon request in New Standard sizes 1/2″ to 12″",
-    "For temperatures of -40º F (-40º C) to 300º F (149º C)",
-    "Totally non-asbestos construction",
-];

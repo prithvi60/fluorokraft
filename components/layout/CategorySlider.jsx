@@ -32,8 +32,8 @@ const CategorySlider = () => {
                             alt={image.categoryName}
                             title={image.categoryName}
                             className="object-cover object-center w-full h-[90dvh] md:h-[80dvh] overflow-hidden clip-pathHero brightness-50"
-                            // priority
-                            loading="lazy"
+                            priority
+                            loading="eager"
                             sizes="calc(100vw - 40px)"
                         />
                         <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 space-y-4">
