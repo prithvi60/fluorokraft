@@ -5,24 +5,23 @@ import { Readable } from "stream";
 export async function GET() {
   // Static routes
   const links = [
-    // { url: "/", changefreq: "daily", priority: 1.0 },
-    // {
-    //   url: "/",
-    //   changefreq: "weekly",
-    //   priority: 0.9,
-    // },
-    // { url: "/about", changefreq: "monthly", priority: 0.8 },
-    // { url: "/services/content-B2B", changefreq: "weekly", priority: 0.9 },
-    // { url: "/services/content-B2C", changefreq: "weekly", priority: 0.9 },
-    // { url: "/services/founders", changefreq: "weekly", priority: 0.9 },
-    // { url: "/resources/blog", changefreq: "weekly", priority: 0.9 },
-    // { url: "/resources/works", changefreq: "weekly", priority: 0.9 },
-    // { url: "/resources/media", changefreq: "weekly", priority: 0.9 },
-    // {
-    //   url: "/contact",
-    //   changefreq: "monthly",
-    //   priority: 0.9,
-    // },
+    { url: "/", changefreq: "daily", priority: 1.0 },
+    {
+      url: "/",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    { url: "/about", changefreq: "monthly", priority: 0.8 },
+    { url: "/why-fluoroKraft", changefreq: "weekly", priority: 0.9 },
+    { url: "/products", changefreq: "weekly", priority: 0.9 },
+    { url: "/materials", changefreq: "weekly", priority: 0.9 },
+    { url: "/industries", changefreq: "weekly", priority: 0.9 },
+    { url: "/infrastructure", changefreq: "weekly", priority: 0.9 },
+    {
+      url: "/contact",
+      changefreq: "monthly",
+      priority: 0.9,
+    },
   ];
 
   try {
