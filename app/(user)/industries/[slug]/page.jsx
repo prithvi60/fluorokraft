@@ -2,6 +2,7 @@ import AllPageHero from "@/components/layout/AllPageHero"
 import Contact from "@/components/layout/Contact"
 import { SectionHeading2, SectionPara1 } from "@/components/layout/SectionComponents"
 import { industriesData } from "@/utils/Data"
+import Image from "next/image"
 
 const Page = async ({ params }) => {
     const { slug } = await params
@@ -12,6 +13,15 @@ const Page = async ({ params }) => {
         <main>
             <AllPageHero text={filteredData.title} />
             <section className="padding w-full h-full space-y-8 ">
+                <Image
+                    src={filteredData.img}
+                    alt={filteredData.title}
+                    title={filteredData.title}
+                    width={100}
+                    height={100}
+                    className="object-cover w-full md:mx-4 lg:mx-7 md:float-right md:w-fit h-64 xl:h-80 2xl:h-96 flex-shrink-0 clip-pathHero"
+                    loading="lazy"
+                />
                 <p className={`text-base md:text-lg text-foreground`}>
                     {filteredData.para}
                 </p>

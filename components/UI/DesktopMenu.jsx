@@ -10,21 +10,37 @@ export default function DesktopMenu({ menu, path }) {
       className={`group/link relative font-medium tracking-wide`}
       key={menu.menu}
     >
-      <Link
-        onMouseEnter={() => setIsHover(true)}
-        onMouseLeave={() => setIsHover(false)}
-        title={menu.menu}
-        aria-label={menu.menu}
-        href={menu.link || ""}
-        className={`flex capitalize items-center text-background text-sm xl:text-lg`}
-        passHref
-        itemProp="url"
-      >
-        {menu.menu}
-        <span
-          className={`absolute -bottom-0.5 left-0 right-0 h-[2px] rounded-full bg-background transition-transform duration-500 ease-out ${isHover ? "scale-x-100 origin-left" : "scale-x-0 origin-right"}`}
-        />
-      </Link>
+      {menu.menu === "products" || menu.menu === "materials" ? (
+        <a
+          onMouseEnter={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
+          title={menu.menu}
+          aria-label={menu.menu}
+          href={menu.link || ""}
+          className={`flex capitalize items-center text-background text-sm xl:text-lg`}
+        >
+          {menu.menu}
+          <span
+            className={`absolute -bottom-0.5 left-0 right-0 h-[2px] rounded-full bg-background transition-transform duration-500 ease-out ${isHover ? "scale-x-100 origin-left" : "scale-x-0 origin-right"}`}
+          />
+        </a>
+      ) : (
+        <Link
+          onMouseEnter={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
+          title={menu.menu}
+          aria-label={menu.menu}
+          href={menu.link || ""}
+          className={`flex capitalize items-center text-background text-sm xl:text-lg`}
+          passHref
+          itemProp="url"
+        >
+          {menu.menu}
+          <span
+            className={`absolute -bottom-0.5 left-0 right-0 h-[2px] rounded-full bg-background transition-transform duration-500 ease-out ${isHover ? "scale-x-100 origin-left" : "scale-x-0 origin-right"}`}
+          />
+        </Link>
+      )}
     </li>
   );
 }

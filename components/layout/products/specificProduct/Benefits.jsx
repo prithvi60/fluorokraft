@@ -8,9 +8,8 @@ import {
 const Benefits = ({ data }) => {
     return (
         <section className="w-full relative padding flex flex-col gap-10 md:gap-7 lg:gap-16 md:flex-row items-start justify-between bg-[#F7F7F7]">
-            <SectionWrapper count={"01"} title={"Benefits"} data={data.benefits} />
+            <SectionWrapper title={"Benefits"} data={data.benefits} />
             <SectionWrapper
-                count={"02"}
                 title={"Applications"}
                 data={data.applications}
             />
@@ -20,13 +19,10 @@ const Benefits = ({ data }) => {
 
 export default Benefits;
 
-export const SectionWrapper = ({ count, title, data }) => {
+export const SectionWrapper = ({ title, data }) => {
     return (
         <div className="w-full md:w-1/2 space-y-8 md:space-y-16">
             <div className="space-y-5">
-                {count && (
-                    <SectionHeadingSmall text={count} />
-                )}
                 <SectionHeading2 text={title} />
             </div>
             <div className="w-full flex justify-between gap-10 lg:gap-20">

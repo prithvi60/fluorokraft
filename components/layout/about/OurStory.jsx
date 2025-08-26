@@ -12,7 +12,7 @@ const OurStory = () => {
         <section className="w-full relative padding flex flex-col gap-10 md:gap-7 lg:gap-16 md:flex-row items-start justify-between">
             <div className="w-full md:w-3/5 space-y-8">
                 <SectionHeading2
-                    text={"Established Strength Guiding the Next Industrial Wave"}
+                    text={"Strength Guiding the Next Industrial Wave"}
                 />
                 <div className="w-full flex justify-between gap-10 lg:gap-20">
                     <SectionHeadingSmall text={"Our Story"} />

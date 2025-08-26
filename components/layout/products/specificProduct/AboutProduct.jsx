@@ -9,8 +9,8 @@ import {
 
 const AboutProduct = ({ data }) => {
     return (
-        <section className="w-full relative padding flex flex-col-reverse gap-10 md:gap-7 lg:gap-16 md:flex-row items-start justify-between">
-            <div className="block space-y-6 md:space-y-8 max-w-sm w-full md:w-1/2 relative">
+        <section className="w-full relative padding flex flex-col-reverse gap-10 md:gap-7 lg:gap-0 md:flex-row items-start justify-between">
+            <div className="block space-y-6 md:space-y-8 w-full md:w-1/2 relative xl:ml-14">
                 <div className="space-y-5">
                     {data.title && (
                         <div className="pb-3">
@@ -20,7 +20,7 @@ const AboutProduct = ({ data }) => {
                     <SectionHeading2 text={data.subTitle} />
                 </div>
                 {typeof data.desc === "string" ? (
-                    <SectionPara1 text={data.desc} clamp />
+                    <SectionPara1 text={data.desc} />
                 ) : (
                     <p
                         className="text-base text-foreground"

@@ -4,16 +4,15 @@ import { useState } from "react";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import { productCategoryData } from "@/utils/Data";
 
-export default function MultiLevelDropdown({ setIsActiveIndex }) {
+export default function MultiLevelDropdown({ setIsActiveIndex, data }) {
     const [openIndex, setOpenIndex] = useState(null);
     const [openSubIndex, setOpenSubIndex] = useState(null);
 
     return (
         <div className="relative inline-block text-left">
             <ul className="bg-[#F6F6F5] shadow-lg rounded-md border max-w-72 2xl:max-w-full overflow-hidden">
-                {productCategoryData.map((mainItem, idx) => (
+                {data.map((mainItem, idx) => (
                     <li key={idx} className="border-b last:border-0 w-full">
                         <button
                             className={`w-full gap-3 flex justify-between items-center px-4 py-2 font-bold hover:bg-success/50 cursor-pointer`}
@@ -79,7 +78,7 @@ export default function MultiLevelDropdown({ setIsActiveIndex }) {
                                                             <li key={nestedIdx} className="">
                                                                 <button
                                                                     onClick={() => setIsActiveIndex(nested.title)}
-                                                                    className="block pr-4 py-2 hover:bg-success/50 pl-10 w-full text-left"
+                                                                    className="block pr-4 py-2 hover:bg-success/50 pl-10 w-full text-left cursor-pointer"
                                                                 >
                                                                     {nested.title}
                                                                 </button>

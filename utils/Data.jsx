@@ -298,7 +298,8 @@ export const whyFluorokraftFaqs = [
 
 export const materialCards = [
     {
-        title: "PTFEE",
+        title: "PTFE",
+        mainTitle: "Fluoropolymers",
         detail1:
             "Most PTFE seals, in order to retain their toughness and flexibility, are fortified with short glass fiber, bronze flashes, carbon, graphite, or a combination of these fillers. Because of a lack of resilience (memory) in PTFE, an energizer is most often employed to obtain the desired fit. Benefits are chemical inertness, high heat resistance, low temperature flexibility, low running friction, and non-adhesive characteristics. Temperatures to +500Â° F are obtainable but are often reduced by the filler or energizer employed.",
         detail2:
@@ -306,6 +307,7 @@ export const materialCards = [
     },
     {
         title: "Nylon 6,6",
+        mainTitle: "Engineering Thermoplastics",
         detail1:
             "Nylon 6,6 is a high-performance engineering thermoplastic known for its excellent mechanical strength, rigidity, and wear resistance. It is commonly reinforced with fillers such as glass fiber, carbon, or minerals to enhance its load-bearing capacity and dimensional stability under heat. Due to its high crystallinity, Nylon 6,6 offers superior tensile strength, excellent abrasion resistance, and good fatigue endurance. However, like many polyamides, it is hygroscopic—absorbing moisture from the environment—which can slightly affect its mechanical properties and dimensions in humid conditions.",
         detail2:
@@ -313,6 +315,7 @@ export const materialCards = [
     },
     {
         title: "Nitrile Rubber",
+        mainTitle: "Elastomers / Rubber",
         detail1:
             "Nitrile Rubber is usually considered as the backbone of the industrial and automotive rubber products industries. Nitrile Rubber is actually a complex family of unsaturated synthetic rubber copolymers of acrylonitrile (ACN) and butadiene. The physical and chemical properties of Nitrile Rubber depend on the percentage of acrylonitrile in the base polymer. Generally, this type of synthetic rubber is resistant to oil, fuel, grease, water, air and flame retardant liquids (HFA, HFB, HFC).",
         detail2:
@@ -320,6 +323,7 @@ export const materialCards = [
     },
     {
         title: "DELRIN",
+        mainTitle: "Engineering Thermoplastics",
         detail1:
             "Commonly called POM, it is a thermoplastic with high strength and stiffness. As a semi-crystalline material, Acetal offers excellent dimensional stability. It is also characterized by a low coefficient of friction. Great temperature range (-49 F to + 212 F)",
         lists: [
@@ -333,6 +337,7 @@ export const materialCards = [
     },
     {
         title: "PEEK",
+        mainTitle: "Engineering Thermoplastics",
         detail1:
             "PEEK (polyetheretherketone) is a high strength alternative to fluoropolymers with an upper continuous-use temperature of 250Â°C (480Â°F). PEEK exhibits excellent mechanical and thermal properties, chemical inertness, creep resistance at high temperatures, low flammability, hydrolysis resistance, and radiation resistance. These properties make PEEK a preferred product in the aircraft, automotive, semiconductor, and chemical processing industries. PEEK is used for wear and load bearing applications, such as, valve seats, pump gears, and compressor valve plates.",
         detail2:
@@ -346,6 +351,7 @@ export const materialCards = [
     },
     {
         title: "PCTFE",
+        mainTitle: "Fluoropolymers",
         detail1:
             "PCTFE is a high-performance fluoropolymer known for its exceptional chemical resistance, low moisture absorption, and superior gas barrier properties. As a thermoplastic, it maintains excellent dimensional stability across a broad temperature range, typically from -240°C to +150°C. PCTFE also features a low coefficient of thermal expansion, making it ideal for applications requiring tight tolerances. It is non-flammable, resistant to UV radiation, and does not absorb significant amounts of water, making it well-suited for use in aerospace, cryogenics, and precision instrumentation.",
         detail2:
@@ -353,6 +359,7 @@ export const materialCards = [
     },
     {
         title: "PP",
+        mainTitle: "Polyolefins",
         detail1:
             "Polypropylene is a versatile, semi-crystalline thermoplastic known for its light weight, chemical resistance, and excellent fatigue endurance. It offers a good balance of mechanical strength and flexibility, making it suitable for a wide range of industrial applications. PP is particularly resistant to acids, bases, and organic solvents, and is non-hygroscopic, meaning it absorbs very little moisture. With a continuous use temperature range from 0°C to 100°C, and short-term tolerance up to 130°C, it is ideal for applications that require resistance to chemical attack and environmental stress cracking.",
         detail2:
@@ -360,6 +367,7 @@ export const materialCards = [
     },
     {
         title: "LDPE / HDPE",
+        mainTitle: "Polyolefins",
         detail1:
             "Polyethylene, available in two primary forms—LDPE (Low-Density Polyethylene) and HDPE (High-Density Polyethylene)—is a widely used thermoplastic known for its excellent chemical resistance, low moisture absorption, and lightweight nature. Both grades are non-toxic, UV-stabilizable, and offer good electrical insulation properties. LDPE is more flexible and impact-resistant, making it suitable for applications that require pliability, while HDPE is stronger and more rigid, ideal for structural components and high-load environments. Both materials are available in FDA-compliant grades for food and medical uses.",
         detail2:
@@ -370,19 +378,31 @@ export const materialCards = [
 export const materialCardsLists = [
     {
         title: "Fluoropolymers",
-        lists: ["PTFEE", "PCTFE"],
+        subItems: [
+            { title: "PTFE" },
+            { title: "PCTFE" },
+        ],
     },
     {
         title: "Engineering Thermoplastics",
-        lists: ["Nylon 6,6", "DELRIN", "PEEK"],
+        subItems: [
+            { title: "Nylon 6,6" },
+            { title: "DELRIN" },
+            { title: "PEEK" },
+        ],
     },
     {
         title: "Elastomers / Rubber",
-        lists: ["Nitrile Rubber"],
+        subItems: [
+            { title: "Nitrile Rubber" },
+        ],
     },
     {
         title: "Polyolefins",
-        lists: ["PP", "LDPE / HDPE"],
+        subItems: [
+            { title: "PP" },
+            { title: "LDPE / HDPE" },
+        ],
     },
 ];
 

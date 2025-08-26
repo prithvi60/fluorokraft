@@ -1,14 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
 import { SectionPara1 } from "../SectionComponents";
-import {
-    fluoroProducts,
-    productCategorySpecificDetails,
-    productsTabsLists,
-} from "@/utils/Data";
+import { productCategoryData, productCategorySpecificDetails } from "@/utils/Data";
 import Image from "next/image";
 import { UnderlineAnimation } from "@/components/UI/Button";
-import { AccordionSplitted } from "@/components/UI/AccordionSplitted";
 import { useState } from "react";
 import NestedDropdown from "@/components/UI/NestedDropdown";
 
@@ -27,7 +22,9 @@ const ProductsSection = () => {
                 isActiveIndex === "PTFE Encapsulated Discs"
             ) {
                 filteredData = productCategorySpecificDetails.filter(
-                    (val) => val.subTitle === "Butterfly Valve PTFE Seats and PTFE Encapsulated Discs"
+                    (val) =>
+                        val.subTitle ===
+                        "Butterfly Valve PTFE Seats and PTFE Encapsulated Discs"
                 );
             } else {
                 // Default single filter logic
@@ -49,10 +46,20 @@ const ProductsSection = () => {
         <section className="w-full flex flex-col sm:flex-row gap-16 padding">
             <div className="w-full sm:w-2/5 lg:w-1/5">
                 <div className="space-y-3">
-                    <h2 className="font-semi tracking-wider text-lg md:text-xl bg-success px-4 py-2 rounded-md w-full text-white">
-                        Product Categories
+                    <h2
+                        className={`font-semi tracking-wider text-lg md:text-xl bg-success px-4 py-2 rounded-md w-full text-white ${dataCollection.length !== productCategorySpecificDetails.length && "cursor-pointer hover:scale-90 hover:transition-all hover:duration-300"}`}
+                        onClick={() => setDataCollection(productCategorySpecificDetails)}
+                    >
+                        <span
+                            className={`${dataCollection.length !== productCategorySpecificDetails.length && "animate-pulse"}`}
+                        >
+                            Product Categories
+                        </span>
                     </h2>
-                    <NestedDropdown setIsActiveIndex={setIsActiveIndex} />
+                    <NestedDropdown
+                        setIsActiveIndex={setIsActiveIndex}
+                        data={productCategoryData}
+                    />
                 </div>
             </div>
             {dataCollection.length > 0 ? (

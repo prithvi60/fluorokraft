@@ -8,11 +8,11 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const NavBar = () => {
-  const path = usePathname()
+  const path = usePathname();
 
   return (
     <header
-      className={`px-5 md:px-10 py-6 md:py-4 text-lg static flex items-center ${path !== "/" ? "bg-info" : "bg-[#2C3E50]"} !border-none shadow-none`}
+      className={`px-5 md:px-10 py-6 md:py-4 text-lg sticky top-0 left-0 z-[9999] flex items-center ${path !== "/" ? "bg-info" : "bg-[#2C3E50]"} !border-none shadow-none`}
     >
       <nav className="flex justify-between items-center w-full">
         <Link href="/" aria-label="logo" title="Fluorokraft logo" passHref>
