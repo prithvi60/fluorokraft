@@ -558,120 +558,56 @@ export const infrastructureCategoryDetail = [
         title: "Moulding Shop",
         para: (
             <>
-                Fluorokraft operates a fully equipped moulding facility capable of
-                processing both PTFE and PEEK materials with precision. The shop
-                features hydraulic presses ranging from small to high tonnage, enabling
-                the production of components across a wide range of sizes and
-                specifications. PTFE is shaped using a cold forming technique prior to
-                sintering, ensuring dimensional accuracy and material integrity.
+                Fluorokraft operates a fully equipped moulding facility capable of processing both PTFE and PEEK materials with precision. The shop features hydraulic presses ranging from small to high tonnage, enabling the production of components across a wide range of sizes and specifications. PTFE is shaped using a cold forming technique prior to sintering, ensuring dimensional accuracy and material integrity.
                 <br />
                 <br />
-                For PEEK, a combined moulding and thermal processing approach is
-                employed to achieve optimal mechanical properties. Additionally,
-                Fluorokraft offers in-house blending of customized PTFE and PEEK
-                compounds, allowing tailored solutions for specific performance
-                requirements across industries.
+                For PEEK, a combined moulding and thermal processing approach is employed to achieve optimal mechanical properties. Additionally, Fluorokraft offers in-house blending of customized PTFE and PEEK compounds, allowing tailored solutions for specific performance requirements across industries.
             </>
         ),
-        points: [
-            "Compression moulding capability for both PTFE and PEEK in-house",
-            "Hydraulic presses ranging from 50 tonnes to 200 tonnes",
-            "Cold moulding of PTFE before the sintering process",
-            "Moulding cum heating process for PEEK",
-            "Blending for customised compounds in PTFE and PEEK in-house",
-        ],
-        img: "/infra/mould-bg.png",
-        inHouseLists: [""],
+        // points: [
+        //     "Compression moulding capability for both PTFE and PEEK in-house",
+        //     "Hydraulic presses ranging from 50 tonnes to 200 tonnes",
+        //     "Cold moulding of PTFE before the sintering process",
+        //     "Moulding cum heating process for PEEK",
+        //     "Blending for customised compounds in PTFE and PEEK in-house",
+        // ],
+        img: "/infra/Moulding-Shop.jpg",
     },
     {
-        title: "Precision machining facilities",
+        title: "Precision Machining Facility",
         para: (
             <>
-                Fluorokraft’s machining division is equipped with advanced CNC systems,
-                operated by skilled programmers specializing in high-accuracy component
-                production. The facility includes a range of turning, milling, and
-                multi-axis machining centers capable of handling complex geometries and
-                tight tolerances.
+                Fluorokraft’s machining division is equipped with advanced CNC systems, operated by skilled programmers specializing in high-accuracy component production. The facility includes a range of turning, milling, and multi-axis machining centers capable of handling complex geometries and tight tolerances.
                 <br />
                 <br />
-                In addition to CNC capabilities, the shop features conventional
-                machining setups for specialized tasks, along with custom tooling and
-                fixture design to support unique part requirements. The team ensures
-                consistent performance through precise tool calibration and wear
-                monitoring, enabling reliable output across varied production volumes.
+                In addition to CNC capabilities, the shop features conventional machining setups for specialized tasks, along with custom tooling and fixture design to support unique part requirements. The team ensures consistent performance through precise tool calibration and wear monitoring, enabling reliable output across varied production volumes.
             </>
         ),
-        points: [
-            "Turning centres",
-            "Turn-mill centres",
-            "Vertical milling centres",
-            "Conventional machine shop",
-            "Tool and design facilities for specialised fixtures",
-        ],
-        img: "/infra/machine-bg.png",
-        inHouseLists: [""],
+        img: "/infra/Precision-Machining-Facility.png",
     },
     {
-        title: "Inspection Facility",
+        title: "World Class Isostatic Facility",
         para: (
             <>
-                Fluorokraft maintains stringent quality control through continuous
-                in-process monitoring, ensuring every PTFE component meets tight
-                dimensional tolerances—down to 0.05 mm. Skilled technicians oversee each
-                stage of production to maintain consistency and precision.
+                Fluorokraft’s isostatic moulding infrastructure is designed for precision and consistency in PTFE and PFA components. Advanced moulding systems ensure uniform pressure, producing parts with consistent density and minimal internal stress—crucial for high-performance applications involving corrosive fluids, heat, and mechanical loads.
                 <br />
                 <br />
-                Final inspections are carried out using advanced video-based measurement
-                systems that accurately validate intricate geometries and surface
-                profiles. Every production batch is fully traceable, supported by
-                detailed dimensional reports and certified material test documentation
-                to guarantee compliance and performance.
+                The facility includes specialized cold moulding equipment for PTFE and integrated heating for PEEK, enabling tailored processing. In-house compound blending allows precise control over material properties. With skilled technicians and strict quality protocols, Fluorokraft delivers complex, high-tolerance components for industries like chemical processing, oil & gas, pharmaceuticals, and aerospace.
             </>
         ),
-        points: [
-            "Fully-equipped inspection and testing facilities to verify dimensions and material properties",
-            "Rapid-I inspection system for non-contact dimensional inspection",
-            "Customised gauges for inspection of large volume parts",
-            "In-house capacity to test properties such as:",
-        ],
-        img: "/infra/INSPECTION-BG.png",
-        inHouseLists: [
-            "Tensile strength",
-            "Elongation",
-            "Specific gravity",
-            "Breakdown voltage",
-            "Coefficients of linear thermal expansion",
-            "Wear resistance K-Factor",
-            "Coefficients of friction",
-            "Compressive strength",
-        ],
+        img: "/infra/World-Class-Isostatic-Facility.png",
     },
     {
-        title: "ePTFE Unit",
+        title: "Quality Assurance and Inspection",
         para: (
             <>
-                Fluorokraft’s isostatic moulding infrastructure is designed for
-                precision and consistency in PTFE and PFA components. Advanced moulding
-                systems ensure uniform pressure, producing parts with consistent density
-                and minimal internal stress—crucial for high-performance applications
-                involving corrosive fluids, heat, and mechanical loads.
+                Fluorokraft maintains stringent quality control through continuous in-process monitoring, ensuring every PTFE component meets tight dimensional tolerances—down to 0.05 mm. Skilled technicians oversee each stage of production to maintain consistency and precision.
                 <br />
                 <br />
-                The facility includes specialized cold moulding equipment for PTFE and
-                integrated heating for PEEK, enabling tailored processing. In-house
-                compound blending allows precise control over material properties. With
-                skilled technicians and strict quality protocols, Fluorokraft delivers
-                complex, high-tolerance components for industries like chemical
-                processing, oil & gas, pharmaceuticals, and aerospace.
+                Final inspections are carried out using advanced video-based measurement systems that accurately validate intricate geometries and surface profiles. Every production batch is fully traceable, supported by detailed dimensional reports and certified material test documentation to guarantee compliance and performance.
             </>
         ),
-        points: [
-            "Custom-built, CNC-controlled ePTFE stretching machine to meet global quality norms",
-            "Enhanced capability to manufacture expanded PTFE tapes in thicknesses of 0.5mm to 15mm",
-            "In-house extrusion and tooling expertise to allow for unique profiles",
-        ],
-        img: "/infra/ePTFE.png",
-        inHouseLists: [""],
+        img: "/infra/Quality-Assurance-Inspection.png",
     },
 ];
 
@@ -2692,7 +2628,7 @@ export const productCategorySpecificDetails = [
 export const industriesData = [
     {
         title: "Pumps and Valves",
-        img: "/industries/PV.jpg",
+        img: "/industries/Valve.png",
         href: "pumps-and-valves",
         para: (
             <>
@@ -2771,7 +2707,7 @@ export const industriesData = [
     },
     {
         title: "Oil and Gas",
-        img: "/industries/OG.jpg",
+        img: "/industries/Oil-Gas.png",
         href: "oil-and-gas",
         para: (
             <>
@@ -2832,7 +2768,7 @@ export const industriesData = [
     },
     {
         title: "Chemical and Process Industries",
-        img: "/industries/CPI.jpg",
+        img: "/industries/Chemical.png",
         href: "chemical-and-proces-industries",
         para: (
             <>
@@ -2894,7 +2830,7 @@ export const industriesData = [
     },
     {
         title: "Water, Wastewater & Environmental Systems",
-        img: "/industries/WES.jpg",
+        img: "/industries/Water-treatment.png",
         href: "water-and-wastewater-environment-systems",
         para: (
             <>
@@ -2956,7 +2892,7 @@ export const industriesData = [
     },
     {
         title: "Energy, Power, Transportation and Others",
-        img: "/industries/EPT.jpg",
+        img: "/industries/Power.png",
         href: "energy-power-transportation-and-others",
         para: (
             <>
@@ -3022,7 +2958,7 @@ export const industriesData = [
     },
     {
         title: "Aerospace",
-        img: "/industries/aero.jpg",
+        img: "/industries/Aerospace.png",
         href: "aerospace",
         para: (
             <>
